@@ -11,55 +11,86 @@
 <body>
     <!-- header -->
     <header class="header">
-        <div class="header-top">
-            <nav>
-                <ul>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Story</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Testimonials</a></li>
+        
+        <div class="header__top">
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="menu__link">Shop</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="menu__link">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="menu__link">Story</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="menu__link">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="menu__link">Blog</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="menu__link">Testimonials</a>
+                    </li>
                 </ul>
             </nav>
-            <a class="logo" href="">
-                <img src="" alt="">
-            </a>
 
-            <div class="right-block">
-                <div class="personal">
-                    <ul>
-                        <li>
-                            <a href=""><img src="" alt=""></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="" alt=""></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="" alt=""></a>
-                            <span>3</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="social">
-                    <ul>
-                        <li>
-                            <a href=""><img src="" alt=""></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="" alt=""></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="header__logo logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="" alt="">
+                </a>
+            </div>
+
+            <div class="header__personal personal">
+                <ul class="personal__list">
+                    <li class="personal__list-item">
+                        <a class="personal__link" href="#">
+                            <img class="personal__icon-search" src="" alt="">
+                        </a>
+                    </li>
+                    <li class="personal__list-item">
+                        <a class="personal__link" href="#">
+                            <img class="personal__icon-user" src="" alt="">
+                        </a>
+                    </li>
+                    <li class="personal__list-item">
+                        <a class="personal__link-cart" href="#">
+                            <img class="personal__cart-icon"src="" alt="">
+                        </a>
+                        <span class="personal__cart-count">3</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header__social social">
+                <ul class="social__list">
+                    <li class="social__list-item">
+                        <a class="social__link" href="">
+                            <img class="social__icon" src="" alt="">
+                        </a>
+                    </li>
+                    <li class="social__list-item">
+                        <a class="social__link" href="">
+                            <img class="social__icon" src="" alt="">
+                        </a>
+                    </li>
+                    <li class="social__list-item">
+                        <a class="social__link" href="">
+                            <img class="social__icon" src="" alt="">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="header-content">
-            <a href="">Shop Now</a>
+
+        <div class="header__content">
+            <a class="header__btn btn btn--green-bg" href="">Shop Now
+                <img class="btn__arrow-yellow" src="" alt="" >
+            </a>
         </div>
     </header>
+
     <!-- smoothies -->
     <section class="smoothies">
     <h2>What are these smoothies?</h2>
@@ -155,12 +186,12 @@
     </section>
     <!-- testimonials -->
     <section class="testimonials">
-        <h2>Why clients LOVE us?</h2>
+        <h2>Why clients <span>love</span> us?</h2>
         <div class="wrapper">
-            <article class="content">
+            <div class="content">
                 <blockquote>”Smoothie is great. I don't know what else to say. I will let my mum know about this, she could really make use of Smoothie! Smoothie saved my business.”</blockquote>
                 <address>- from Santa Monica, CA</address>
-            </article>
+            </div>
             <img src="" alt="">
         </div>
         <button></button>
