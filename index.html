@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Сюда подключаем стили -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Document</title>
 </head>
 
@@ -16,22 +18,22 @@
             <nav class="header__menu menu">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="menu__link">Shop</a>
+                        <a class="menu__link" href="#">Shop</a>
                     </li>
                     <li class="menu__item">
-                        <a href="menu__link">Home</a>
+                        <a class="menu__link" href="#">Home</a>
                     </li>
                     <li class="menu__item">
-                        <a href="menu__link">Story</a>
+                        <a class="menu__link" href="#">Story</a>
                     </li>
                     <li class="menu__item">
-                        <a href="menu__link">About</a>
+                        <a class="menu__link" href="#">About</a>
                     </li>
                     <li class="menu__item">
-                        <a href="menu__link">Blog</a>
+                        <a class="menu__link" href="#">Blog</a>
                     </li>
                     <li class="menu__item">
-                        <a href="menu__link">Testimonials</a>
+                        <a class="menu__link" href="#">Testimonials</a>
                     </li>
                 </ul>
             </nav>
@@ -154,39 +156,49 @@
     </section>
     <!-- products -->
     <section class="products">
-        <div>
-            <img src="" alt="">
-            <h4>Dark Chocolate Smoothie</h4>
-            <span>100 ml</span>
-            <a href="">Buy</a>
+        <div class="products_box">
+            <img class="products__icon" src="" alt="">
+            <h4 class="products__titile">Dark Chocolate Smoothie</h4>
+            <span class="products__desc">100 ml</span>
+            <a class="products__btn btn btn--no-bg" href="">Buy
+                <img class="btn__arrow-white" src="" alt="">
+            </a>
         </div>
-        <div>
-            <img src="" alt="">
-            <h4>Vegan Lettuce Smoothie</h4>
-            <span>100 ml</span>
-            <a href="">Buy</a>
+        <div class="products_box">
+            <img class="products__icon" src="" alt="">
+            <h4 class="products__titile">Vegan Lettuce Smoothie</h4>
+            <span class="products__desc">100 ml</span>
+            <a class="products__btn btn btn--no-bg" href="">Buy
+                <img class="btn__arrow-white" src="" alt="">
+            </a>
         </div>
-        <div>
-            <img src="" alt="">
-            <h4>Lemon Ginger Smoothie</h4>
-            <span>100 ml</span>
-            <a href="">Buy</a>
+        <div class="products_box">
+            <img class="products__icon" src="" alt="">
+            <h4 class="products__titile">Lemon Ginger Smoothie</h4>
+            <span class="products__desc">100 ml</span>
+            <a class="products__btn btn btn--no-bg" href="">Buy
+                <img class="btn__arrow-white" src="" alt="">
+            </a>
         </div>
-        <div>
-            <img src="" alt="">
-            <h4>Turmeric Garlic Smoothie</h4>
-            <span>100 ml</span>
-            <a href="">Buy</a>
+        <div class="products_box">
+            <img class="products__icon" src="" alt="">
+            <h4 class="products__titile">Turmeric Garlic Smoothie</h4>
+            <span class="products__desc">100 ml</span>
+            <a class="products__btn btn btn--no-bg" href="">Buy
+                <img class="btn__arrow-white" src="" alt="">
+            </a>
         </div>
     </section>
     <!-- story -->
     <section class="story">
-        <div class="wrapper">
-            <h2>Our story</h2>
-            <p>As products typically using raw fruits or vegetables, smoothies include dietary fiber (e.g. pulp, skin, and seeds) and so are thicker than fruit juice, often with a consistency similar to a milkshake. </p>
-            <a href="">Who we are</a>
+        <div class="story__wrapper">
+            <h2 class="story__title">Our story</h2>
+            <p class="story__text">As products typically using raw fruits or vegetables, smoothies include dietary fiber (e.g. pulp, skin, and seeds) and so are thicker than fruit juice, often with a consistency similar to a milkshake. </p>
+            <a class="story__btn btn btn--green-bg" href="">Who we are
+                <img class="btn__arrow-yellow" src="" alt="">
+            </a>
         </div>
-        <img src="" alt="">
+        <img class="story__image" src="" alt="">
     </section>
     <!-- testimonials -->
     <section class="testimonials">
