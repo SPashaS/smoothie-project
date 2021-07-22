@@ -1,0 +1,8 @@
+* {
+    border: 1px solid red;
+}
+
+.header {
+    background-image: url(../assets/images/header-bg-img.png);
+    background-size: 100%;
+}
