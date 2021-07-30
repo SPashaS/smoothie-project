@@ -466,3 +466,134 @@ a {
     height: 16px;
     border: 1px solid red;
 }
+/*     BLOG       */
+
+.blog {
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.blog__inner {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    border: 1px solid red;
+}
+
+.blog__content {
+    display: flex;
+    border: 1px solid red;
+}
+
+.blog__image {
+    width: 555px;
+    height: 400px;
+}
+
+.blog__article {
+    margin-left: 43px;
+    border: 1px solid red;
+}
+
+.blog__article-title {
+    font-family: 'MuliExtraBold';
+    font-size: 30px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #f2612d;
+}
+
+.blog__article-time {
+    font-family: 'MuliReg';
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.19;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1e1e1e;
+}
+
+.blog__article-excerpt {
+    width: 472px;
+    margin: 40px 0 0 60px;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.94;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1e1e1e;
+    border: 1px solid red;
+}
+
+.blog__article-arr {
+    width: 18px;
+    height: 10px;
+}
+
+.blog__article-link {
+    font-family: 'MuliExtraBold';
+    color: black;
+}
+
+/*      INSTAGRAM     */
+
+.instagram__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.instagram__top-link {
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.instagram__top-icon {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    margin-right: 12px;
+    border: 1px solid red;
+}
+
+.instagram__top-title {
+    display: flex;
+    font-size: 24px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: -0.48px;
+    text-align: left;
+    color: #0aa566;
+    border: 1px solid red;
+}
+
+.instagram__content {
+    margin-bottom: 10px;
+}
+.instagram__list {
+    display: flex;
+    justify-content: center;
+}
+
+.instagram__list-item {
+    display: flex;
+    flex-basis: 20%;
+    flex-shrink: 1;
+}
+
+.instagram__list-photo {
+    width:100%;
+    
+}
+
