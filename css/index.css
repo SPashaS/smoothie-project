@@ -183,11 +183,10 @@ a {
 .title {
     font-family: 'MuliExtraBold';
     border: 1px solid red;
-    margin: 98px 0 55px;
+    padding: 98px 0 55px;
     font-size: 50px;
     line-height: 0.8;
     letter-spacing: -1px;
-    text-align: center;
     color: #f7ae3b;
 }
 
@@ -353,4 +352,117 @@ a {
     font-size: 21px;
     border-radius: 30px;
     border: solid 2px #ffffff;
+}
+
+/*    STORY      */
+
+.story {
+    display: flex;
+    justify-content: center;
+}
+
+.story__wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0 70px;
+    border: 1px solid red;
+}
+.story__content {
+    width: 437px;
+}
+.story__title {
+    text-align: left;
+}
+.story__text {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.94;
+    letter-spacing: normal;
+    text-align: left;
+    margin-bottom: 55px;
+}
+.story__btn {
+    height: 60px;
+    width: 301px;
+    background-color: #0aa566;
+    font-size: 24px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.story__image {
+    width: 585px;
+    height: 601px;
+    border: 1px solid red;
+}
+
+/*   TESTIMONIALS     */
+
+.testimonials {
+    background-color: #672f1b;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.title--orange-up {
+    text-transform: uppercase;
+    color: #f2612d;
+}
+.testimonials__content {
+    display: flex;
+    margin-bottom: 100px;
+    border: 1px solid red;
+}
+
+.testimonials__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.testimonials__img {
+    width: 220px;
+    height: 218px;
+}
+
+.testimonials__quote {
+    width: 455px;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.94;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid red;
+}
+
+.testimonials__address {
+    font-weight: 600;
+    font-style: italic;
+    line-height: 2.5;
+    color: #f7ae3b;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.testimonials__footer {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 90px;
+    margin-bottom: 80px;
+    border: 1px solid red;
+}
+
+.testimonials__footer-btn {
+    width: 30px;
+    height: 16px;
+    border: 1px solid red;
 }
