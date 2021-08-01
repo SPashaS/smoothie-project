@@ -597,3 +597,163 @@ a {
     
 }
 
+/*      FOOOTER   */
+.footer__content {
+    background-color: #f6ab3b;
+}
+
+.footer__content-inner {
+    height: 372px;
+    padding: 80px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__bottom {
+    padding: 25px 164px 21px 869px;
+    background-color: #6c2c1c;
+
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    width: 600px;
+}
+.information {
+    border: 1px solid red;
+    width: 300px;
+}
+
+.payment {
+    border: 1px solid red;
+    width: 400px;
+}
+
+.subscribe {
+    border: 1px solid red;
+    width: 600px;
+}
+.footer__title {
+    font-family: 'MuliExtraBold';
+    font-size: 26px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.footer__information {
+    font-family: 'MuliExtraBold';
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.94;
+    letter-spacing: -0.36px;
+    text-align: left;
+}
+.information__menu-link {
+    color: #6d450c;
+}
+
+.payment__icon1 {
+    width: 46px;
+    height: 30px;
+}
+.payment__icon2 {
+    width: 36px;
+    height: 36px;
+}
+.payment__icon3 {
+    width: 48px;
+    height: 29px;
+}
+.payment__icon4 {
+    width: 54px;
+    height: 26px;
+}
+.payment__icon5 {
+    width: 34px;
+    height: 26px;
+}
+.payment__icon6 {
+    width: 42px;
+    height: 28px;
+}
+.payment__icon7 {
+    width: 50px;
+    height: 14px;
+}
+.payment__icon8 {
+    width: 142px;
+    height: 36px;
+}
+.payment__icon9 {
+    width: 48px;
+    height: 15px;
+}
+
+.subscribe__input {
+    width: 495px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    font-family: 'MuliExtraBold';
+    font-size: 17px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.06;
+    letter-spacing: -0.34px;
+    text-align: left;
+    color: #6d450c;
+    border-width: 0px;
+    background-image: url('../assets/images/ft-inp-ic.png');
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 60px;
+
+}
+
+
+.subscribe__socials-link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 27px;
+}
+.subscribe__link {
+    padding-right: 42px;
+    text-transform: uppercase;
+    font-family: 'MuliExtraBold';
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.22;
+    letter-spacing: -0.36px;
+    color: #6d450c;
+}
+.subscribe__social-list {
+    display: flex; 
+    column-gap:24px;
+    padding-right:52px;
+}
+
+.subscribe__icon {
+    height: 24px;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 26px 0;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.26px;
+    color: #af8a82;
+}
