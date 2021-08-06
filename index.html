@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Сюда подключаем стили -->
+
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>Document</title>
 </head>
 
 <body>
-    <!-- header -->
+
     <header class="header">
         
         <div class="header__top">
@@ -138,9 +138,11 @@
     <section class="about">
 
         <div class="about__inner">
-            <img class="about__image" src="./assets/images/about.png" alt="">
+            <div class="about__image-wrapper">
+                <img class="about__image" src="./assets/images/about.png" alt="">
+            </div>
             <div class="about__content">
-                <h2 class="about__title">What makes Smoothie an awesome drink? </h2>
+                <h2 class="about__title">What makes Smoothie an <span class="about__title--light-green">awesome drink?</span></h2>
             
                 <ul class="about__list">
                     <li class="about__item"><b>Crunchy Puffs</b> Texture</li>
@@ -196,7 +198,7 @@
     </section>
 
 
-    <section class="story">
+     <section class="story">
         <div class="story__inner">
             <div class="story__content">
                 <h2 class="story__title title">Our story</h2>
@@ -210,6 +212,8 @@
     </section>
 
 
+
+    
     <section class="testimonials">
         <h2 class="testimonials__title title">Why clients 
             <span class="title--orange-up">love</span> us?
@@ -360,7 +364,7 @@
         <div class="footer__bottom">
             <p class="footer__copyright">© 2020. All Rights Reserved.</p>
         </div>
-    </footer> 
+    </footer>
 </body>
 
 </html>
