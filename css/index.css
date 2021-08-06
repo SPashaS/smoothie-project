@@ -185,7 +185,6 @@ a:hover {
 }
 .btn--green-bg::after  {
     text-decoration-line: none;
-    -moz-text-decoration-line: none;
     content: "";
     display: block;
     background-image: url('../assets/images/arrow-png.png');
@@ -205,11 +204,14 @@ a:hover {
 
 .title {
     font-family: 'MuliExtraBold';
-    margin: 98px 0 44px;
     font-size: 50px;
     line-height: 0.8;
     letter-spacing: -1px;
     color: #f7ae3b;
+}
+
+.smoothies__title {
+    margin: 98px 0 44px;
 }
 
 .smoothies__desc {
@@ -341,7 +343,7 @@ a:hover {
     left: 22px;
 }
 
-.about__item:before {
+.about__item::before {
     content: '';
     background-image: url('../assets/images/about-li.png');
     position: absolute;
@@ -434,16 +436,30 @@ a:hover {
 
 .story__inner {
     display: flex;
-    justify-content: center;
-    margin: 70px 0 70px;
-    border: 1px solid red;
+    width: 1300px;
+    justify-content: space-between;
+    margin: 121px 0 160px;
+    position: relative;
 }
 .story__content {
-    width: 437px;
-    border: 1px solid red;
+    width: 515px;
 }
+
+.story__content::before {
+    content: "";
+    background-image: url(../assets/images/stStamp.png);
+    display: block;
+    width: 290px;
+    height: 216px;
+    position: absolute;
+    top: 23px;
+    left: 548px;
+    opacity: 0.5;
+}
+
 .story__title {
     text-align: left;
+    margin: 138px 0 47px;
 }
 .story__text {
     font-size: 18px;
@@ -453,51 +469,77 @@ a:hover {
     line-height: 1.94;
     letter-spacing: normal;
     text-align: left;
-    margin-bottom: 55px;
-    border: 1px solid red;
+    margin-bottom: 50px;
 }
 .story__btn {
-    width: 220px;
+    width: 300px;
     height: 60px;
     background-color: #0aa566;
     font-size: 24px;
     border-radius: 30px;
 }
+
+
 .story__image {
     width: 585px;
     height: 601px;
-    border: 1px solid red;
 }
 
-/*   TESTIMONIALS     */
+/*   ---------------------------   TESTIMONIALS   ---------------------------   */
 
 .testimonials {
     background-color: #672f1b;
     display: flex;
     flex-direction: column;
     align-items:center;
+    position: relative;
 }
 
+.testimonials__title::before {
+    content: "";
+    background-image: url('../assets/images/tePsev.png');
+    display: block;
+    width: 410px;
+    height: 301px;
+    position: absolute;
+    top: -81px;
+    right: 58px;
+}
+
+.testimonials__title {
+    margin: 116px 0 127px;
+}
 .title--orange-up {
     text-transform: uppercase;
     color: #f2612d;
 }
 .testimonials__content {
     display: flex;
-    margin-bottom: 100px;
-    border: 1px solid red;
+    margin-bottom: 120px;
 }
 
 .testimonials__text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    border: 1px solid red;
+    width: 510px;
+    padding-top: 55px;
+    position: relative;
+}
+.testimonials__text::before {
+    content: "";
+    background-image: url('../assets/images/testSarah.png');
+    background-size: 764px 148px;
+    width: 764px;
+    height: 148px;
+    position: absolute;
+    top: -36px;
+    left: -157px;
 }
 
 .testimonials__img {
     width: 220px;
     height: 218px;
+    z-index: 1;
 }
 
 .testimonials__quote {
@@ -510,59 +552,62 @@ a:hover {
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
-    border: 1px solid red;
+    z-index: 1;
 }
 
 .testimonials__address {
     font-weight: 600;
     font-style: italic;
-    line-height: 2.5;
+    line-height: 3;
     color: #f7ae3b;
-    text-align: center;
-    border: 1px solid red;
+    text-align: left;
+    padding-left: 120px;
 }
 
 .testimonials__footer {
     display: flex;
     justify-content: space-between;
-    column-gap: 90px;
-    margin-bottom: 80px;
-    border: 1px solid red;
+    column-gap: 97px;
+    margin-bottom: 83px;
 }
 
 .testimonials__footer-btn {
     width: 30px;
     height: 16px;
-    border: 1px solid red;
 }
-/*     BLOG       */
+
+
+/*   ---------------------------   BLOG   ---------------------------   */
 
 .blog {
     display: flex;
     justify-content: center;
-    border: 1px solid red;
 }
 
 .blog__inner {
+    width: 1205px;
     display: flex;
     flex-direction: column;
     margin-bottom: 150px;
-    border: 1px solid red;
 }
 
 .blog__content {
     display: flex;
-    border: 1px solid red;
 }
 
+
+
+.blog__title {
+    margin: 98px 0 58px;
+}
 .blog__image {
     width: 555px;
     height: 400px;
 }
 
 .blog__article {
-    margin-left: 43px;
-    border: 1px solid red;
+    margin-top: 123px;
+    margin-left: 64px;
 }
 
 .blog__article-title {
@@ -574,10 +619,23 @@ a:hover {
     letter-spacing: -0.6px;
     text-align: left;
     color: #f2612d;
+    position: relative;
+}
+
+.blog__article-title::before {
+    content: "";
+    display: block;
+    background-color: #f7ae3b;
+    background-size: 530px 5px;
+    border-radius: 0 6px 6px 0;
+    width: 645px;
+    height: 12px;
+    position: absolute;
+    top: -54px;
+    left: -62px;
 }
 
 .blog__article-time {
-    font-family: 'MuliReg';
     font-size: 16px;
     font-stretch: normal;
     font-style: normal;
@@ -588,8 +646,8 @@ a:hover {
 }
 
 .blog__article-excerpt {
-    width: 472px;
-    margin: 40px 0 0 60px;
+    width: 477px;
+    margin: 25px 0 0 61px;
     font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
@@ -598,7 +656,7 @@ a:hover {
     letter-spacing: normal;
     text-align: left;
     color: #1e1e1e;
-    border: 1px solid red;
+
 }
 
 .blog__article-arr {
@@ -609,21 +667,32 @@ a:hover {
 .blog__article-link {
     font-family: 'MuliExtraBold';
     color: black;
+    position: relative;
+}
+.blog__article-link::after {
+    content: "";
+    display: block;
+    background-image: url('../assets/images/arrow-png.png');
+    background-size: 18px 10px;
+    width: 18px;
+    height: 10px;
+    position: absolute;
+    top: 8px;
+    left: 107px;
 }
 
-/*      INSTAGRAM     */
+/*   ---------------------------   INSTAGRAM   ---------------------------   */
 
 .instagram__top {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    padding: 42px 0 37px;
 }
 
 .instagram__top-link {
     display: flex;
     align-items: center;
-    border: 1px solid red;
 }
 
 .instagram__top-icon {
@@ -631,11 +700,9 @@ a:hover {
     width: 26px;
     height: 26px;
     margin-right: 12px;
-    border: 1px solid red;
 }
 
 .instagram__top-title {
-    display: flex;
     font-size: 24px;
     font-weight: 800;
     font-stretch: normal;
@@ -644,11 +711,10 @@ a:hover {
     letter-spacing: -0.48px;
     text-align: left;
     color: #0aa566;
-    border: 1px solid red;
 }
 
 .instagram__content {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 .instagram__list {
     display: flex;
@@ -656,53 +722,39 @@ a:hover {
 }
 
 .instagram__list-item {
-    display: flex;
-    flex-basis: 20%;
-    flex-shrink: 1;
+    position: relative;
+}
+.instagram__list-link::before {
+    content: "";
+    background-image: url('../assets/images/inst-wt-ic.png');
+    background-size: 25px 25px ;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 24px;
+    right: 20px;
 }
 
 .instagram__list-photo {
     width:100%;
-    
 }
 
-/*      FOOOTER   */
+/*   ---------------------------   FOOOTER   ---------------------------   */
+/*   -------------   content   -------------   */
+.footer {
+    position: relative
+}
+
 .footer__content {
     background-color: #f6ab3b;
 }
 
 .footer__content-inner {
-    height: 372px;
-    padding: 80px 100px;
+    padding: 70px 100px 87px;
     display: flex;
     justify-content: space-between;
 }
 
-.footer__bottom {
-    padding: 25px 164px 21px 869px;
-    background-color: #6c2c1c;
-
-}
-
-.footer__logo {
-    display: flex;
-    align-items: center;
-    width: 600px;
-}
-.information {
-    border: 1px solid red;
-    width: 300px;
-}
-
-.payment {
-    border: 1px solid red;
-    width: 400px;
-}
-
-.subscribe {
-    border: 1px solid red;
-    width: 600px;
-}
 .footer__title {
     font-family: 'MuliExtraBold';
     font-size: 26px;
@@ -712,7 +764,23 @@ a:hover {
     letter-spacing: -0.52px;
     text-align: left;
     color: #ffffff;
-    padding-bottom: 20px;
+    padding-bottom: 23px;
+}
+
+/*   -------------   logo   -------------   */
+.footer__logo {
+    display: flex;
+    align-items: center;
+    width: 538px;
+}
+
+/*   -------------   information   -------------   */
+.information {
+    width: 337px;
+}
+
+.information__menu-link {
+    color: #6d450c;
 }
 
 .footer__information {
@@ -724,45 +792,58 @@ a:hover {
     letter-spacing: -0.36px;
     text-align: left;
 }
-.information__menu-link {
-    color: #6d450c;
+/*   -------------   payment   -------------   */
+.payment {
+    width: 317px;
+    margin-right: 112px;
+}
+.payment__list {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 23px 20px;
 }
 
-.payment__icon1 {
+.payment__icon:nth-child(1) {
     width: 46px;
     height: 30px;
 }
-.payment__icon2 {
+.payment__icon:nth-child(2) {
     width: 36px;
     height: 36px;
 }
-.payment__icon3 {
+.payment__icon:nth-child(3) {
     width: 48px;
     height: 29px;
 }
-.payment__icon4 {
+.payment__icon:nth-child(4) {
     width: 54px;
     height: 26px;
 }
-.payment__icon5 {
+.payment__icon:nth-child(5) {
     width: 34px;
     height: 26px;
 }
-.payment__icon6 {
+.payment__icon:nth-child(6) {
     width: 42px;
     height: 28px;
 }
-.payment__icon7 {
+.payment__icon:nth-child(7) {
     width: 50px;
     height: 14px;
 }
-.payment__icon8 {
+.payment__icon:nth-child(8) {
     width: 142px;
     height: 36px;
 }
-.payment__icon9 {
+.payment__icon:nth-child(9) {
     width: 48px;
     height: 15px;
+}
+/*   -------------   subscribe   -------------   */
+.subscribe {
+    width: 500px;
 }
 
 .subscribe__input {
@@ -779,11 +860,7 @@ a:hover {
     text-align: left;
     color: #6d450c;
     border-width: 0px;
-    background-image: url('../assets/images/ft-inp-ic.png');
-    background-size: 24px;
-    background-repeat: no-repeat;
-    background-position: left;
-    padding-left: 60px;
+    padding-left: 62px;
 
 }
 .subscribe__input:focus-visible {
@@ -795,8 +872,31 @@ a:hover {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-top: 27px;
+    padding-top: 22px;
+    position: relative;
 }
+.subscribe__link::before {
+    content: "";
+    background-image: url('../assets/images/ft-inp-ic.png');
+    background-size:24px;
+    width: 24px;
+    height: 19px;
+    position: absolute;
+    top: -38px;
+    left: 23px
+}
+
+.subscribe__link::after {
+    content: "";
+    background-image: url(../assets/images/ft-arr.png);
+    background-size: 44px;
+    width: 44px;
+    height: 40px;
+    position: absolute;
+    top: 14px;
+    left: 123px;
+}
+
 .subscribe__link {
     padding-right: 42px;
     text-transform: uppercase;
@@ -807,10 +907,11 @@ a:hover {
     line-height: 2.22;
     letter-spacing: -0.36px;
     color: #6d450c;
+    padding-top: 3px;
 }
 .subscribe__social-list {
     display: flex; 
-    column-gap:24px;
+    column-gap:28px;
     padding-right:52px;
 }
 
@@ -828,4 +929,35 @@ a:hover {
     font-style: normal;
     letter-spacing: 0.26px;
     color: #af8a82;
+    background-color: #6c2c1c;
+}
+
+.footer__goTop {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #f2662f;
+    position: absolute;
+    bottom: 44px;
+    right: 101px;
+}
+
+.footer__goTop::before {
+    content: '';
+    background-image: url('../assets/images/ft-arr-top.png');
+    background-size: 13px 25px;
+    width: 13px;
+    height: 25px;
+    position: absolute;
+    bottom: 11px;
+    right: 19px;
+}
+
+.footer__goTop::after {
+    content: 'Go top';
+    position: absolute;
+    bottom: -18px;
+    left: -61px;
+    color: #fff;
 }
