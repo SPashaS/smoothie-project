@@ -734,6 +734,15 @@ a:hover {
     bottom: 24px;
     right: 20px;
 }
+.instagram__list-link::after {
+    content: "";
+    background: linear-gradient(to top left, rgb(0, 0, 0), rgba(0, 0, 0, 0)) ;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 3px;
+    right: 0px;
+}
 
 .instagram__list-photo {
     width:100%;
