@@ -215,7 +215,7 @@ a:hover {
 }
 
 .smoothies__desc {
-    width: 915px;
+    max-width: 915px;
     margin-bottom: 56px;
     font-size: 18px;
     line-height: 1.94;
@@ -228,7 +228,7 @@ a:hover {
 .smoothies__greed {
     display: flex;
     flex-wrap: wrap;
-    width: 1010px;
+    max-width: 1010px;
     margin-bottom: 126px;
 }
 
@@ -354,7 +354,7 @@ a:hover {
 }
 
 .about__btn {
-    width: 380px;
+    max-width: 380px;
     height: 60px;
     border-radius: 30px;
     border: solid 2px #f8b231;
@@ -733,10 +733,11 @@ a:hover {
     position: absolute;
     bottom: 24px;
     right: 20px;
+    z-index: 1;
 }
 .instagram__list-link::after {
     content: "";
-    background: linear-gradient(to top left, rgb(0, 0, 0), rgba(0, 0, 0, 0)) ;
+    background: linear-gradient(to top left, #0000006c 10%, #0000000c 30%, #a1988700 70%) ;
     width: 150px;
     height: 150px;
     position: absolute;
@@ -851,8 +852,9 @@ a:hover {
     height: 15px;
 }
 /*   -------------   subscribe   -------------   */
-.subscribe {
+.footer__subscribe {
     width: 500px;
+    position: relative;
 }
 
 .subscribe__input {
@@ -872,8 +874,16 @@ a:hover {
     padding-left: 62px;
 
 }
-.subscribe__input:focus-visible {
 
+input[type="text"]::-webkit-input-placeholder {
+    color: #6d450c;
+} 
+
+input[type="text"]::-moz-placeholder {
+    color: #6d450c;
+}
+
+.subscribe__input:focus-visible {
     outline: none;
 }
 
@@ -882,27 +892,27 @@ a:hover {
     justify-content: flex-end;
     align-items: center;
     padding-top: 22px;
-    position: relative;
 }
-.subscribe__link::before {
+
+.subscribe__socials-link::before {
     content: "";
     background-image: url('../assets/images/ft-inp-ic.png');
     background-size:24px;
     width: 24px;
     height: 19px;
     position: absolute;
-    top: -38px;
+    top: 82px;
     left: 23px
 }
 
-.subscribe__link::after {
+.subscribe__socials-link::after {
     content: "";
     background-image: url(../assets/images/ft-arr.png);
     background-size: 44px;
     width: 44px;
     height: 40px;
     position: absolute;
-    top: 14px;
+    top: 135px;
     left: 123px;
 }
 
