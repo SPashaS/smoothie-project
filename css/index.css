@@ -88,9 +88,9 @@ a:hover {
 /*   -------------   LOGO   -------------   */
 .header__logo {
     position: absolute;
-    top: 50%;
+    top: 70px;
     left: 50%;
-    transform: translate(-107px, -53px);
+    transform: translateX(-52%);
 }
 
 
@@ -139,7 +139,7 @@ a:hover {
     max-width: 18px;
     background-color: white;
     color: black;
-    font-size: 10px;
+    font-size: 9px;
     border-radius: 50%;
     position: absolute;
     top: -9px;
@@ -169,28 +169,34 @@ a:hover {
 /*   -------------   HEADER__CONTENT   -------------   */
 .header__content {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*   -------------   btn   -------------   */
 .header__btn {
     height: 70px;
     width: 280px;
-    background-color: #0aa566;
-    font-size: 23px;
-    border-radius: 35px;
+    padding: 0 40px;
 }
 
 .btn {
+    font-size: 23px;
+    border-radius: 35px;
     font-family: 'MuliExtraBold';
-    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
 }
+.btn--green-bg {
+    background-color: #0aa566;
+}
+.btn--green-bg:hover {
+    background-color: #098d58;
+}
+
 .btn--green-bg::after  {
-    text-decoration-line: none;
     content: "";
     display: block;
     background-image: url('../assets/images/arrow-png.png');
@@ -211,20 +217,19 @@ a:hover {
 .title {
     font-family: 'MuliExtraBold';
     font-size: 50px;
-    line-height: 0.8;
     letter-spacing: -1px;
     color: #f7ae3b;
 }
 
 .smoothies__title {
-    margin: 98px 0 44px;
+    margin: 89px 0 35px;
 }
 
 .smoothies__desc {
     max-width: 915px;
     margin-bottom: 56px;
     font-size: 18px;
-    line-height: 1.94;
+    line-height: 1.95;
     letter-spacing: normal;
     text-align: center;
     color: #1e1e1e;
@@ -235,13 +240,14 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     max-width: 1010px;
-    margin-bottom: 126px;
+    margin-bottom: 124px;
 }
 
 .smoothies__box {
+    padding: 24px 0 39px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 249px;
     height: 185px;
@@ -258,16 +264,34 @@ a:hover {
     border-right: 2px solid #f6edde;
 }
 
-.smoothies__icon {
-    height: 73px;
+.smoothies__box:nth-child(1) .smoothies__icon {
+    width: 70px;
+}
+.smoothies__box:nth-child(2) .smoothies__icon {
+    width: 74px;
+}
+.smoothies__box:nth-child(3) .smoothies__icon {
+    width: 71px;
+}
+.smoothies__box:nth-child(4) .smoothies__icon {
+    width: 72px;
+}
+.smoothies__box:nth-child(5) .smoothies__icon {
+    width: 65px;
+}
+.smoothies__box:nth-child(6) .smoothies__icon {
+    width: 79px;
+}
+.smoothies__box:nth-child(7) .smoothies__icon {
+    width: 72px;
+}
+.smoothies__box:nth-child(8) .smoothies__icon {
+    width: 64px;
 }
 
+
 .smoothies__name {
-    margin: 21px 0 0;
     font-size: 25px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.6;
     letter-spacing: -0.5px;
     color: #f2612d;
 }
@@ -283,7 +307,7 @@ a:hover {
 }
 
 .about__inner {
-    margin: 89px 0 82px;
+    margin: 88px 0 82px;
     display: flex;
 }
 
@@ -297,7 +321,7 @@ a:hover {
     width: 691px;
     height: 818px;
     position: absolute;
-    top: -23px;
+    top: -25px;
     left: -204px;
 }
 
@@ -310,11 +334,8 @@ a:hover {
 .about__title {
     font-family: 'MuliExtraBold';
     font-size: 55px;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.09;
     letter-spacing: -1.1px;
-    text-align: left;
     color: #ffffff;
     margin-bottom: 46px;
 }
@@ -335,17 +356,14 @@ a:hover {
 .about__list {
     margin-bottom: 41px;
     padding-left: 16px;
-
 }
 .about__item {
     list-style-position: inside;
     font-size: 21px;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 2.10;
-    letter-spacing: normal;
     text-align: left;
     position: relative;
+    letter-spacing: 0.4px;
     left: 22px;
 }
 
@@ -355,22 +373,18 @@ a:hover {
     position: absolute;
     width: 18px; height: 18px;
     background-size: 18px 18px;
-    left: -38px;
+    left: -36px;
     top: 12px;
 }
 
 .about__btn {
-    max-width: 380px;
+    width: 380px;
     height: 60px;
     border-radius: 30px;
     border: solid 2px #f8b231;
     background-color: #14826f;
     font-size: 21px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.05;
-    letter-spacing: normal;
-    text-align: left;
+    padding: 0 36px 0 29px;
 }
 
 /*   ---------------------------   PRODUCTS   ---------------------------   */
