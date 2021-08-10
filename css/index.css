@@ -178,11 +178,11 @@ a:hover {
     height: 70px;
     width: 280px;
     padding: 0 40px;
+    font-size: 23px;
+    border-radius: 35px;
 }
 
 .btn {
-    font-size: 23px;
-    border-radius: 35px;
     font-family: 'MuliExtraBold';
     display: flex;
     justify-content: space-between;
@@ -417,16 +417,11 @@ a:hover {
 .products__img {
     width: 119px;
     height: 303px;
-    margin-bottom: 34px;
-
+    margin: 0 8px 30px 0;
 }
 
-.products__title {
-    margin-bottom: 15px;
-    font-family: 'MuliExtraBold';
-    line-height: 0.92;
-    letter-spacing: normal;
-    text-align: center;
+.products__name {
+    margin-bottom: 7px;
     font-family: 'MuliExtraBold';
     font-size: 24px;
 }
@@ -434,9 +429,7 @@ a:hover {
 .products__desc {
     font-family: 'MuliItalic';
     font-size: 21px;
-    font-weight: normal;
-    line-height: 0.52;
-    margin-bottom: 69px;
+    margin-bottom: 63px;
 }
 
 .products__btn {
@@ -445,6 +438,16 @@ a:hover {
     font-size: 21px;
     border-radius: 30px;
     border: solid 2px #ffffff;
+    padding: 0 34px 5px;
+}
+
+.btn--no-bg::after {
+    content: "";
+    display: block;
+    background-image: url('../assets/images/arr-white.png');
+    background-size: 30px 16px;
+    width: 30px;
+    height: 16px;
 }
 
 /*   ---------------------------   STORY   ---------------------------   */
@@ -465,21 +468,20 @@ a:hover {
     width: 515px;
 }
 
-.story__content::before {
+.story__content::after {
     content: "";
-    background-image: url(../assets/images/stStamp.png);
+    background-image: url('../assets/images/stStamp.png');
     display: block;
     width: 290px;
     height: 216px;
     position: absolute;
-    top: 23px;
+    top: 19px;
     left: 548px;
     opacity: 0.5;
 }
 
 .story__title {
-    text-align: left;
-    margin: 138px 0 47px;
+    margin: 127px 0 37px;
 }
 .story__text {
     font-size: 18px;
@@ -495,8 +497,9 @@ a:hover {
     width: 300px;
     height: 60px;
     background-color: #0aa566;
-    font-size: 24px;
+    font-size: 21px;
     border-radius: 30px;
+    padding: 0 42px 0 27px;
 }
 
 
