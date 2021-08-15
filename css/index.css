@@ -809,6 +809,13 @@ button {
     padding-bottom: 5px;
 }
 
+
+
+.footer__center-block {
+    margin-right: 112px;
+    display: flex;
+}
+
 /*   -------------   information   -------------   */
 .information {
     width: 337px;
@@ -828,7 +835,6 @@ button {
 /*   -------------   payment   -------------   */
 .payment {
     width: 317px;
-    margin-right: 112px;
 }
 .payment__list {
     padding-top: 5px;
@@ -1091,5 +1097,75 @@ input[type="text"]::-moz-placeholder {
     }   
     .story__image {
         align-self: flex-end;
+    }
+    .testimonials__title::before {
+        display: none;
+    }
+    .testimonials__content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .testimonials__quote {
+        width: 100%;
+    }
+    .testimonials__text::before {
+    background-size: 688px 134px;
+    width: 688px;
+    height: 134px;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    .blog {
+        padding: 0 32px;
+    }
+    .blog__inner {   
+        margin-bottom: 99px;
+    }
+    .blog__content {
+        flex-direction: column;
+    }
+    .blog__article-title::before {
+        display: none;
+    }
+    .blog__image {
+        width: 100%;
+        object-fit: cover;
+    }
+    .blog__article {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .instagram__list {
+        justify-content: flex-start;
+        overflow: auto;
+    }
+    .instagram__list-photo {
+        width: 384px;
+        height: 384px;
+    }
+    .footer__content-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__center-block {
+        margin-right: 0px;
+        margin-bottom: 60px;
+    }
+    .footer__logo {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .payment {
+        width: 286px;
+    }
+
+    .information {
+        width: 296px;
+    }
+    .footer__goTop {
+        right: 32px;
     }
 }
