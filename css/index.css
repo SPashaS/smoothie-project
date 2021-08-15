@@ -66,7 +66,6 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid red;
 }
 .header__burger-btn {
     background-image: url('../assets/images/menu.png');
@@ -82,7 +81,6 @@ button {
 
 .header__nav {
     margin-top: -5px;
-    border: 2px solid red;
     max-width: 450px;
 }
 
@@ -120,7 +118,6 @@ button {
 .header__right-block {
     display: flex;
     align-items: center;
-    border: 2px solid red;
 }
 
 /*   -------------   personal   -------------   */
@@ -479,7 +476,7 @@ button {
 
 .story__inner {
     display: flex;
-    width: 1300px;
+    max-width: 1300px;
     justify-content: space-between;
     margin: 121px 0 160px;
     position: relative;
@@ -1033,7 +1030,7 @@ input[type="text"]::-moz-placeholder {
         margin-bottom: 20px;
     }
     .smoothies {
-        padding: 0 16px;
+        padding: 0 32px;
     }
     .smoothies__greed {
         justify-content: center;
@@ -1051,6 +1048,11 @@ input[type="text"]::-moz-placeholder {
     .smoothies__box:nth-child(2), .smoothies__box:nth-child(6) {
         border-right: 0;
     }
+
+    .about {
+        justify-content: flex-start;
+        padding: 0 32px;
+    }
     .about__inner {
         flex-direction: column;
     }
@@ -1064,5 +1066,30 @@ input[type="text"]::-moz-placeholder {
     }
     .about__content {
         margin-left: 0;
+    }
+    .products {
+        overflow: auto;
+    }
+    .products__box {
+        min-width: 480px;
+    }
+    .story {
+        padding: 0 32px;
+    }
+    .story__inner {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .story__content {
+        width: 100%;
+        align-self: flex-start;
+        margin-bottom: 100px;
+    }
+    .story__content::after {
+        top: 582px;
+        left: -42px;
+    }   
+    .story__image {
+        align-self: flex-end;
     }
 }
