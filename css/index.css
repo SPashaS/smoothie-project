@@ -48,7 +48,7 @@ button {
 
 /*   ---------------------------   HEADER   ---------------------------   */
 .header {
-    background: url("../assets/images/header-bg-img.png") center no-repeat;
+    background: url('../assets/images/header-bg-img.png') center no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -270,7 +270,10 @@ button {
     width: 249px;
     height: 185px;
 }
-
+/* хз почему не ровняется по центру */
+.smoothies__box:last-child .smoothies__name {
+    text-align: center;
+}
 .smoothies__box:nth-child(1),.smoothies__box:nth-child(2),.smoothies__box:nth-child(3) {
     border-right: 2px solid #f6edde;
     border-bottom: 2px solid #f6edde;
@@ -330,8 +333,8 @@ button {
 }
 
 .about__image-wrapper {
-    max-width: 691px;
-    max-height: 627px;
+    width: 691px;
+    height: 627px;
     position: relative;
 }
 
@@ -339,16 +342,14 @@ button {
     max-width: 691px;
     max-height: 818px;
     width: 100%;
-    max-height: 818px;
     position: absolute;
     top: -25px;
-    left: -204px;
+    right: 88px;
 }
 
 
 .about__content {
-    max-width: 600px;
-    margin-left: -64px;
+    max-width: 632px;
 }
 
 .about__title {
@@ -366,7 +367,7 @@ button {
 }
 .about__title--light-green::after {
     content: "";
-    background-image: url(../assets/images/smLine.png);
+    background-image: url('../assets/images/smLine.png');
     display: block;
     width: 450px;
     height: 13px;
@@ -1212,6 +1213,9 @@ input[type="text"]::-moz-placeholder {
         width: 145px;
         height: 173px;
     }
+    .smoothies__name {
+        font-size: 1.3rem;
+    }
     .about {
         padding: 0 10px;
     }
@@ -1223,6 +1227,7 @@ input[type="text"]::-moz-placeholder {
     }
     .about__image-wrapper {
         margin-bottom: 50px;
+        width: 340px;
     }
     .about__title {
         font-size: 2.75rem;
