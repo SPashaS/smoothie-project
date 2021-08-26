@@ -192,29 +192,34 @@ button {
 }
 
 /*   -------------   btn   -------------   */
-.header__btn {
-    height: 70px;
-    width: 280px;
-    padding: 0 40px;
-    font-size: 23px;
-    border-radius: 35px;
-}
-
-.btn {
+.button {
     font-family: 'MuliExtraBold';
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    font-size: 21px;
+    height: 60px;
+    border-radius: 30px;
 }
-.btn--green-bg {
+
+.header__button {
+    width: 280px;
+    padding: 0 40px;
+    font-size: 24px;
+    height: 70px;
+    border-radius: 35px;
+}
+
+.button--green-bg {
     background-color: #0aa566;
 }
-.btn--green-bg:hover {
+
+.button--green-bg:hover {
     background-color: #098d58;
 }
 
-.btn--green-bg::after  {
+.button--green-bg::after  {
     content: "";
     display: block;
     background-image: url('../assets/images/arrow-png.png');
@@ -227,8 +232,16 @@ button {
 /*   ---------------------------   SMOOTHIES   ---------------------------   */
 
 .smoothies {
+
+}
+
+.smoothies__inner {
+    max-width: 1010px;
+    border: 2px solid red;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-content: center;
     align-items: center;
 }
 
@@ -251,13 +264,12 @@ button {
     letter-spacing: normal;
     text-align: center;
     color: #1e1e1e;
-    font-stretch: normal;
 }
 
 .smoothies__greed {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1010px;
+    width: 100%;
     margin-bottom: 124px;
 }
 
@@ -267,7 +279,7 @@ button {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 249px;
+    width: 25%;
     height: 185px;
 }
 /* хз почему не ровняется по центру */
@@ -398,13 +410,12 @@ button {
     top: 12px;
 }
 
-.about__btn {
+.about__button {
     max-width: 380px;
     height: 60px;
     border-radius: 30px;
     border: solid 2px #f8b231;
     background-color: #14826f;
-    font-size: 21px;
     padding: 0 36px 0 29px;
 }
 
@@ -453,16 +464,15 @@ button {
     margin-bottom: 63px;
 }
 
-.products__btn {
+.products__button {
     width: 204px;
     height: 60px;
-    font-size: 21px;
     border-radius: 30px;
     border: solid 2px #ffffff;
     padding: 0 34px 5px;
 }
 
-.btn--no-bg::after {
+.button--no-bg::after {
     content: "";
     display: block;
     background-image: url('../assets/images/arr-white.png');
@@ -514,12 +524,9 @@ button {
     text-align: left;
     margin-bottom: 50px;
 }
-.story__btn {
+.story__button {
     width: 300px;
-    height: 60px;
     background-color: #0aa566;
-    font-size: 21px;
-    border-radius: 30px;
     padding: 0 42px 0 27px;
 }
 
