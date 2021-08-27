@@ -237,11 +237,9 @@ button {
 
 .smoothies__inner {
     max-width: 1010px;
-    border: 2px solid red;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-content: center;
     align-items: center;
 }
 
@@ -340,28 +338,28 @@ button {
 }
 
 .about__inner {
-    margin: 88px 0 82px;
+    margin: 88px auto;
     display: flex;
+    justify-content: space-between;
+    max-width: 1430px;
 }
 
 .about__image-wrapper {
-    width: 691px;
-    height: 627px;
+    width: 48%;
+    height: 600px;
     position: relative;
 }
 
 .about__image {
-    max-width: 691px;
-    max-height: 818px;
     width: 100%;
-    position: absolute;
+    position: relative;
     top: -25px;
-    right: 88px;
+    right: 0px;
 }
 
 
 .about__content {
-    max-width: 632px;
+    width: 43%;
 }
 
 .about__title {
@@ -433,18 +431,19 @@ button {
     padding: 129px 0 79px;
 }
 
-.products__box:nth-child(1) {
+.products__box--brown {
     background-color: #632b17;
 }
-.products__box:nth-child(2) {
+.products__box--green {
     background-color: #178670;
 }
-.products__box:nth-child(3) {
+.products__box--yellow {
     background-color: #f7ae3b;
 }
-.products__box:nth-child(4) {
+.products__box--orange {
     background-color: #c3471b;
 }
+
 
 .products__img {
     width: 119px;
@@ -1052,6 +1051,10 @@ input[type="text"]::-moz-placeholder {
     }
     .smoothies__greed {
         justify-content: center;
+        max-width: 539px;
+    }
+    .smoothies__box {
+        width: 50%;
     }
     .smoothies__box:nth-child(1),.smoothies__box:nth-child(3),.smoothies__box:nth-child(5) {
         border-right: 2px solid #f6edde;
@@ -1080,10 +1083,12 @@ input[type="text"]::-moz-placeholder {
         transform: translateX(-50%);
     }
     .about__image-wrapper {
+        width: 100%;
         margin-bottom: 300px;
     }
     .about__content {
         margin-left: 0;
+        width: 100%;
     }
     .products {
         overflow: auto;
