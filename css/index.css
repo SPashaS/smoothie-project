@@ -156,7 +156,7 @@ button {
     max-width: 18px;
     background-color: white;
     color: black;
-    font-size: 9px;
+    font-size: 0.56rem;
     border-radius: 50%;
     position: absolute;
     top: -9px;
@@ -198,7 +198,7 @@ button {
     justify-content: space-between;
     align-items: center;
     color: white;
-    font-size: 21px;
+    font-size: 1.31rem;
     height: 60px;
     border-radius: 30px;
 }
@@ -206,7 +206,7 @@ button {
 .header__button {
     width: 280px;
     padding: 0 40px;
-    font-size: 24px;
+    font-size: 1.5rem;
     height: 70px;
     border-radius: 35px;
 }
@@ -232,7 +232,7 @@ button {
 /*   ---------------------------   SMOOTHIES   ---------------------------   */
 
 .smoothies {
-
+    padding: 0 30px;
 }
 
 .smoothies__inner {
@@ -245,7 +245,7 @@ button {
 
 .title {
     font-family: 'MuliExtraBold';
-    font-size: 50px;
+    font-size: 3.125rem;
     letter-spacing: -1px;
     color: #f7ae3b;
 }
@@ -257,7 +257,7 @@ button {
 .smoothies__desc {
     max-width: 915px;
     margin-bottom: 52px;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.95;
     letter-spacing: normal;
     text-align: center;
@@ -322,21 +322,21 @@ button {
 
 
 .smoothies__name {
-    font-size: 25px;
+    font-size: 1.56rem;
     letter-spacing: -0.5px;
     color: #f2612d;
 }
-
 
 
 /*   ---------------------------   ABOUT   ---------------------------   */
 .about {
     background-color: #14826f;
     color: white;
+    padding: 0 30px;
 }
 
 .about__inner {
-    margin: 0 7.4%;
+    margin: 0 6%;
     padding: 88px 0 94px;
     display: flex;
     justify-content: space-between;
@@ -344,7 +344,7 @@ button {
 }
 
 .about__image-wrapper {
-    max-width: 691px;
+    flex-basis: 691px;
     height: 600px;
     position: relative;
 }
@@ -358,12 +358,13 @@ button {
 
 
 .about__content {
-    max-width: 590px;
+    flex-basis: 590px;
+    margin-left: 40px;
 }
 
 .about__title {
     font-family: 'MuliExtraBold';
-    font-size: 55px;
+    font-size: 3.43rem;
     line-height: 1.09;
     letter-spacing: -1.1px;
     color: #ffffff;
@@ -389,7 +390,7 @@ button {
 }
 .about__item {
     list-style-position: inside;
-    font-size: 21px;
+    font-size: 1.31rem;
     line-height: 2.10;
     text-align: left;
     position: relative;
@@ -427,7 +428,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 129px 0 79px;
+    padding: 128px 0 79px;
 }
 
 /* модификаторы */
@@ -454,13 +455,14 @@ button {
 .products__name {
     margin-bottom: 7px;
     font-family: 'MuliExtraBold';
-    font-size: 24px;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .products__desc {
     font-family: 'MuliItalic';
-    font-size: 21px;
-    margin-bottom: 63px;
+    font-size: 1.31rem;
+    margin-bottom: 62px;
 }
 
 .products__button {
@@ -502,18 +504,14 @@ button {
     margin: 127px 0 37px;
 }
 .story__text {
-    font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
+    font-size: 1.125rem;
     line-height: 1.94;
     letter-spacing: normal;
     text-align: left;
-    padding: 0 50px 50px 0;
+    padding-bottom: 50px;
 }
 .story__button {
     width: 300px;
-    background-color: #0aa566;
     padding: 0 42px 0 27px;
 }
 
@@ -521,6 +519,7 @@ button {
     max-width: 585px;
     max-height: 601px;
     position: relative;
+    margin-left: 30px;
 }
 
 .story__image {
@@ -534,8 +533,8 @@ button {
     width: 290px;
     height: 216px;
     position: absolute;
-    top: 25px;
-    left: -154px;
+    top: 20px;
+    left: -166px;
     opacity: 0.8;
 }
 
@@ -590,10 +589,10 @@ button {
     width: 766px;
     height: 148px;
     position: absolute;
-    top: -36px;
-    left: -157px;
+    top: -79px;
+    left: -164px;
     font-family: 'MuliExtraBold';
-    font-size: 200px;
+    font-size: 12.5rem;
     letter-spacing: -4px;
     color: rgba(82, 25, 5, 0.6);
 }
@@ -602,12 +601,12 @@ button {
     width: 220px;
     height: 218px;
     z-index: 1;
-    margin-left: 50px;
+    margin-left: 58px;
 }
 
 .testimonials__quote {
     width: 457px;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.9;
     text-align: center;
     color: #ffffff;
@@ -616,7 +615,7 @@ button {
 
 .testimonials__address {
     font-family: 'MuliSemiBoldItalic';
-    font-size: 17px;
+    font-size: 1.06rem;
     color: #f7ae3b;
     text-align: left;
     padding: 19px 0 0 124px;
@@ -638,7 +637,7 @@ button {
 /*   ---------------------------   BLOG   ---------------------------   */
 
 .blog {
-    padding: 0;
+    padding: 0 30px;
 }
 
 .blog__inner {
@@ -706,12 +705,11 @@ button {
 
 .blog__article-excerpt {
     max-width: 532px;
-    padding: 25px 0 0 60px;
+    padding: 26px 0 0 60px;
     font-size: 18px;
-    line-height: 1.94;
+    line-height: 1.95;
     text-align: left;
     color: #1e1e1e;
-
 }
 
 .blog__article-arr {
@@ -745,7 +743,7 @@ button {
 
 .instagram__top {
     margin: 0 auto;
-    padding: 48px 0 44px;
+    padding: 44px 0 45px;
 }
 
 .instagram__top-link {
@@ -767,28 +765,29 @@ button {
 }
 
 .instagram__content {
-    margin-bottom: 7px;
+    margin-bottom: 11px;
     display: flex;
     justify-content: center;
 }
 
-.instagram__box {
+.instagram__link {
     position: relative;
     width: 25%;
+    max-height: 384px;
 }
 
-.instagram__box-link::before {
+.instagram__link::before {
     content: "";
     background-image: url('../assets/images/inst-wt-ic.png');
     background-size: 25px 25px ;
     width: 25px;
     height: 25px;
     position: absolute;
-    bottom: 24px;
-    right: 20px;
+    bottom: 20px;
+    right: 22px;
     z-index: 1;
 }
-.instagram__box-link::after {
+.instagram__link::after {
     content: "";
     background: linear-gradient(to top left, #0000006c 10%, #0000000c 30%, #a1988700 70%) ;
     width: 150px;
@@ -798,7 +797,7 @@ button {
     right: 0px;
 }
 
-.instagram__box-image {
+.instagram__image {
     width:100%;
     height: 100%;
     object-fit: cover;
@@ -815,7 +814,7 @@ button {
 }
 
 .footer__content-inner {
-    padding: 72px 100px 91px;
+    padding: 74px 100px 92px 103px;
     display: flex;
     justify-content: space-between;
 }
@@ -825,26 +824,28 @@ button {
     font-size: 26px;
     letter-spacing: -0.52px;
     color: #ffffff;
-    padding-bottom: 31px;
+    padding-bottom: 29px;
 }
 
 /*   -------------   logo   -------------   */
 .footer__logo {
     display: flex;
     align-items: center;
-    flex-basis: 538px;
-    padding-bottom: 5px;
+    flex-basis: 391px;
+    padding-bottom: 15px;
 }
 
 
 
 .footer__center-block {
     display: flex;
+    flex-basis: 614px;
+    justify-content: space-between;
 }
 
 /*   -------------   information   -------------   */
 .information {
-    flex-basis: 337px;
+    max-width: 314px;
 }
 
 .information__menu {
@@ -860,7 +861,7 @@ button {
 
 /*   -------------   payment   -------------   */
 .payment {
-    flex-basis: 317px;
+    max-width: 300px;
 }
 .payment__list {
     padding-top: 5px;
@@ -910,13 +911,12 @@ button {
 }
 /*   -------------   subscribe   -------------   */
 .footer__subscribe {
-    flex-basis: 500px;
+    flex-basis: 495px;
     position: relative;
-    padding-right: 5px;
 }
 
 .subscribe__input {
-    width: 495px;
+    width: 100%;
     height: 60px;
     border-radius: 30px;
     background-color: #ffffff;
@@ -1011,7 +1011,7 @@ input[type="text"]::-moz-placeholder {
     height: 50px;
     border-radius: 5px;
     background-color: #f2662f;
-    position: absolute;
+    position: fixed;
     bottom: 44px;
     right: 101px;
 }
@@ -1035,6 +1035,45 @@ input[type="text"]::-moz-placeholder {
     color: #fff;
 }
 
+
+/* доп медиа запросы*/
+@media screen and (max-width: 1205px) {
+    .about__title--light-green::after {
+        display: none;
+    }
+    .blog__article-link::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .header__burger-btn {
+        display: block;
+    }
+    .header__navigation {
+        display: none;
+    }
+
+    .footer__content-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__center-block {
+        display: flex;
+        flex-basis: 247px;
+        justify-content: space-between;
+        width: 683px;
+    }
+    .footer__logo {
+        flex-basis: 100px;
+    }
+    .footer__subscribe {
+        flex-basis: 182px;
+        width: 495px;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     .header__navigation {
         position: fixed;
@@ -1056,10 +1095,10 @@ input[type="text"]::-moz-placeholder {
     .header__right-block {
         margin-bottom: 130px;
     }
-    .nav__list {
+    .menu__list {
         flex-direction: column;
     }
-    .nav__item {
+    .menu__item {
         margin-bottom: 20px;
     }
     .smoothies {
@@ -1100,7 +1139,7 @@ input[type="text"]::-moz-placeholder {
     }
     .about__image-wrapper {
         width: 100%;
-        margin-bottom: 300px;
+        margin-bottom: 90px;
     }
     .about__content {
         margin-left: 0;
@@ -1162,11 +1201,15 @@ input[type="text"]::-moz-placeholder {
     .blog {
         padding: 0 32px;
     }
-    .blog__inner {   
-        margin-bottom: 99px;
+    .blog__inner {
+        padding-bottom: 50px;
     }
     .blog__content {
         flex-direction: column;
+    }
+    .blog__article {
+        padding: 0;
+        flex-basis: 240px;
     }
     .blog__article::before {
         display: none;
@@ -1183,9 +1226,12 @@ input[type="text"]::-moz-placeholder {
         justify-content: flex-start;
         overflow: auto;
     }
-    .instagram__box-photo {
+    .instagram__link {
         width: 384px;
         height: 384px;
+    }
+    .instagram__image {
+        width: 384px;
     }
     .footer__content-inner {
         flex-direction: column;
@@ -1194,6 +1240,10 @@ input[type="text"]::-moz-placeholder {
     .footer__center-block {
         margin-right: 0px;
         margin-bottom: 60px;
+        width: 100%;
+    }
+    .footer__subscribe {
+        max-width: 495px;
     }
     .footer__logo {
         width: 100%;
@@ -1214,6 +1264,10 @@ input[type="text"]::-moz-placeholder {
 }
 
 @media screen and (max-width: 360px) {
+    body,
+    html {
+        font-size: 80%;
+    }
     .header__navigation {
         position: fixed;
         background-color: #0aa566;
@@ -1247,6 +1301,9 @@ input[type="text"]::-moz-placeholder {
     .smoothies {
         padding: 0 10px;
     }
+    .smoothies__title {
+        text-align: center;
+    }
     .smoothies__box {
         width: 145px;
         height: 173px;
@@ -1257,6 +1314,12 @@ input[type="text"]::-moz-placeholder {
     .about {
         padding: 0 10px;
     }
+    .about__content {
+        flex-basis: 490px;
+    }
+    .about__inner {
+        margin: 0;
+    }
     .about__image {
         max-width: 337px;
         position: unset;
@@ -1264,8 +1327,8 @@ input[type="text"]::-moz-placeholder {
         transform: translateX(0%);
     }
     .about__image-wrapper {
-        margin-bottom: 50px;
-        width: 340px;
+        margin-bottom: 0;
+        flex-basis: 440px;
     }
     .about__title {
         font-size: 2.75rem;
@@ -1296,6 +1359,7 @@ input[type="text"]::-moz-placeholder {
     }
     .story__inner {
         margin: 0 0 95px;
+        padding: 0;
     }
     .story__title {
         margin: 75px 0 37px;
@@ -1303,11 +1367,14 @@ input[type="text"]::-moz-placeholder {
     .story__content {
         margin-bottom: 46px;
     }
-    .story__content::after {
+    .story__button {
+        margin: 0 auto;
+    }
+    .story__image-wrapper {
+        margin-left: 0;
+    }
+    .story__image-wrapper::after {
         display: none;
-    } 
-    .story__btn {
-        margin: auto;
     }
     .testimonials {
         padding: 0 10px;
@@ -1329,6 +1396,9 @@ input[type="text"]::-moz-placeholder {
     .blog {
         padding: 0 10px;
     }
+    .blog__image-wrapper {
+        flex-basis: 246px;
+    }
     .blog__article-excerpt {
         padding: 20px 0 0 0;
     }
@@ -1336,10 +1406,7 @@ input[type="text"]::-moz-placeholder {
         display: inline-block;
         position: initial;
     }
-    .blog__inner {
-        margin-bottom: 50px;
-    }
-    .instagram__list-photo {
+    .instagram__link {
         width: 270px;
         height: 270px;
     }
@@ -1350,7 +1417,7 @@ input[type="text"]::-moz-placeholder {
         margin-right: 112px;
         flex-direction: column;
     }
-    .subscribe__input {
+    .footer__subscribe {
         width: 340px;
     }
     .footer__center-block {
