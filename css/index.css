@@ -683,7 +683,7 @@ button {
 
 .blog__article-title {
     font-family: 'MuliExtraBold';
-    font-size: 30px;
+    font-size: 1.875rem;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.33;
@@ -694,7 +694,7 @@ button {
 }
 
 .blog__article-time {
-    font-size: 16px;
+    font-size: 1rem;
     font-stretch: normal;
     font-style: normal;
     line-height: 2.19;
@@ -706,7 +706,7 @@ button {
 .blog__article-excerpt {
     max-width: 532px;
     padding: 26px 0 0 60px;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.95;
     text-align: left;
     color: #1e1e1e;
@@ -759,7 +759,7 @@ button {
 }
 
 .instagram__top-title {
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: left;
     color: #0aa566;
 }
@@ -921,7 +921,7 @@ button {
     border-radius: 30px;
     background-color: #ffffff;
     font-family: 'MuliExtraBold';
-    font-size: 17px;
+    font-size: 1.06rem;
     letter-spacing: -0.34px;
     color: #6d450c;
     border-width: 0px;
@@ -974,7 +974,7 @@ input[type="text"]::-moz-placeholder {
     padding-right: 42px;
     text-transform: uppercase;
     font-family: 'MuliExtraBold';
-    font-size: 18px;
+    font-size: 1.125rem;
     font-stretch: normal;
     font-style: normal;
     line-height: 2.22;
@@ -997,7 +997,7 @@ input[type="text"]::-moz-placeholder {
     justify-content: center;
     align-items: center;
     padding: 26px 0;
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: 0.26px;
@@ -1236,6 +1236,7 @@ input[type="text"]::-moz-placeholder {
     .footer__content-inner {
         flex-direction: column;
         align-items: center;
+        padding: 74px 30px 92px 30px;
     }
     .footer__center-block {
         margin-right: 0px;
@@ -1243,7 +1244,7 @@ input[type="text"]::-moz-placeholder {
         width: 100%;
     }
     .footer__subscribe {
-        max-width: 495px;
+        width: 495px;
     }
     .footer__logo {
         width: 100%;
@@ -1260,6 +1261,12 @@ input[type="text"]::-moz-placeholder {
     }
     .footer__goTop {
         right: 32px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .testimonials__text::before {
+        display: none;
     }
 }
 
@@ -1341,6 +1348,7 @@ input[type="text"]::-moz-placeholder {
     }
     .about__item {
         font-size: 1.1rem;
+        max-width: 300px;
     }
     .about__list {
         max-width: 335px;
@@ -1418,7 +1426,7 @@ input[type="text"]::-moz-placeholder {
         flex-direction: column;
     }
     .footer__subscribe {
-        width: 340px;
+        max-width: 340px;
     }
     .footer__center-block {
         margin-right: 0;
