@@ -1033,21 +1033,9 @@ input[type="text"]::-moz-placeholder {
 
 
 /* доп медиа запросы*/
-@media screen and (max-width: 1205px) {
-    .about__title--light-green::after {
-        display: none;
-    }
-    .blog__article-link::after {
-        display: none;
-    }
-}
-@media screen and (max-width: 890px) {
-    .products__button {
-        width: 184px;
-    }
-}
 
-@media screen and (max-width: 990px) {
+
+@media screen and (max-width: 1360px) {
     .header__burger-btn {
         display: block;
     }
@@ -1074,6 +1062,19 @@ input[type="text"]::-moz-placeholder {
     }
 }
 
+@media screen and (max-width: 1205px) {
+    .about__title--light-green::after {
+        display: none;
+    }
+    .blog__article-link::after {
+        display: none;
+    }
+}
+@media screen and (max-width: 890px) {
+    .products__button {
+        width: 184px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .header__navigation {
