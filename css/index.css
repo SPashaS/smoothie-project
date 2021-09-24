@@ -325,30 +325,28 @@ button {
 }
 
 .about__inner {
-    margin: 88px 0 82px;
+    margin: 88px 0 94px;
     display: flex;
 }
 
 .about__image-wrapper {
-    max-width: 691px;
-    max-height: 627px;
+    width: 628px;
+    height: 627px;
     position: relative;
 }
 
 .about__image {
-    max-width: 691px;
+    width: 691px;
     max-height: 818px;
-    width: 100%;
+    object-fit: cover;
     max-height: 818px;
     position: absolute;
     top: -25px;
-    left: -204px;
+    left: -203px;
 }
-
 
 .about__content {
     max-width: 600px;
-    margin-left: -64px;
 }
 
 .about__title {
@@ -1067,9 +1065,8 @@ input[type="text"]::-moz-placeholder {
         flex-direction: column;
     }
     .about__image {
-        top: 0px;
-        left: 50%;
-        transform: translateX(-50%);
+            top: 0;
+            left: 0;
     }
     .about__image-wrapper {
         margin-bottom: 300px;
