@@ -101,7 +101,7 @@ function css(cb) {
             cascade: true
         }))
         .pipe(cssbeautify())
-        .pipe(concat('style.css'))
+        // .pipe(concat('style.css'))
         .pipe(dest(path.build.css))
         .pipe(cssnano({
             zindex: false,
