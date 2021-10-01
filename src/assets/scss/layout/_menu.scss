@@ -1,0 +1,16 @@
+.menu {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'MuliBold', sans-serif;
+    letter-spacing: 0.32px;
+} 
+
+.menu__link {
+    color: white;
+    text-decoration-line: none;
+}
+
+.menu__list {
+    display: flex;
+    column-gap: 17px;
+}

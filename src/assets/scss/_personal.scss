@@ -1,0 +1,44 @@
+
+/*   -------------   personal   -------------   */
+.personal__list {
+    display: flex;
+    align-items: center;
+    margin-right: 136px;
+    position: relative;
+}
+
+.personal__list::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    opacity: 0.3;
+    position: absolute;
+    right: -96px;
+}
+
+.personal__list-item {
+    margin-right: 46px;
+}
+.personal__list-item:last-child {
+    position: relative;
+    margin-right: 0px;
+}
+
+.personal__cart-count{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18px;
+    min-width: 18px;
+    max-width: 18px;
+    background-color: white;
+    color: black;
+    font-size: 0.56rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -9px;
+    right: -14px;
+    padding-top: 2px;
+}
+
