@@ -342,22 +342,22 @@ template {
 /*  fonts   */
 @font-face {
     font-family: 'MuliRegular';
-  src: url("../assets/fonts/Muli-Regular.woff");
+  src: url("./../fonts/Muli-Regular.woff");
 }
 
 @font-face {
     font-family: 'MuliExtraBold';
-  src: url("../assets/fonts/Muli-ExtraBold.woff");
+  src: url("./../fonts/Muli-ExtraBold.woff");
 }
 
 @font-face {
     font-family: 'MuliBold';
-  src: url("../assets/fonts/Muli-Bold.ttf");
+  src: url("./../fonts/Muli-Bold.ttf");
 }
 
 @font-face {
     font-family: 'MuliSemiBoldItalic';
-  src: url("../assets/fonts/Muli-Semi-BoldItalic.ttf");
+  src: url("./../fonts/Muli-Semi-BoldItalic.ttf");
 }
 
 * {
@@ -392,7 +392,7 @@ button {
 
 /*   ---------------------------   HEADER   ---------------------------   */
 .header {
-    background: url("../assets/images/header-bg-img.png") center no-repeat;
+    background: url("./../images/header-bg-img.png") center no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -419,7 +419,7 @@ button {
 }
 
 .header__burger-btn {
-    background-image: url("../assets/images/menu.png");
+    background-image: url("./../images/menu.png");
     background-size: cover;
     width: 30px;
     height: 30px;
@@ -593,7 +593,7 @@ button {
 .button--green-bg::after {
     content: "";
     display: block;
-    background-image: url("../assets/images/arrow-png.png");
+    background-image: url("./../images/arrow-png.png");
     background-size: 30px 16px;
     width: 30px;
     height: 16px;
@@ -723,7 +723,8 @@ button {
 }
 
 .about__inner {
-    margin: 88px 0 94px;
+    margin: 0 6%;
+    padding: 88px 0 94px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -732,24 +733,23 @@ button {
 }
 
 .about__image-wrapper {
-    width: 628px;
-    height: 627px;
+    -ms-flex-preferred-size: 691px;
+    flex-basis: 691px;
+    height: 600px;
     position: relative;
 }
 
 .about__image {
-    width: 691px;
-    max-height: 818px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    max-height: 818px;
-    position: absolute;
+    width: 100%;
+    position: relative;
     top: -25px;
-    left: -203px;
+    right: 0px;
 }
 
 .about__content {
-    max-width: 600px;
+    -ms-flex-preferred-size: 590px;
+    flex-basis: 590px;
+    margin-left: 40px;
 }
 
 .about__title {
@@ -768,7 +768,7 @@ button {
 
 .about__title--light-green::after {
     content: "";
-    background-image: url("../assets/images/smLine.png");
+    background-image: url("./../images/smLine.png");
     display: block;
     width: 450px;
     height: 13px;
@@ -793,7 +793,7 @@ button {
 
 .about__item::before {
     content: '';
-    background-image: url("../assets/images/about-li.png");
+    background-image: url("./../images/about-li.png");
     position: absolute;
     width: 18px;
     height: 18px;
@@ -876,7 +876,7 @@ button {
 .button--no-bg::after {
     content: "";
     display: block;
-    background-image: url("../assets/images/arr-white.png");
+    background-image: url("./../images/arr-white.png");
     background-size: 30px 16px;
     width: 30px;
     height: 16px;
@@ -932,7 +932,7 @@ button {
 
 .story__image-wrapper::after {
     content: "";
-    background-image: url(../assets/images/stStamp.png);
+    background-image: url("./../images/stStamp.png");
     display: block;
     width: 290px;
     height: 216px;
@@ -961,7 +961,7 @@ button {
 
 .testimonials__inner::before {
     content: "";
-    background-image: url("../assets/images/tePsev.png");
+    background-image: url("./../images/tePsev.png");
     display: block;
     width: 410px;
     height: 301px;
@@ -1147,7 +1147,7 @@ button {
 .blog__article-link::after {
     content: "";
     display: block;
-    background-image: url("../assets/images/arrow-png.png");
+    background-image: url("./../images/arrow-png.png");
     background-size: 18px 10px;
     width: 18px;
     height: 10px;
@@ -1206,7 +1206,7 @@ button {
 
 .instagram__link::before {
     content: "";
-    background-image: url("../assets/images/inst-wt-ic.png");
+    background-image: url("./../images/inst-wt-ic.png");
     background-size: 25px 25px;
     width: 25px;
     height: 25px;
@@ -1403,7 +1403,7 @@ input[type="text"]::-moz-placeholder {
 
 .subscribe__socials-link::before {
     content: "";
-    background-image: url("../assets/images/ft-inp-ic.png");
+    background-image: url("./../images/ft-inp-ic.png");
     background-size: 24px;
     width: 24px;
     height: 19px;
@@ -1414,7 +1414,7 @@ input[type="text"]::-moz-placeholder {
 
 .subscribe__socials-link::after {
     content: "";
-    background-image: url("../assets/images/ft-arr.png");
+    background-image: url("./../images/ft-arr.png");
     background-size: 44px;
     width: 44px;
     height: 39px;
@@ -1474,7 +1474,7 @@ input[type="text"]::-moz-placeholder {
 
 .footer__goTop::before {
     content: '';
-    background-image: url("../assets/images/ft-arr-top.png");
+    background-image: url("./../images/ft-arr-top.png");
     background-size: 13px 25px;
     width: 13px;
     height: 25px;
