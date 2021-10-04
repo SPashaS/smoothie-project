@@ -1,0 +1,55 @@
+/*   ---------------------------   STORY   ---------------------------   */
+
+.story {
+    padding: 0 30px;
+}
+
+.story__inner {
+    margin: 0 auto;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 121px 0 160px;
+    position: relative;
+}
+.story__content {
+    max-width: 515px;
+}
+
+.story__title {
+    margin: 127px 0 37px;
+}
+.story__text {
+    font-size: 1.125rem;
+    line-height: 1.94;
+    letter-spacing: normal;
+    text-align: left;
+    padding-bottom: 50px;
+}
+.story__button {
+    width: 300px;
+    padding: 0 42px 0 27px;
+}
+
+.story__image-wrapper {
+    max-width: 585px;
+    max-height: 601px;
+    position: relative;
+    margin-left: 30px;
+}
+
+.story__image {
+    width: 100%;
+}
+
+.story__image-wrapper::after {
+    content: "";
+    background-image: url('./../images/stStamp.png');
+    display: block;
+    width: 290px;
+    height: 216px;
+    position: absolute;
+    top: 20px;
+    left: -166px;
+    opacity: 0.8;
+}
