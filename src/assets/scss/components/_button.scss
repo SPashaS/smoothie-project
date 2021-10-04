@@ -27,3 +27,12 @@
     width: 30px;
     height: 16px;
 }
+
+.button--no-bg::after {
+    content: "";
+    display: block;
+    background-image: url('./../images/arr-white.png');
+    background-size: 30px 16px;
+    width: 30px;
+    height: 16px;
+}
