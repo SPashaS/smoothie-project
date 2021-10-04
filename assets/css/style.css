@@ -390,6 +390,14 @@ button {
     background-color: transparent;
 }
 
+input[type="text"]::-webkit-input-placeholder {
+    color: #6d450c;
+}
+
+input[type="text"]::-moz-placeholder {
+    color: #6d450c;
+}
+
 /*   ---------------------------   HEADER   ---------------------------   */
 .header {
     background: url("./../images/header-bg-img.png") center no-repeat;
@@ -435,6 +443,40 @@ button {
     max-width: 450px;
 }
 
+.header__logo {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    -webkit-transform: translateX(-52%);
+    transform: translateX(-52%);
+}
+
+/*   -------------   HEADER__RIGHT-BLOCK   -------------   */
+.header__right-block {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*   -------------   HEADER__CONTENT   -------------   */
+.header__content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header__button {
+    width: 280px;
+    padding: 0 40px;
+    font-size: 1.5rem;
+    height: 70px;
+    border-radius: 35px;
+}
+
 .menu {
     text-transform: uppercase;
     color: #fff;
@@ -456,25 +498,8 @@ button {
     column-gap: 17px;
 }
 
-/*   -------------   LOGO   -------------   */
-.header__logo {
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    -webkit-transform: translateX(-52%);
-    transform: translateX(-52%);
-}
-
 .logo__img {
     width: 210px;
-}
-
-/*   -------------   HEADER__RIGHT-BLOCK   -------------   */
-.header__right-block {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
 }
 
 /*   -------------   personal   -------------   */
@@ -549,16 +574,6 @@ button {
     border-radius: 50%;
 }
 
-/*   -------------   HEADER__CONTENT   -------------   */
-.header__content {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
 /*   -------------   btn   -------------   */
 .button {
     font-family: 'MuliExtraBold';
@@ -572,14 +587,6 @@ button {
     font-size: 1.31rem;
     height: 60px;
     border-radius: 30px;
-}
-
-.header__button {
-    width: 280px;
-    padding: 0 40px;
-    font-size: 1.5rem;
-    height: 70px;
-    border-radius: 35px;
 }
 
 .button--green-bg {
@@ -599,6 +606,27 @@ button {
     height: 16px;
 }
 
+.button--no-bg::after {
+    content: "";
+    display: block;
+    background-image: url("./../images/arr-white.png");
+    background-size: 30px 16px;
+    width: 30px;
+    height: 16px;
+}
+
+.title {
+    font-family: 'MuliExtraBold';
+    font-size: 3.125rem;
+    letter-spacing: -1px;
+    color: #f7ae3b;
+}
+
+.title--orange-up {
+    text-transform: uppercase;
+    color: #f2612d;
+}
+
 /*   ---------------------------   SMOOTHIES   ---------------------------   */
 .smoothies {
     padding: 0 30px;
@@ -613,13 +641,6 @@ button {
     flex-direction: column;
     -ms-flex-align: center;
     align-items: center;
-}
-
-.title {
-    font-family: 'MuliExtraBold';
-    font-size: 3.125rem;
-    letter-spacing: -1px;
-    color: #f7ae3b;
 }
 
 .smoothies__title {
@@ -873,15 +894,6 @@ button {
     padding: 0 34px 5px;
 }
 
-.button--no-bg::after {
-    content: "";
-    display: block;
-    background-image: url("./../images/arr-white.png");
-    background-size: 30px 16px;
-    width: 30px;
-    height: 16px;
-}
-
 /*   ---------------------------   STORY   ---------------------------   */
 .story {
     padding: 0 30px;
@@ -972,11 +984,6 @@ button {
 
 .testimonials__title {
     margin: 107px 0 119px;
-}
-
-.title--orange-up {
-    text-transform: uppercase;
-    color: #f2612d;
 }
 
 .testimonials__content {
@@ -1284,6 +1291,61 @@ button {
     max-width: 314px;
 }
 
+/*   -------------   payment   -------------   */
+.footer__payment {
+    max-width: 300px;
+}
+
+.footer__subscribe {
+    -ms-flex-preferred-size: 495px;
+    flex-basis: 495px;
+    position: relative;
+}
+
+.footer__bottom {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 26px 0;
+    font-size: 0.8125rem;
+    letter-spacing: 0.26px;
+    color: #af8a82;
+    background-color: #6c2c1c;
+}
+
+.footer__goTop {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #f2662f;
+    position: fixed;
+    bottom: 44px;
+    right: 101px;
+}
+
+.footer__goTop::before {
+    content: '';
+    background-image: url("./../images/ft-arr-top.png");
+    background-size: 13px 25px;
+    width: 13px;
+    height: 25px;
+    position: absolute;
+    bottom: 11px;
+    right: 19px;
+}
+
+.footer__goTop::after {
+    content: 'Go top';
+    position: absolute;
+    bottom: -18px;
+    left: -61px;
+    color: #fff;
+}
+
 .information__menu {
     padding-left: 3px;
     font-family: 'MuliExtraBold';
@@ -1294,11 +1356,6 @@ button {
 
 .information__menu-link {
     color: #6d450c;
-}
-
-/*   -------------   payment   -------------   */
-.footer__payment {
-    max-width: 300px;
 }
 
 .payment__list {
@@ -1360,12 +1417,6 @@ button {
 }
 
 /*   -------------   subscribe   -------------   */
-.footer__subscribe {
-    -ms-flex-preferred-size: 495px;
-    flex-basis: 495px;
-    position: relative;
-}
-
 .subscribe__input {
     width: 100%;
     height: 60px;
@@ -1377,14 +1428,6 @@ button {
     color: #6d450c;
     border-width: 0px;
     padding-left: 62px;
-}
-
-input[type="text"]::-webkit-input-placeholder {
-    color: #6d450c;
-}
-
-input[type="text"]::-moz-placeholder {
-    color: #6d450c;
 }
 
 .subscribe__input:focus-visible {
@@ -1445,50 +1488,6 @@ input[type="text"]::-moz-placeholder {
 
 .subscribe__icon {
     height: 24px;
-}
-
-.footer__bottom {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 26px 0;
-    font-size: 0.8125rem;
-    letter-spacing: 0.26px;
-    color: #af8a82;
-    background-color: #6c2c1c;
-}
-
-.footer__goTop {
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: #f2662f;
-    position: fixed;
-    bottom: 44px;
-    right: 101px;
-}
-
-.footer__goTop::before {
-    content: '';
-    background-image: url("./../images/ft-arr-top.png");
-    background-size: 13px 25px;
-    width: 13px;
-    height: 25px;
-    position: absolute;
-    bottom: 11px;
-    right: 19px;
-}
-
-.footer__goTop::after {
-    content: 'Go top';
-    position: absolute;
-    bottom: -18px;
-    left: -61px;
-    color: #fff;
 }
 
 /* доп медиа запросы*/
