@@ -3,14 +3,14 @@
     color: #fff;
     font-family: 'MuliBold', sans-serif;
     letter-spacing: 0.32px;
-} 
 
-.menu__link {
-    color: white;
-    text-decoration-line: none;
-}
+    &__link {
+        color: white;
+        text-decoration-line: none;
+    }
 
-.menu__list {
-    display: flex;
-    column-gap: 17px;
+    &__list {
+        display: flex;
+        column-gap: 17px;
+    }
 }

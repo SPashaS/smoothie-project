@@ -1,38 +1,46 @@
 /*   -------------   btn   -------------   */
 .button {
     font-family: 'MuliExtraBold';
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     color: white;
     font-size: 1.31rem;
     height: 60px;
     border-radius: 30px;
+    @include flex(space-between, center);
+
+    &--green-bg {
+        background-color: $primaryColor;
+
+        &:hover {
+            background-color: #098d58;
+        }
+
+        &::after  {
+            content: "";
+            display: block;
+            background-image: url('./../images/arrow-png.png');
+            background-size: 30px 16px;
+            width: 30px;
+            height: 16px;
+        }
+    }
+
+    &--no-bg {
+
+        &::after {
+            content: "";
+            display: block;
+            background-image: url('./../images/arr-white.png');
+            background-size: 30px 16px;
+            width: 30px;
+            height: 16px;
+        }
+    }
 }
 
 
-.button--green-bg {
-    background-color: #0aa566;
-}
 
-.button--green-bg:hover {
-    background-color: #098d58;
-}
 
-.button--green-bg::after  {
-    content: "";
-    display: block;
-    background-image: url('./../images/arrow-png.png');
-    background-size: 30px 16px;
-    width: 30px;
-    height: 16px;
-}
 
-.button--no-bg::after {
-    content: "";
-    display: block;
-    background-image: url('./../images/arr-white.png');
-    background-size: 30px 16px;
-    width: 30px;
-    height: 16px;
-}
+
+
+
