@@ -4,9 +4,9 @@
     font-size: 3.125rem;
     letter-spacing: -1px;
     color: #f7ae3b;
-}
-
-.title--orange-up {
-    text-transform: uppercase;
-    color: #f2612d;
+    
+    &--orange-up {
+        text-transform: uppercase;
+        color: #f2612d;
+    }
 }

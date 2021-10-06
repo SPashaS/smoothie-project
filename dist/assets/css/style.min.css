@@ -513,62 +513,57 @@ input[type="text"]::-moz-placeholder {
   font-size: 3.125rem;
   letter-spacing: -1px;
   color: #f7ae3b; }
-
-.title--orange-up {
-  text-transform: uppercase;
-  color: #f2612d; }
+  .title--orange-up {
+    text-transform: uppercase;
+    color: #f2612d; }
 
 /*   ---------------------------   SMOOTHIES   ---------------------------   */
 .smoothies {
   padding: 0 30px; }
-
-.smoothies__inner {
-  max-width: 1010px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.smoothies__title {
-  margin: 89px 0 35px; }
-
-.smoothies__desc {
-  max-width: 915px;
-  margin-bottom: 52px;
-  font-size: 1.125rem;
-  line-height: 1.95;
-  letter-spacing: normal;
-  text-align: center;
-  color: #1e1e1e; }
-
-.smoothies__greed {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-bottom: 128px; }
-
-.smoothies__box {
-  padding: 24px 0 39px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 25%;
-  height: 185px; }
+  .smoothies__inner {
+    max-width: 1010px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .smoothies__title {
+    margin: 89px 0 35px; }
+  .smoothies__desc {
+    max-width: 915px;
+    margin-bottom: 52px;
+    font-size: 1.125rem;
+    line-height: 1.95;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1e1e1e; }
+  .smoothies__greed {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 128px; }
+  .smoothies__name {
+    font-size: 1.56rem;
+    letter-spacing: -0.5px;
+    color: #f2612d; }
+  .smoothies__box {
+    padding: 24px 0 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    height: 185px; }
+    .smoothies__box:nth-child(1), .smoothies__box:nth-child(2), .smoothies__box:nth-child(3) {
+      border-right: 2px solid #f6edde;
+      border-bottom: 2px solid #f6edde; }
+    .smoothies__box:nth-child(4) {
+      border-bottom: 2px solid #f6edde; }
+    .smoothies__box:nth-child(5), .smoothies__box:nth-child(6), .smoothies__box:nth-child(7) {
+      border-right: 2px solid #f6edde; }
 
 /* хз почему не ровняется по центру */
 .smoothies__box:last-child .smoothies__name {
   text-align: center; }
-
-.smoothies__box:nth-child(1), .smoothies__box:nth-child(2), .smoothies__box:nth-child(3) {
-  border-right: 2px solid #f6edde;
-  border-bottom: 2px solid #f6edde; }
-
-.smoothies__box:nth-child(4) {
-  border-bottom: 2px solid #f6edde; }
-
-.smoothies__box:nth-child(5), .smoothies__box:nth-child(6), .smoothies__box:nth-child(7) {
-  border-right: 2px solid #f6edde; }
 
 .smoothies__box:nth-child(1) .smoothies__icon {
   width: 70px; }
@@ -593,11 +588,6 @@ input[type="text"]::-moz-placeholder {
 
 .smoothies__box:nth-child(8) .smoothies__icon {
   width: 64px; }
-
-.smoothies__name {
-  font-size: 1.56rem;
-  letter-spacing: -0.5px;
-  color: #f2612d; }
 
 /*   ---------------------------   ABOUT   ---------------------------   */
 .about {
