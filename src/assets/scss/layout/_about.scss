@@ -3,85 +3,88 @@
     background-color: #14826f;
     color: white;
     padding: 0 30px;
-}
 
-.about__inner {
-    margin: 0 6%;
-    padding: 88px 0 94px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 1424px;
-}
+    &__inner {
+        margin: 0 6%;
+        padding: 88px 0 94px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1424px;
+    }
 
-.about__image-wrapper {
-    flex-basis: 691px;
-    height: 600px;
-    position: relative;
-}
+    &__image-wrapper {
+        flex-basis: 691px;
+        height: 600px;
+        position: relative;
+    }
 
-.about__image {
-    width: 100%;
-    position: relative;
-    top: -25px;
-    right: 0px;
-}
+    &__image {
+        width: 100%;
+        position: relative;
+        top: -25px;
+        right: 0px;
+    }
 
-.about__content {
-    flex-basis: 590px;
-    margin-left: 40px;
-}
+    &__content {
+        flex-basis: 590px;
+        margin-left: 40px;
+    }
 
-.about__title {
-    font-family: 'MuliExtraBold';
-    font-size: 3.43rem;
-    line-height: 1.09;
-    letter-spacing: -1.1px;
-    color: #ffffff;
-    margin-bottom: 46px;
-}
+    &__list {
+        margin-bottom: 41px;
+        padding-left: 16px;
+    }
 
-.about__title--light-green {
-    color: #cae941;
-    position: relative;
-}
-.about__title--light-green::after {
-    content: "";
-    background-image: url('./../images/smLine.png');
-    display: block;
-    width: 450px;
-    height: 13px;
-    left: -10px;
-    position: absolute;
-}
-.about__list {
-    margin-bottom: 41px;
-    padding-left: 16px;
-}
-.about__item {
-    list-style-position: inside;
-    font-size: 1.31rem;
-    line-height: 2.10;
-    text-align: left;
-    position: relative;
-    letter-spacing: 0.4px;
-    left: 22px;
-}
+    &__title {
+        font-family: 'MuliExtraBold';
+        font-size: 3.43rem;
+        line-height: 1.09;
+        letter-spacing: -1.1px;
+        color: #ffffff;
+        margin-bottom: 46px;
 
-.about__item::before {
-    content: '';
-    background-image: url('./../images/about-li.png');
-    position: absolute;
-    width: 18px; height: 18px;
-    background-size: 18px 18px;
-    left: -36px;
-    top: 12px;
-}
+        &--light-green {
+            color: #cae941;
+            position: relative;
+        }
 
-.about__button {
-    max-width: 380px;
-    height: 60px;
-    border-radius: 30px;
-    border: solid 2px #f8b231;
-    background-color: #14826f;
-    padding: 0 36px 0 29px;
+        &--light-green::after {
+            content: "";
+            background-image: url('./../images/smLine.png');
+            display: block;
+            width: 450px;
+            height: 13px;
+            left: -10px;
+            position: absolute;
+        }
+    }
+
+    &__item {
+        list-style-position: inside;
+        font-size: 1.31rem;
+        line-height: 2.10;
+        text-align: left;
+        position: relative;
+        letter-spacing: 0.4px;
+        left: 22px;
+
+        &::before {
+            content: '';
+            background-image: url('./../images/about-li.png');
+            position: absolute;
+            width: 18px; height: 18px;
+            background-size: 18px 18px;
+            left: -36px;
+            top: 12px;
+        }
+    }
+
+    &__button {
+        max-width: 380px;
+        height: 60px;
+        border-radius: 30px;
+        border: solid 2px #f8b231;
+        background-color: #14826f;
+        padding: 0 36px 0 29px;
+    }
 }
