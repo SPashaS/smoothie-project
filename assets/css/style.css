@@ -666,6 +666,12 @@ input[type="text"]::-moz-placeholder {
     margin-bottom: 128px;
 }
 
+.smoothies__name {
+    font-size: 1.56rem;
+    letter-spacing: -0.5px;
+    color: #f2612d;
+}
+
 .smoothies__box {
     padding: 24px 0 39px;
     display: -ms-flexbox;
@@ -680,11 +686,6 @@ input[type="text"]::-moz-placeholder {
     height: 185px;
 }
 
-/* хз почему не ровняется по центру */
-.smoothies__box:last-child .smoothies__name {
-    text-align: center;
-}
-
 .smoothies__box:nth-child(1), .smoothies__box:nth-child(2), .smoothies__box:nth-child(3) {
     border-right: 2px solid #f6edde;
     border-bottom: 2px solid #f6edde;
@@ -696,6 +697,11 @@ input[type="text"]::-moz-placeholder {
 
 .smoothies__box:nth-child(5), .smoothies__box:nth-child(6), .smoothies__box:nth-child(7) {
     border-right: 2px solid #f6edde;
+}
+
+/* хз почему не ровняется по центру */
+.smoothies__box:last-child .smoothies__name {
+    text-align: center;
 }
 
 .smoothies__box:nth-child(1) .smoothies__icon {
@@ -728,12 +734,6 @@ input[type="text"]::-moz-placeholder {
 
 .smoothies__box:nth-child(8) .smoothies__icon {
     width: 64px;
-}
-
-.smoothies__name {
-    font-size: 1.56rem;
-    letter-spacing: -0.5px;
-    color: #f2612d;
 }
 
 /*   ---------------------------   ABOUT   ---------------------------   */
