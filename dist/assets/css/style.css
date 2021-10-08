@@ -773,6 +773,11 @@ input[type="text"]::-moz-placeholder {
     margin-left: 40px;
 }
 
+.about__list {
+    margin-bottom: 41px;
+    padding-left: 16px;
+}
+
 .about__title {
     font-family: 'MuliExtraBold';
     font-size: 3.43rem;
@@ -795,11 +800,6 @@ input[type="text"]::-moz-placeholder {
     height: 13px;
     left: -10px;
     position: absolute;
-}
-
-.about__list {
-    margin-bottom: 41px;
-    padding-left: 16px;
 }
 
 .about__item {
@@ -848,9 +848,9 @@ input[type="text"]::-moz-placeholder {
     -ms-flex-align: center;
     align-items: center;
     padding: 128px 0 79px;
+    /* мод*/
 }
 
-/* модификаторы */
 .products__box--brown {
     background-color: #632b17;
 }

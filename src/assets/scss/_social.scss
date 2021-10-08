@@ -1,16 +1,19 @@
 /*   -------------   social   -------------   */
-.social__list {
-    display: flex;
-    column-gap: 10px;
-}
+.social {
+    &__list {
+        display: flex;
+        column-gap: 10px;
+    }
 
-.social__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 35px;
-    min-width: 35px;
-    max-width: 35px;
-    background-color: white;
-    border-radius: 50%;
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        min-width: 35px;
+        max-width: 35px;
+        background-color: white;
+        border-radius: 50%;
+    }
+
 }
