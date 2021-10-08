@@ -931,15 +931,15 @@ input[type="text"]::-moz-placeholder {
     padding: 0 42px 0 27px;
 }
 
+.story__image {
+    width: 100%;
+}
+
 .story__image-wrapper {
     max-width: 585px;
     max-height: 601px;
     position: relative;
     margin-left: 30px;
-}
-
-.story__image {
-    width: 100%;
 }
 
 .story__image-wrapper::after {
@@ -1080,13 +1080,13 @@ input[type="text"]::-moz-placeholder {
     margin: 89px 0 50px;
 }
 
+.blog__image {
+    width: 100%;
+}
+
 .blog__image-wrapper {
     -ms-flex-preferred-size: 555px;
     flex-basis: 555px;
-}
-
-.blog__image {
-    width: 100%;
 }
 
 .blog__article {
