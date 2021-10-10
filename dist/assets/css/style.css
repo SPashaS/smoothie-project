@@ -1244,6 +1244,9 @@ input[type="text"]::-moz-placeholder {
 /*   -------------   content   -------------   */
 .footer {
     position: relative;
+  /*   -------------   logo   -------------   */
+  /*   -------------   information   -------------   */
+  /*   -------------   payment   -------------   */
 }
 
 .footer__content {
@@ -1266,7 +1269,6 @@ input[type="text"]::-moz-placeholder {
     padding-bottom: 29px;
 }
 
-/*   -------------   logo   -------------   */
 .footer__logo {
     display: -ms-flexbox;
     display: flex;
@@ -1286,12 +1288,10 @@ input[type="text"]::-moz-placeholder {
     justify-content: space-between;
 }
 
-/*   -------------   information   -------------   */
 .footer__information {
     max-width: 314px;
 }
 
-/*   -------------   payment   -------------   */
 .footer__payment {
     max-width: 300px;
 }

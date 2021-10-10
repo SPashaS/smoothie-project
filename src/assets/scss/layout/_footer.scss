@@ -1,94 +1,94 @@
 /*   ---------------------------   FOOOTER   ---------------------------   */
 /*   -------------   content   -------------   */
 .footer {
-    position: relative
-}
-
-.footer__content {
-    background-color: #f6ab3b;
-}
-
-.footer__content-inner {
-    padding: 74px 100px 92px 103px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer__title {
-    font-family: 'MuliExtraBold';
-    font-size: 26px;
-    letter-spacing: -0.52px;
-    color: #ffffff;
-    padding-bottom: 29px;
-}
-
-/*   -------------   logo   -------------   */
-.footer__logo {
-    display: flex;
-    align-items: center;
-    flex-basis: 391px;
-    padding-bottom: 15px;
-}
-
-
-
-.footer__center-block {
-    display: flex;
-    flex-basis: 614px;
-    justify-content: space-between;
-}
-
-/*   -------------   information   -------------   */
-.footer__information {
-    max-width: 314px;
-}
-
-/*   -------------   payment   -------------   */
-.footer__payment {
-    max-width: 300px;
-}
-.footer__subscribe {
-    flex-basis: 495px;
     position: relative;
-}
 
-.footer__bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 26px 0;
-    font-size: 0.8125rem;
-    letter-spacing: 0.26px;
-    color: #af8a82;
-    background-color: #6c2c1c;
-}
+    &__content {
+        background-color: #f6ab3b;
 
-.footer__goTop {
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: #f2662f;
-    position: fixed;
-    bottom: 44px;
-    right: 101px;
-}
+        &-inner {
+            padding: 74px 100px 92px 103px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 
-.footer__goTop::before {
-    content: '';
-    background-image: url('./../images/ft-arr-top.png');
-    background-size: 13px 25px;
-    width: 13px;
-    height: 25px;
-    position: absolute;
-    bottom: 11px;
-    right: 19px;
-}
+    &__title {
+        font-family: 'MuliExtraBold';
+        font-size: 26px;
+        letter-spacing: -0.52px;
+        color: #ffffff;
+        padding-bottom: 29px;
+    }
 
-.footer__goTop::after {
-    content: 'Go top';
-    position: absolute;
-    bottom: -18px;
-    left: -61px;
-    color: #fff;
+    /*   -------------   logo   -------------   */
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        flex-basis: 391px;
+        padding-bottom: 15px;
+    }
+
+    &__center-block {
+        display: flex;
+        flex-basis: 614px;
+        justify-content: space-between;
+    }
+
+    /*   -------------   information   -------------   */
+    &__information {
+        max-width: 314px;
+    }
+
+    &__payment {
+        max-width: 300px;
+    }
+    
+    /*   -------------   payment   -------------   */
+    &__subscribe {
+        flex-basis: 495px;
+        position: relative;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 26px 0;
+        font-size: 0.8125rem;
+        letter-spacing: 0.26px;
+        color: #af8a82;
+        background-color: #6c2c1c;
+    }
+
+    &__goTop {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #f2662f;
+        position: fixed;
+        bottom: 44px;
+        right: 101px;
+
+        &::before {
+            content: '';
+            background-image: url('./../images/ft-arr-top.png');
+            background-size: 13px 25px;
+            width: 13px;
+            height: 25px;
+            position: absolute;
+            bottom: 11px;
+            right: 19px;
+        }
+
+        &::after {
+            content: 'Go top';
+            position: absolute;
+            bottom: -18px;
+            left: -61px;
+            color: #fff;
+        }
+    }
 }
