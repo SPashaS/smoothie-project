@@ -437,7 +437,6 @@ input[type="text"]::-moz-placeholder {
     display: none;
 }
 
-/*   -------------   NAV   -------------   */
 .header__menu {
     margin-top: -5px;
     max-width: 450px;
@@ -451,7 +450,6 @@ input[type="text"]::-moz-placeholder {
     transform: translateX(-52%);
 }
 
-/*   -------------   HEADER__RIGHT-BLOCK   -------------   */
 .header__right-block {
     display: -ms-flexbox;
     display: flex;
@@ -459,7 +457,6 @@ input[type="text"]::-moz-placeholder {
     align-items: center;
 }
 
-/*   -------------   HEADER__CONTENT   -------------   */
 .header__content {
     display: -ms-flexbox;
     display: flex;
