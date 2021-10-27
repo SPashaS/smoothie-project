@@ -1,11 +1,13 @@
 @import './abstracts/vars';
 @import './abstracts/mixins';
-@import './normalize';
-@import './fonts';
+@import './base/normalize';
+@import './base/fonts';
 
 
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,6 +17,12 @@ html,
 body {
     font-family: 'MuliRegular', sans-serif;
     font-size: 100%;
+}
+
+.container {
+    max-width: 1740px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 ul {
@@ -41,10 +49,10 @@ input[type="text"]::-moz-placeholder {
 }
 
 @import './layout/header';
-@import './layout/menu';
+@import './components/menu';
 @import './logo';
-@import './personal';
-@import './social';
+@import './components/personal';
+@import './components/social';
 @import './components/button';
 @import './components/title';
 @import './layout/smoothies';
@@ -55,8 +63,8 @@ input[type="text"]::-moz-placeholder {
 @import './layout/blog';
 @import './layout/instagram';
 @import './layout/footer';
-@import './information';
-@import './payment';
-@import './subscribe';
+@import './components/information';
+@import './components/payment';
+@import './components/subscribe';
 
 @import './media';

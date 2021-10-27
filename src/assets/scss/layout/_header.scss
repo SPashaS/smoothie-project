@@ -4,13 +4,10 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    width: 100%;
     color: #fff;
-    display: flex;
-    flex-direction: column;
 
     &__top {
-        padding: 89px 100px 121px;
+        padding: 89px 0 121px;
         position: relative;
     }
 
@@ -33,7 +30,6 @@
 
     &__menu {
         margin-top: -5px;
-        max-width: 450px;
     }
 
     &__logo {
@@ -48,17 +44,12 @@
         align-items: center;
     }
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     &__button {
         width: 280px;
         padding: 0 40px;
         font-size: 1.5rem;
         height: 70px;
         border-radius: 35px;
+        margin: 0 auto;
     }
 }
