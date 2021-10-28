@@ -504,15 +504,13 @@ input[type="text"]::-moz-placeholder {
 
 /*   ---------------------------   SMOOTHIES   ---------------------------   */
 .smoothies {
-  padding: 0 30px; }
+  padding: 89px 30px 128px; }
   .smoothies__inner {
-    max-width: 1010px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center; }
   .smoothies__title {
-    margin: 89px 0 35px; }
+    margin-bottom: 35px; }
   .smoothies__desc {
     max-width: 915px;
     margin-bottom: 52px;
@@ -524,8 +522,7 @@ input[type="text"]::-moz-placeholder {
   .smoothies__greed {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    margin-bottom: 128px; }
+    max-width: 1010px; }
   .smoothies__name {
     font-size: 1.56rem;
     letter-spacing: -0.5px;

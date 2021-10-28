@@ -360,7 +360,9 @@ template {
   src: url("./../fonts/Muli-Semi-BoldItalic.ttf");
 }
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -370,6 +372,12 @@ html,
 body {
     font-family: 'MuliRegular', sans-serif;
     font-size: 100%;
+}
+
+.container {
+    max-width: 1740px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 ul {
@@ -404,16 +412,11 @@ input[type="text"]::-moz-placeholder {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    width: 100%;
     color: #fff;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
 }
 
 .header__top {
-    padding: 89px 100px 121px;
+    padding: 89px 0 121px;
     position: relative;
 }
 
@@ -439,7 +442,6 @@ input[type="text"]::-moz-placeholder {
 
 .header__menu {
     margin-top: -5px;
-    max-width: 450px;
 }
 
 .header__logo {
@@ -457,26 +459,17 @@ input[type="text"]::-moz-placeholder {
     align-items: center;
 }
 
-.header__content {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
 .header__button {
     width: 280px;
     padding: 0 40px;
     font-size: 1.5rem;
     height: 70px;
     border-radius: 35px;
+    margin: 0 auto;
 }
 
 .menu {
     text-transform: uppercase;
-    color: #fff;
     font-family: 'MuliBold', sans-serif;
     letter-spacing: 0.32px;
 }
