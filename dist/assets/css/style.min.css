@@ -522,7 +522,7 @@ input[type="text"]::-moz-placeholder {
   .smoothies__greed {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1010px; }
+    max-width: 1050px; }
   .smoothies__name {
     font-size: 1.56rem;
     letter-spacing: -0.5px;
@@ -577,23 +577,16 @@ input[type="text"]::-moz-placeholder {
   color: white;
   padding: 0 30px; }
   .about__inner {
-    margin: 0 6%;
-    padding: 88px 0 94px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 1424px; }
-  .about__image-wrapper {
-    flex-basis: 691px;
-    height: 600px;
-    position: relative; }
+    display: flex; }
   .about__image {
+    max-width: 691px;
     width: 100%;
+    margin-right: 190px;
     position: relative;
-    top: -25px;
-    right: 0px; }
+    top: 70px;
+    left: 40px; }
   .about__content {
-    flex-basis: 590px;
-    margin-left: 40px; }
+    max-width: 590px; }
   .about__list {
     margin-bottom: 41px;
     padding-left: 16px; }
@@ -603,7 +596,8 @@ input[type="text"]::-moz-placeholder {
     line-height: 1.09;
     letter-spacing: -1.1px;
     color: #ffffff;
-    margin-bottom: 46px; }
+    margin-bottom: 46px;
+    padding-top: 88px; }
     .about__title--light-green {
       color: #cae941;
       position: relative; }

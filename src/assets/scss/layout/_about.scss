@@ -5,29 +5,21 @@
     padding: 0 30px;
 
     &__inner {
-        margin: 0 6%;
-        padding: 88px 0 94px;
         display: flex;
-        justify-content: space-between;
-        max-width: 1424px;
     }
 
-    &__image-wrapper {
-        flex-basis: 691px;
-        height: 600px;
-        position: relative;
-    }
 
     &__image {
+        max-width: 691px;
         width: 100%;
+        margin-right: 190px;
         position: relative;
-        top: -25px;
-        right: 0px;
+        top: 70px;
+        left: 40px;
     }
 
     &__content {
-        flex-basis: 590px;
-        margin-left: 40px;
+        max-width: 590px;
     }
 
     &__list {
@@ -42,6 +34,7 @@
         letter-spacing: -1.1px;
         color: #ffffff;
         margin-bottom: 46px;
+        padding-top: 88px;
 
         &--light-green {
             color: #cae941;
