@@ -619,12 +619,10 @@ input[type="text"]::-moz-placeholder {
 
 /*   ---------------------------   SMOOTHIES   ---------------------------   */
 .smoothies {
-    padding: 0 30px;
+    padding: 89px 30px 128px;
 }
 
 .smoothies__inner {
-    max-width: 1010px;
-    margin: 0 auto;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -634,7 +632,7 @@ input[type="text"]::-moz-placeholder {
 }
 
 .smoothies__title {
-    margin: 89px 0 35px;
+    margin-bottom: 35px;
 }
 
 .smoothies__desc {
@@ -652,8 +650,7 @@ input[type="text"]::-moz-placeholder {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 100%;
-    margin-bottom: 128px;
+    max-width: 1010px;
 }
 
 .smoothies__name {
