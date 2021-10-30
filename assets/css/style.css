@@ -650,7 +650,7 @@ input[type="text"]::-moz-placeholder {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    max-width: 1010px;
+    max-width: 1050px;
 }
 
 .smoothies__name {
@@ -731,33 +731,21 @@ input[type="text"]::-moz-placeholder {
 }
 
 .about__inner {
-    margin: 0 6%;
-    padding: 88px 0 94px;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    max-width: 1424px;
-}
-
-.about__image-wrapper {
-    -ms-flex-preferred-size: 691px;
-    flex-basis: 691px;
-    height: 600px;
-    position: relative;
 }
 
 .about__image {
+    max-width: 691px;
     width: 100%;
+    margin-right: 190px;
     position: relative;
-    top: -25px;
-    right: 0px;
+    top: 70px;
+    left: 40px;
 }
 
 .about__content {
-    -ms-flex-preferred-size: 590px;
-    flex-basis: 590px;
-    margin-left: 40px;
+    max-width: 590px;
 }
 
 .about__list {
@@ -772,6 +760,7 @@ input[type="text"]::-moz-placeholder {
     letter-spacing: -1.1px;
     color: #ffffff;
     margin-bottom: 46px;
+    padding-top: 88px;
 }
 
 .about__title--light-green {
