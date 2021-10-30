@@ -680,11 +680,13 @@ input[type="text"]::-moz-placeholder {
     margin: 0 auto;
     max-width: 1300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 121px 0 160px;
     position: relative; }
   .story__content {
-    max-width: 515px; }
+    max-width: 515px;
+    margin-right: 200px; }
   .story__title {
     margin: 127px 0 37px; }
   .story__text {
@@ -695,14 +697,14 @@ input[type="text"]::-moz-placeholder {
     padding-bottom: 50px; }
   .story__button {
     width: 300px;
-    padding: 0 42px 0 27px; }
+    padding: 0 42px 0 27px;
+    margin-bottom: 30px; }
   .story__image {
     width: 100%; }
     .story__image-wrapper {
       max-width: 585px;
       max-height: 601px;
-      position: relative;
-      margin-left: 30px; }
+      position: relative; }
       .story__image-wrapper::after {
         content: "";
         background-image: url("./../images/stStamp.png");

@@ -7,13 +7,15 @@
         margin: 0 auto;
         max-width: 1300px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
         padding: 121px 0 160px;
         position: relative;
     }
 
     &__content {
         max-width: 515px;
+        margin-right: 200px;
     }
 
     &__title {
@@ -31,6 +33,7 @@
     &__button {
         width: 300px;
         padding: 0 42px 0 27px;
+        margin-bottom: 30px;
     }
 
     &__image {
@@ -40,7 +43,6 @@
             max-width: 585px;
             max-height: 601px;
             position: relative;
-            margin-left: 30px;
 
             &::after {
                 content: "";
