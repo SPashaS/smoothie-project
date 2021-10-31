@@ -880,14 +880,17 @@ input[type="text"]::-moz-placeholder {
     max-width: 1300px;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 121px 0 160px;
     position: relative;
 }
 
 .story__content {
     max-width: 515px;
+    margin-right: 200px;
 }
 
 .story__title {
@@ -905,6 +908,7 @@ input[type="text"]::-moz-placeholder {
 .story__button {
     width: 300px;
     padding: 0 42px 0 27px;
+    margin-bottom: 30px;
 }
 
 .story__image {
@@ -915,7 +919,6 @@ input[type="text"]::-moz-placeholder {
     max-width: 585px;
     max-height: 601px;
     position: relative;
-    margin-left: 30px;
 }
 
 .story__image-wrapper::after {

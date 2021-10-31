@@ -504,7 +504,7 @@ input[type="text"]::-moz-placeholder {
 
 /*   ---------------------------   SMOOTHIES   ---------------------------   */
 .smoothies {
-  padding: 89px 30px 128px; }
+  padding: 89px 0 128px; }
   .smoothies__inner {
     display: flex;
     flex-direction: column;
@@ -522,7 +522,8 @@ input[type="text"]::-moz-placeholder {
   .smoothies__greed {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1050px; }
+    max-width: 1050px;
+    width: 100%; }
   .smoothies__name {
     font-size: 1.56rem;
     letter-spacing: -0.5px;
