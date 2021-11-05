@@ -483,9 +483,9 @@ input[type="text"]::-moz-placeholder {
 .menu__list {
     display: -ms-flexbox;
     display: flex;
-    -webkit-column-gap: 17px;
-    -moz-column-gap: 17px;
-    column-gap: 17px;
+    -webkit-column-gap: 32px;
+    -moz-column-gap: 32px;
+    column-gap: 32px;
 }
 
 .logo__img {
@@ -568,8 +568,7 @@ input[type="text"]::-moz-placeholder {
 .button {
     font-family: 'MuliExtraBold';
     color: white;
-    font-size: 1.31rem;
-    height: 60px;
+    font-size: 1.42rem;
     border-radius: 30px;
     display: -ms-flexbox;
     display: flex;
@@ -640,7 +639,6 @@ input[type="text"]::-moz-placeholder {
     margin-bottom: 52px;
     font-size: 1.125rem;
     line-height: 1.95;
-    letter-spacing: normal;
     text-align: center;
     color: #1e1e1e;
 }
@@ -650,7 +648,7 @@ input[type="text"]::-moz-placeholder {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    max-width: 1050px;
+    max-width: 1010px;
     width: 100%;
 }
 

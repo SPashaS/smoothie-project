@@ -574,18 +574,21 @@ input[type="text"]::-moz-placeholder {
 .about {
   background-color: #14826f;
   color: white;
-  padding: 0 30px; }
+  padding: 0; }
   .about__inner {
-    display: flex; }
+    display: flex;
+    position: relative;
+    justify-content: flex-end; }
   .about__image {
     max-width: 691px;
     width: 100%;
     margin-right: 190px;
-    position: relative;
-    top: 70px;
-    left: 40px; }
+    position: absolute;
+    top: 64px;
+    left: 43px; }
   .about__content {
-    max-width: 590px; }
+    max-width: 590px;
+    margin-right: 255px; }
   .about__list {
     margin-bottom: 41px;
     padding-left: 16px; }
@@ -631,7 +634,8 @@ input[type="text"]::-moz-placeholder {
     border-radius: 30px;
     border: solid 2px #f8b231;
     background-color: #14826f;
-    padding: 0 36px 0 29px; }
+    padding: 0 38px 0 24px;
+    margin-bottom: 95px; }
 
 /*   ---------------------------   PRODUCTS   ---------------------------   */
 .products {
