@@ -5,7 +5,7 @@
         column-gap: 10px;
     }
 
-    &__link {
+    &__item {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -14,6 +14,15 @@
         max-width: 35px;
         background-color: white;
         border-radius: 50%;
+
+        &--ft {
+            background-color: transparent;
+        }
     }
 
+    &__icon {
+        width: 100%;
+    }
+    
+    
 }

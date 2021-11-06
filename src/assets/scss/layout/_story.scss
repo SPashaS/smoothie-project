@@ -1,7 +1,6 @@
 /*   ---------------------------   STORY   ---------------------------   */
 
 .story {
-    padding: 0 30px;
 
     &__inner {
         margin: 0 auto;
@@ -34,6 +33,7 @@
         width: 300px;
         padding: 0 42px 0 27px;
         margin-bottom: 30px;
+        height: 60px;
     }
 
     &__image {

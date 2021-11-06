@@ -76,12 +76,13 @@
     }
 
     &__button {
+        font-size: 1.3rem;
         max-width: 380px;
         height: 60px;
         border-radius: 30px;
         border: solid 2px #f8b231;
         background-color: #14826f;
-        padding: 0 38px 0 24px;
-        margin-bottom: 95px;
+        padding: 0 38px 0 28px;
+        margin-bottom: 94px;
     }
 }

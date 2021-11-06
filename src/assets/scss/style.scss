@@ -50,11 +50,11 @@ input[type="text"]::-moz-placeholder {
 
 @import './layout/header';
 @import './components/menu';
-@import './logo';
 @import './components/personal';
 @import './components/social';
 @import './components/button';
 @import './components/title';
+@import './components/form';
 @import './layout/smoothies';
 @import './layout/about';
 @import './layout/products';
@@ -63,8 +63,5 @@ input[type="text"]::-moz-placeholder {
 @import './layout/blog';
 @import './layout/instagram';
 @import './layout/footer';
-@import './components/information';
-@import './components/payment';
-@import './components/subscribe';
 
 @import './media';
