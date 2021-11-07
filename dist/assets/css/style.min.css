@@ -446,7 +446,6 @@ input[type="text"]::-moz-placeholder {
   right: -14px;
   padding-top: 2px; }
 
-/*   -------------   social   -------------   */
 .social__list {
   display: flex;
   column-gap: 10px; }
@@ -456,22 +455,29 @@ input[type="text"]::-moz-placeholder {
   align-items: center;
   justify-content: center;
   height: 35px;
-  min-width: 35px;
-  max-width: 35px;
+  width: 35px;
   background-color: white;
   border-radius: 50%; }
   .social__item--ft {
     background-color: transparent; }
 
-.social__icon {
-  width: 100%; }
+.social__icon1 {
+  width: 12px;
+  height: 24px; }
+
+.social__icon2 {
+  width: 20px;
+  height: 26px; }
+
+.social__icon3 {
+  width: 26px;
+  height: 26px; }
 
 /*   -------------   btn   -------------   */
 .button {
   font-family: 'MuliExtraBold';
   color: white;
   font-size: 1.42rem;
-  border-radius: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -512,7 +518,7 @@ input[type="text"]::-moz-placeholder {
     width: 24px;
     height: 19px;
     position: absolute;
-    top: 82px;
+    top: 23px;
     left: 23px; }
   .form::after {
     content: "";
@@ -529,10 +535,11 @@ input[type="text"]::-moz-placeholder {
     border-radius: 30px;
     background-color: #ffffff;
     font-family: 'MuliExtraBold';
-    font-size: 1.06rem;
+    font-size: 1.04rem;
     letter-spacing: -0.34px;
     color: #6d450c;
     border-width: 0px;
+    padding-top: 2px;
     padding-left: 62px; }
     .form__input:focus-visible {
       outline: none; }
@@ -551,7 +558,6 @@ input[type="text"]::-moz-placeholder {
     top: 82px;
     left: 184px; }
 
-/*   ---------------------------   SMOOTHIES   ---------------------------   */
 .smoothies {
   padding: 89px 0 128px; }
   .smoothies__inner {
@@ -575,12 +581,13 @@ input[type="text"]::-moz-placeholder {
   .smoothies__name {
     font-size: 1.56rem;
     letter-spacing: -0.5px;
-    color: #f2612d; }
+    color: #f2612d;
+    padding: 22px 0 38px; }
   .smoothies__box {
-    padding: 24px 0 39px;
+    padding-top: 24px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     width: 25%;
     height: 185px; }
@@ -591,34 +598,22 @@ input[type="text"]::-moz-placeholder {
       border-bottom: 2px solid #f6edde; }
     .smoothies__box:nth-child(5), .smoothies__box:nth-child(6), .smoothies__box:nth-child(7) {
       border-right: 2px solid #f6edde; }
-
-/* хз почему не ровняется по центру */
-.smoothies__box:last-child .smoothies__name {
-  text-align: center; }
-
-.smoothies__box:nth-child(1) .smoothies__icon {
-  width: 70px; }
-
-.smoothies__box:nth-child(2) .smoothies__icon {
-  width: 74px; }
-
-.smoothies__box:nth-child(3) .smoothies__icon {
-  width: 71px; }
-
-.smoothies__box:nth-child(4) .smoothies__icon {
-  width: 72px; }
-
-.smoothies__box:nth-child(5) .smoothies__icon {
-  width: 65px; }
-
-.smoothies__box:nth-child(6) .smoothies__icon {
-  width: 79px; }
-
-.smoothies__box:nth-child(7) .smoothies__icon {
-  width: 72px; }
-
-.smoothies__box:nth-child(8) .smoothies__icon {
-  width: 64px; }
+    .smoothies__box:first-child .smoothies__icon {
+      width: 70px; }
+    .smoothies__box:nth-child(2) .smoothies__icon {
+      width: 74px; }
+    .smoothies__box:nth-child(3) .smoothies__icon {
+      width: 71px; }
+    .smoothies__box:nth-child(4) .smoothies__icon {
+      width: 72px; }
+    .smoothies__box:nth-child(5) .smoothies__icon {
+      width: 65px; }
+    .smoothies__box:nth-child(6) .smoothies__icon {
+      width: 79px; }
+    .smoothies__box:nth-child(7) .smoothies__icon {
+      width: 72px; }
+    .smoothies__box:last-child .smoothies__icon {
+      width: 64px; }
 
 /*   ---------------------------   ABOUT   ---------------------------   */
 .about {
@@ -754,7 +749,8 @@ input[type="text"]::-moz-placeholder {
   width: 300px;
   padding: 0 42px 0 27px;
   margin-bottom: 30px;
-  height: 60px; }
+  height: 60px;
+  border-radius: 30px; }
 
 .story__image {
   width: 100%; }
@@ -841,6 +837,15 @@ input[type="text"]::-moz-placeholder {
     .testimonials__footer-btn {
       width: 30px;
       height: 16px; }
+  .testimonials__button {
+    background-image: url("./../images/arrow-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 30px;
+    height: 16px; }
+    .testimonials__button--left {
+      transform: rotate(180deg); }
 
 /*   ---------------------------   BLOG   ---------------------------   */
 .blog__inner {
@@ -990,20 +995,22 @@ input[type="text"]::-moz-placeholder {
     color: #ffffff;
     padding-bottom: 29px; }
   .footer__logo-link {
-    width: 30%;
-    padding-bottom: 15px; }
+    width: 27%;
+    margin-top: 60px; }
   .footer__information {
-    max-width: 314px; }
+    width: 18%;
+    padding-left: 24px; }
     .footer__information-list {
       padding-left: 3px;
       font-family: 'MuliExtraBold';
       font-size: 18px;
       letter-spacing: -0.36px;
-      line-height: 1.94; }
+      line-height: 1.96; }
     .footer__information-link {
       color: #6d450c; }
   .footer__payment {
-    max-width: 300px; }
+    width: 23%;
+    padding-left: 10px; }
     .footer__payment-list {
       padding-top: 5px;
       display: flex;
@@ -1011,51 +1018,51 @@ input[type="text"]::-moz-placeholder {
       align-items: center;
       flex-wrap: wrap;
       width: 270px;
-      gap: 21px 20px; }
-    .footer__payment-item:nth-child(1) .footer__payment-icon {
+      gap: 17px 18px; }
+    .footer__payment-icon1 {
       width: 46px;
       height: 30px; }
-    .footer__payment-item:nth-child(2) .footer__payment-icon {
+    .footer__payment-icon2 {
       width: 36px;
       height: 36px; }
-    .footer__payment-item:nth-child(3) .footer__payment-icon {
+    .footer__payment-icon3 {
       width: 48px;
       height: 29px; }
-    .footer__payment-item:nth-child(4) .footer__payment-icon {
+    .footer__payment-icon4 {
       width: 54px;
       height: 26px; }
-    .footer__payment-item:nth-child(5) .footer__payment-icon {
+    .footer__payment-icon5 {
       width: 34px;
       height: 26px;
       margin-left: 7px; }
-    .footer__payment-item:nth-child(6) .footer__payment-icon {
+    .footer__payment-icon6 {
       width: 42px;
       height: 28px; }
-    .footer__payment-item:nth-child(7) .footer__payment-icon {
+    .footer__payment-icon7 {
       width: 50px;
       height: 14px; }
-    .footer__payment-item:nth-child(8) .footer__payment-icon {
+    .footer__payment-icon8 {
       width: 142px;
       height: 36px;
       margin-left: 7px; }
-    .footer__payment-item:nth-child(9) .footer__payment-icon {
+    .footer__payment-icon9 {
       width: 48px;
       height: 15px; }
   .footer__subscribe {
-    flex-basis: 495px; }
+    width: 29%;
+    padding-left: 5px; }
   .footer__social {
-    display: flex; }
-    .footer__social-inner {
-      margin-left: 300px; }
+    margin-top: 26px;
+    margin-left: 65%; }
   .footer__bottom {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 26px 0;
+    background-color: #6c2c1c; }
+  .footer__copyright {
     font-size: 0.8125rem;
     letter-spacing: 0.26px;
-    color: #af8a82;
-    background-color: #6c2c1c; }
+    color: #af8a82; }
   .footer__goTop {
     display: block;
     width: 50px;

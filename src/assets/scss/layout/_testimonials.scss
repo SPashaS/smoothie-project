@@ -90,5 +90,19 @@
         }
     }
 
+    &__button {
+        background-image: url('./../images/arrow-png.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        width: 30px;
+        height: 16px;
+
+
+        &--left {
+            transform: rotate(180deg);
+        }
+    }
+
 
 }

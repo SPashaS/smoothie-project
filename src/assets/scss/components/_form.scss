@@ -8,7 +8,7 @@
         width: 24px;
         height: 19px;
         position: absolute;
-        top: 82px;
+        top: 23px;
         left: 23px
     }
 
@@ -29,10 +29,11 @@
         border-radius: 30px;
         background-color: #ffffff;
         font-family: 'MuliExtraBold';
-        font-size: 1.06rem;
+        font-size: 1.04rem;
         letter-spacing: -0.34px;
         color: #6d450c;
         border-width: 0px;
+        padding-top: 2px;
         padding-left: 62px;
 
         &:focus-visible {
