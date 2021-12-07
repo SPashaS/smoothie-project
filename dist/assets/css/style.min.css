@@ -321,6 +321,10 @@ template {
   font-family: 'MuliSemiBoldItalic';
   src: url("./../fonts/Muli-Semi-BoldItalic.ttf"); }
 
+@font-face {
+  font-family: 'MyriadproRegular';
+  src: url("./../fonts/Myriadpro-Regular.ttf"); }
+
 *,
 *::before,
 *::after {
@@ -331,12 +335,13 @@ template {
 html,
 body {
   font-family: 'MuliRegular', sans-serif;
-  font-size: 100%; }
+  font-size: 100%;
+  min-width: 320px; }
 
 .container {
-  max-width: 1740px;
+  max-width: 1784px;
   margin: 0 auto;
-  padding: 0 10px; }
+  padding: 0 32px; }
 
 ul {
   list-style-type: none;
@@ -401,14 +406,14 @@ input[type="text"]::-moz-placeholder {
 
 .menu {
   text-transform: uppercase;
-  font-family: 'MuliBold', sans-serif;
+  font-family: 'MyriadproRegular', sans-serif;
   letter-spacing: 0.32px; }
   .menu__link {
     color: white;
     text-decoration-line: none; }
   .menu__list {
     display: flex;
-    column-gap: 32px; }
+    column-gap: 26px; }
 
 /*   -------------   personal   -------------   */
 .personal__list {
@@ -435,22 +440,20 @@ input[type="text"]::-moz-placeholder {
   align-items: center;
   justify-content: center;
   height: 18px;
-  min-width: 18px;
-  max-width: 18px;
+  width: 18px;
   background-color: white;
   color: black;
-  font-size: 0.56rem;
+  font-size: 0.55rem;
   border-radius: 50%;
   position: absolute;
   top: -9px;
-  right: -14px;
-  padding-top: 2px; }
+  right: -14px; }
 
 .social__list {
   display: flex;
   column-gap: 10px; }
 
-.social__item {
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -458,7 +461,7 @@ input[type="text"]::-moz-placeholder {
   width: 35px;
   background-color: white;
   border-radius: 50%; }
-  .social__item--ft {
+  .social__link--ft {
     background-color: transparent; }
 
 .social__icon1 {
@@ -1093,20 +1096,7 @@ input[type="text"]::-moz-placeholder {
   .header__burger-btn {
     display: block; }
   .header__navigation {
-    display: none; }
-  .footer__content-inner {
-    flex-direction: column;
-    align-items: center; }
-  .footer__center-block {
-    display: flex;
-    flex-basis: 247px;
-    justify-content: space-between;
-    width: 683px; }
-  .footer__logo {
-    flex-basis: 100px; }
-  .footer__subscribe {
-    flex-basis: 182px;
-    width: 495px; } }
+    display: none; } }
 
 @media screen and (max-width: 1205px) {
   .about__title--light-green::after {
@@ -1118,6 +1108,7 @@ input[type="text"]::-moz-placeholder {
   .products__button {
     width: 184px; } }
 
+/* медиа запросы*/
 @media screen and (max-width: 768px) {
   .header__navigation {
     position: fixed;

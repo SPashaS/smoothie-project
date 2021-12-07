@@ -1,6 +1,8 @@
-@mixin flex($justifyContent, $alignItems) {
-    display: flex;
-    justify-content: $justifyContent;
-    align-items: $alignItems;
+
+@mixin text($fontSize, $fontWeight,$lineHeight,$color ) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    color: $color;
 }
 

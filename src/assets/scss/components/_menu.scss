@@ -1,6 +1,6 @@
 .menu {
     text-transform: uppercase;
-    font-family: 'MuliBold', sans-serif;
+    font-family: 'MyriadproRegular', sans-serif;
     letter-spacing: 0.32px;
 
     &__link {
@@ -10,6 +10,6 @@
 
     &__list {
         display: flex;
-        column-gap: 32px;
+        column-gap: 26px;
     }
 }

@@ -1,6 +1,5 @@
 /* доп медиа запросы*/
 
-
 @media screen and (max-width: 1360px) {
     .header__burger-btn {
         display: block;
@@ -9,23 +8,6 @@
         display: none;
     }
 
-    .footer__content-inner {
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer__center-block {
-        display: flex;
-        flex-basis: 247px;
-        justify-content: space-between;
-        width: 683px;
-    }
-    .footer__logo {
-        flex-basis: 100px;
-    }
-    .footer__subscribe {
-        flex-basis: 182px;
-        width: 495px;
-    }
 }
 
 @media screen and (max-width: 1205px) {
@@ -41,6 +23,9 @@
         width: 184px;
     }
 }
+
+
+/* медиа запросы*/
 
 @media screen and (max-width: 768px) {
     .header__navigation {

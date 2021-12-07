@@ -3,7 +3,9 @@
     font-family: 'MuliExtraBold';
     color: white;
     font-size: 1.42rem;
-    @include flex(space-between, center);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     &--green-bg {
         background-color: $primaryColor;
