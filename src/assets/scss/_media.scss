@@ -12,6 +12,14 @@
             left: 0;
         }
     }
+
+    .products {
+        overflow: scroll;
+
+        &__box {
+            min-width: 480px;
+        }
+    }
 }
 
 
@@ -72,27 +80,8 @@
         &__box {
             width: 50%;
         }
-
-        // &__box:nth-child(1),&__box:nth-child(3),&__box:nth-child(5) {
-        //     border-right: 2px solid #f6edde;
-        //     border-bottom: 2px solid #f6edde;
-        // }
-        // .smoothies__box:nth-child(7) {
-        //     border-right: 2px solid #f6edde;
-        // }
-        // &__box:nth-child(2), &__box:nth-child(4), &__box:nth-child(6) {
-        //     border-bottom: 2px solid #f6edde;
-        // }
-        // &__box:nth-child(2), &__box:nth-child(6) {
-        //     border-right: 0;
-        // }
     }
-
-
-    
-
 }
-
 
 @media screen and (max-width: 360px) {
     body,
