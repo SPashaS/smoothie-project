@@ -872,7 +872,7 @@ input[type="text"]::-moz-placeholder {
     flex-direction: column;
     -ms-flex-align: center;
     align-items: center;
-    padding: 128px 0 78px;
+    padding: 128px 10px 78px;
     /* мод*/
 }
 
@@ -1463,6 +1463,14 @@ input[type="text"]::-moz-placeholder {
         position: relative;
         top: 30px;
         left: 0;
+    }
+
+    .products {
+        overflow: scroll;
+    }
+
+    .products__box {
+        min-width: 480px;
     }
 }
 

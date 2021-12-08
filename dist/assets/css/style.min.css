@@ -716,14 +716,13 @@ input[type="text"]::-moz-placeholder {
   margin: 0 auto;
   max-width: 1300px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 121px 0 160px;
   position: relative; }
 
 .story__content {
   max-width: 515px;
-  margin-right: 200px; }
+  margin-right: 60px; }
 
 .story__title {
   margin: 127px 0 37px; }
@@ -1098,9 +1097,11 @@ input[type="text"]::-moz-placeholder {
   .header__navigation {
     display: none; } }
 
-@media screen and (max-width: 1205px) {
-  .blog__article-link::after {
-    display: none; } }
+@media screen and (max-width: 1210px) {
+  .story__inner {
+    flex-wrap: wrap; }
+  .story__image-wrapper {
+    margin-left: auto; } }
 
 /* медиа запросы*/
 @media screen and (max-width: 768px) {
@@ -1124,7 +1125,9 @@ input[type="text"]::-moz-placeholder {
   .smoothies__wrapper {
     max-width: 540px; }
   .smoothies__box {
-    width: 50%; } }
+    width: 50%; }
+  .story__image-wrapper::after {
+    display: none; } }
 
 @media screen and (max-width: 360px) {
   body,

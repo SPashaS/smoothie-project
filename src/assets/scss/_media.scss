@@ -33,10 +33,22 @@
 
 }
 
-@media screen and (max-width: 1205px) {
-    .blog__article-link::after {
-        display: none;
+@media screen and (max-width: 1210px) {
+    // .blog__article-link::after {
+    //     display: none;
+    // }
+    
+    .story {
+        &__inner {
+            flex-wrap: wrap;
+        }
+
+        &__image-wrapper {
+            margin-left: auto;
+        }
     }
+
+
 }
 
 
@@ -79,6 +91,12 @@
 
         &__box {
             width: 50%;
+        }
+    }
+
+    .story {
+        &__image-wrapper::after {
+            display: none;
         }
     }
 }
