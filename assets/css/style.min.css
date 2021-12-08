@@ -682,7 +682,7 @@ input[type="text"]::-moz-placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 128px 0 78px;
+    padding: 128px 10px 78px;
     /* мод*/ }
     .products__box--brown {
       background-color: #632b17; }
@@ -1086,7 +1086,11 @@ input[type="text"]::-moz-placeholder {
   .about__image {
     position: relative;
     top: 30px;
-    left: 0; } }
+    left: 0; }
+  .products {
+    overflow: scroll; }
+    .products__box {
+      min-width: 480px; } }
 
 @media screen and (max-width: 1360px) {
   .header__burger-btn {

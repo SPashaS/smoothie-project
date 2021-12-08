@@ -774,14 +774,18 @@ input[type="text"]::-moz-placeholder {
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.about__image-wrapper {
+    max-width: 700px;
+    width: 100%;
 }
 
 .about__image {
     max-width: 691px;
     width: 100%;
-    margin-right: 190px;
     position: absolute;
     top: 64px;
     left: 43px;
@@ -789,7 +793,6 @@ input[type="text"]::-moz-placeholder {
 
 .about__content {
     max-width: 590px;
-    margin-right: 255px;
 }
 
 .about__list {
@@ -1448,6 +1451,21 @@ input[type="text"]::-moz-placeholder {
 }
 
 /* доп медиа запросы*/
+@media screen and (max-width: 1450px) {
+    .about__inner {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .about__image {
+        position: relative;
+        top: 30px;
+        left: 0;
+    }
+}
+
 @media screen and (max-width: 1360px) {
     .header__burger-btn {
         display: block;
@@ -1459,18 +1477,8 @@ input[type="text"]::-moz-placeholder {
 }
 
 @media screen and (max-width: 1205px) {
-    .about__title--light-green::after {
-        display: none;
-    }
-
     .blog__article-link::after {
         display: none;
-    }
-}
-
-@media screen and (max-width: 890px) {
-    .products__button {
-        width: 184px;
     }
 }
 
