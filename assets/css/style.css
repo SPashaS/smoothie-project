@@ -606,7 +606,7 @@ input[type="text"]::-moz-placeholder {
 .button--green-bg::after {
     content: "";
     display: block;
-    background-image: url("./../images/arrow-png.png");
+    background-image: url("./../../images/components/arrow/arrow-yellow.png");
     background-size: 30px 16px;
     width: 30px;
     height: 16px;
@@ -967,7 +967,7 @@ input[type="text"]::-moz-placeholder {
 
 .story__image-wrapper::after {
     content: "";
-    background-image: url("./../images/story/stStamp.png");
+    background-image: url("./../../images/story/stamp.png");
     display: block;
     width: 290px;
     height: 216px;
@@ -985,7 +985,7 @@ input[type="text"]::-moz-placeholder {
 
 .testimonials::before {
     content: "";
-    background-image: url("./../images/testimonials/tePsev.png");
+    background-image: url("./../images/testimonials/pseudo.png");
     display: block;
     width: 410px;
     height: 301px;
@@ -1000,8 +1000,6 @@ input[type="text"]::-moz-placeholder {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-align: end;
-    align-items: flex-end;
     margin: 0 auto;
     position: relative;
 }
@@ -1012,8 +1010,8 @@ input[type="text"]::-moz-placeholder {
     width: 766px;
     height: 148px;
     position: absolute;
-    top: -77px;
-    left: -165px;
+    top: 216px;
+    left: -139px;
     font-family: 'MuliExtraBold';
     font-size: 12.5rem;
     letter-spacing: -4px;
@@ -1022,12 +1020,13 @@ input[type="text"]::-moz-placeholder {
 
 .testimonials__title {
     margin: 107px auto 118px;
-    width: 505px;
 }
 
 .testimonials__content {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-bottom: 121px;
 }
 
@@ -1045,11 +1044,10 @@ input[type="text"]::-moz-placeholder {
     width: 220px;
     height: 218px;
     z-index: 1;
-    margin-left: 58px;
 }
 
 .testimonials__quote {
-    width: 457px;
+    max-width: 457px;
     font-size: 1.125rem;
     line-height: 1.9;
     text-align: center;
@@ -1061,8 +1059,8 @@ input[type="text"]::-moz-placeholder {
     font-family: 'MuliSemiBoldItalic';
     font-size: 1.06rem;
     color: #f7ae3b;
-    text-align: left;
-    padding: 19px 0 0 124px;
+    text-align: center;
+    padding-top: 19px;
 }
 
 .testimonials__footer {
@@ -1080,7 +1078,7 @@ input[type="text"]::-moz-placeholder {
 }
 
 .testimonials__button {
-    background-image: url("./../images/arrow-png.png");
+    background-image: url("./../../images/components/arrow/arrow-yellow.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
@@ -1470,6 +1468,10 @@ input[type="text"]::-moz-placeholder {
     .products__box {
         min-width: 480px;
     }
+
+    .testimonials::before {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1360px) {
@@ -1506,8 +1508,7 @@ input[type="text"]::-moz-placeholder {
     }
 
     .testimonials__inner::after {
-        top: 160px;
-        font-size: 8.5rem;
+        display: none;
     }
 
     .testimonials__content {
