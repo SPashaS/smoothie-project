@@ -46,7 +46,8 @@
 
             &::after {
                 content: "";
-                background-image: url('./../../images/story/stamp.png');
+                background-image: url('./../images/story/stamp.png');
+                background-size: cover;
                 display: block;
                 width: 290px;
                 height: 216px;

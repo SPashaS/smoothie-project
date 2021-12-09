@@ -39,6 +39,28 @@
 
 }
 
+@media screen and (max-width: 1250px) {
+    .blog {
+        &__content {
+            flex-direction: column;
+        }
+
+        &__article::before {
+            display: none;
+        }
+
+        &__article {
+            padding: 20px 0 0;
+        }
+
+        &__image-wrapper {
+            max-width: 708px;
+        }
+    }
+
+}
+
+
 @media screen and (max-width: 1210px) {
     // .blog__article-link::after {
     //     display: none;
@@ -82,6 +104,14 @@
     
 }
 
+@media screen and (max-width: 615px) {
+    .blog {
+        &__article-excerpt {
+            padding-left: 0;
+            max-width: 340px;
+        }
+    }
+}
 
 /* медиа запросы*/
 

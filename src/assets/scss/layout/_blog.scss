@@ -4,8 +4,6 @@
 
     &__inner {
         max-width: 1200px;
-        display: flex;
-        flex-direction: column;
         padding-bottom: 150px;
         margin: 0 auto;
     }
@@ -22,12 +20,12 @@
         width: 100%;
 
         &-wrapper {
-            flex-basis: 555px;
+            max-width: 555px;
         }
     }
 
     &__article {
-        flex-basis: 650px;
+        max-width: 650px;
         padding: 123px 0 0 64px;
         position: relative;
 
@@ -84,17 +82,18 @@
             font-family: 'MuliExtraBold';
             color: black;
             position: relative;
-
+            white-space: nowrap; 
+            
             &::after {
                 content: "";
                 display: block;
-                background-image: url('./../images/arrow-png.png');
+                background-image: url('./../images/components/arrow/arrow-yellow.png');
                 background-size: 18px 10px;
                 width: 18px;
                 height: 10px;
                 position: absolute;
-                top: 8px;
-                left: 107px;
+                top: 7px;
+                right: -34px;
             }
         }
     }
