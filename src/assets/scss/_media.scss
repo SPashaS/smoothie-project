@@ -20,6 +20,12 @@
             min-width: 480px;
         }
     }
+
+    .testimonials {
+        &::before {
+            display: none;
+        }
+    }
 }
 
 
@@ -47,12 +53,34 @@
             margin-left: auto;
         }
     }
-
-
 }
 
+@media screen and (max-width: 1100px) {
+    .testimonials {
+        &__inner::after {
+            left: -20px;
+        }
+    }
+}
 
+@media screen and (max-width: 870px) {
+    .testimonials {
+        &__inner {
+            align-items: center;
 
+            &::after {
+                display: none;
+            }
+        }
+        &__content {
+            flex-direction: column-reverse;
+        }
+        &__img {
+            margin: 0 auto;
+        }
+    }
+    
+}
 
 
 /* медиа запросы*/

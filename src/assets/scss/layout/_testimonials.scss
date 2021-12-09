@@ -4,31 +4,47 @@
     background-color: #672f1b;
     position: relative;
 
+    &::before {
+        content: "";
+        background-image: url('./../images/testimonials/pseudo.png');
+        display: block;
+        width: 410px;
+        height: 301px;
+        position: absolute;
+        top: -83px;
+        right: 58px;
+    }
+
     &__inner {
-        max-width: 874px;
+        max-width: 731px;
         display: flex;
         flex-direction: column;
-        align-items:center;
         margin: 0 auto;
+        position: relative;
 
-        &::before {
-            content: "";
-            background-image: url('./../images/tePsev.png');
-            display: block;
-            width: 410px;
-            height: 301px;
+        &::after {
+            content: "Sarah A";
+            background-size: 764px 148px;
+            width: 766px;
+            height: 148px;
             position: absolute;
-            top: -81px;
-            right: 58px;
+            top: 216px;
+            left: -139px;
+            font-family: 'MuliExtraBold';
+            font-size: 12.5rem;
+            letter-spacing: -4px;
+            color: rgba(82, 25, 5, 0.6);
         }
     }
     
     &__title {
-        margin: 107px 0 119px;
+        margin: 107px auto 118px;
+
     }
 
     &__content {
         display: flex;
+        justify-content: space-between;
         margin-bottom: 121px;
     }
 
@@ -39,30 +55,17 @@
         padding-top: 56px;
         position: relative;
 
-        &::before {
-            content: "Sarah A";
-            background-size: 764px 148px;
-            width: 766px;
-            height: 148px;
-            position: absolute;
-            top: -79px;
-            left: -164px;
-            font-family: 'MuliExtraBold';
-            font-size: 12.5rem;
-            letter-spacing: -4px;
-            color: rgba(82, 25, 5, 0.6);
-        }
+        
     }
 
     &__img {
         width: 220px;
         height: 218px;
         z-index: 1;
-        margin-left: 58px;
     }
 
     &__quote {
-        width: 457px;
+        max-width: 457px;
         font-size: 1.125rem;
         line-height: 1.9;
         text-align: center;
@@ -74,15 +77,15 @@
         font-family: 'MuliSemiBoldItalic';
         font-size: 1.06rem;
         color: #f7ae3b;
-        text-align: left;
-        padding: 19px 0 0 124px;
+        text-align: center;
+        padding-top: 19px;
     }
 
     &__footer {
         display: flex;
         justify-content: space-between;
-        column-gap: 97px;
-        margin-bottom: 81px;
+        margin: 0 auto 81px;
+        width: 160px;
 
         &-btn {
             width: 30px;
@@ -91,7 +94,7 @@
     }
 
     &__button {
-        background-image: url('./../images/arrow-png.png');
+        background-image: url('./../../images/components/arrow/arrow-yellow.png');
         background-repeat: no-repeat;
         background-size: cover;
         display: block;
