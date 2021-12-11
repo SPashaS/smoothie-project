@@ -30,13 +30,12 @@
     &__content {
         margin-bottom: 11px;
         display: flex;
-        justify-content: center;
     }
 
     &__link {
         position: relative;
         width: 25%;
-        max-height: 384px;
+        overflow: hidden;
         
         &::before {
             content: "";

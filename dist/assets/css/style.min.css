@@ -934,12 +934,11 @@ input[type="text"]::-moz-placeholder {
       color: #0aa566; }
   .instagram__content {
     margin-bottom: 11px;
-    display: flex;
-    justify-content: center; }
+    display: flex; }
   .instagram__link {
     position: relative;
     width: 25%;
-    max-height: 384px; }
+    overflow: hidden; }
     .instagram__link::before {
       content: "";
       background-image: url("./../images/inst-wt-ic.png");
@@ -1158,7 +1157,12 @@ input[type="text"]::-moz-placeholder {
   .smoothies__box {
     width: 50%; }
   .story__image-wrapper::after {
-    display: none; } }
+    display: none; }
+  .instagram__content {
+    overflow-x: scroll; }
+  .instagram__link {
+    min-width: 384px;
+    height: 384px; } }
 
 @media screen and (max-width: 360px) {
   body,
@@ -1190,6 +1194,9 @@ input[type="text"]::-moz-placeholder {
     align-items: center;
     flex-direction: column; }
   .header__nav {
-    text-align: center; } }
+    text-align: center; }
+  .instagram__link {
+    min-width: 270px;
+    height: 270px; } }
 
 /*# sourceMappingURL=style.min.css.map */

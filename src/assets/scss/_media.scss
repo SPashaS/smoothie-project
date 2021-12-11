@@ -157,6 +157,18 @@
             display: none;
         }
     }
+
+    .instagram {
+        &__content {
+            overflow-x: scroll;
+        }
+
+        &__link {
+            min-width: 384px;
+            height: 384px;
+        }
+
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -198,5 +210,13 @@
     }
     .header__nav {
         text-align: center;
+    }
+
+    .instagram {
+        &__link {
+            min-width: 270px;
+            height: 270px;
+        }
+
     }
 }
