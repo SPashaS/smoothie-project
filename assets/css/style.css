@@ -677,6 +677,10 @@ input[type="text"]::-moz-placeholder {
     outline: none;
 }
 
+.form__bottom {
+    position: relative;
+}
+
 .form__submit {
     padding-right: 42px;
     text-transform: uppercase;
@@ -689,8 +693,9 @@ input[type="text"]::-moz-placeholder {
     background-color: transparent;
     border-style: none;
     position: absolute;
-    top: 82px;
+    top: 0;
     left: 184px;
+    cursor: pointer;
 }
 
 .smoothies {
@@ -1228,14 +1233,12 @@ input[type="text"]::-moz-placeholder {
     margin-bottom: 11px;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
 }
 
 .instagram__link {
     position: relative;
     width: 25%;
-    max-height: 384px;
+    overflow: hidden;
 }
 
 .instagram__link::before {
@@ -1582,6 +1585,15 @@ input[type="text"]::-moz-placeholder {
     .story__image-wrapper::after {
         display: none;
     }
+
+    .instagram__content {
+        overflow-x: scroll;
+    }
+
+    .instagram__link {
+        min-width: 384px;
+        height: 384px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -1633,5 +1645,10 @@ input[type="text"]::-moz-placeholder {
 
     .header__nav {
         text-align: center;
+    }
+
+    .instagram__link {
+        min-width: 270px;
+        height: 270px;
     }
 }
