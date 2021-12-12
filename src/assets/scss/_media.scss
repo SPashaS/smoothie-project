@@ -58,6 +58,34 @@
         }
     }
 
+    .footer {
+        &__content {
+            &-inner {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        &__logo {
+            flex: 0 0 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 70px;
+        }
+
+        &__information {
+            flex: 0 0 40%;
+        }
+
+        &__payment {
+            flex: 0 0 40%;
+            margin-bottom: 90px;
+        }
+
+        &__subscribe {
+            margin: 0;
+        }
+    }
 }
 
 
@@ -105,10 +133,36 @@
 }
 
 @media screen and (max-width: 615px) {
+    .about {
+        &__title--light-green::after {
+            display: none;
+        }
+
+    }
     .blog {
         &__article-excerpt {
             padding-left: 0;
             max-width: 340px;
+        }
+    }
+
+    .footer {
+        &__information {
+            flex: 0 0 100%;
+            margin-bottom: 70px;
+        }
+
+        &__payment {
+            flex: 0 0 100%;
+            margin-bottom: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .form {
+        &__footer {
+            margin-right: 0;
         }
     }
 }
@@ -116,7 +170,10 @@
 /* медиа запросы*/
 
 @media screen and (max-width: 768px) {
-    
+    .container {
+        padding: 0 10px;
+    }
+
     .header {
         &__navigation {
             position: fixed;
@@ -149,6 +206,14 @@
 
         &__box {
             width: 50%;
+
+            &:nth-child(2), &:nth-child(6) {
+                border-right: 0;
+            }
+
+            &:nth-child(5), &:nth-child(6) {
+                border-bottom: 2px solid #f6edde;
+            }
         }
     }
 
@@ -172,14 +237,6 @@
 }
 
 @media screen and (max-width: 360px) {
-    body,
-    html {
-        font-size: 80%;
-    }
-
-    .container {
-        padding: 0 10px;
-    }
 
     .header__navigation {
         position: fixed;

@@ -11,7 +11,6 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        flex-wrap: wrap;
         }
     }
 
@@ -25,16 +24,14 @@
 
     /*   -------------   logo   -------------   */
 
-    &__logo-link {
-        width: 27%;
-        margin-top: 60px;
+    &__logo {
+        flex: 0 1 385px;
+        align-self: center;
     }
-
 
     /*   -------------   information   -------------   */
     &__information {
-        width: 18%;
-        padding-left: 24px;
+        flex: 0 0 195px;
 
         &-list {
             padding-left: 3px;
@@ -50,8 +47,7 @@
     }
 
     &__payment {
-        width: 23%;
-        padding-left: 10px;
+        flex: 0 0 285px;
 
         &-list {
             padding-top: 5px;
@@ -107,13 +103,11 @@
     }
 
     &__subscribe {
-        width: 29%;
-        padding-left: 5px;
+        flex: 0 1 495px;
     }
 
-    &__social {
-        margin-top: 26px;
-        margin-left: 65%;
+    & .social__link {
+        background-color: transparent;
     }
 
     &__bottom {

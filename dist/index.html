@@ -311,9 +311,11 @@
         <div class="footer__content">
             <div class="container">
                 <div class="footer__content-inner">
-                    <a class="footer__logo-link" href="">
+                    <div class="footer__logo">
+                        <a class="footer__logo-link" href="">
                             <img class="footer__logo-img" src="./assets/images/logo.png" alt="">
-                    </a>
+                        </a>
+                    </div>
                     
                     <div class="footer__information">
                         <h6 class="footer__title">Information</h6>
@@ -370,29 +372,37 @@
                         <h6 class="footer__title">Don't miss out!</h6>
                         
                         <div class="footer__form form">
-                            <input class="form__input" type="email" placeholder="Subscribe to our newsletter" required>
-                            <input class="form__submit" type="submit" value="Follow us">
+                            <input class="form__input" type="email" placeholder="Subscribe to our newsletter" maxlength="40" required>
+                            <div class="form__footer">
+                                <div class="form__wrapper">
+                                    <input class="form__submit" type="submit" value="Follow us">
+                                </div>
+                                
+        
+                                <div class="footer__social social">
+                                    <ul class="social__list">
+                                        <li class="social__item social__item--ft">
+                                            <a class="social__link" href="#">
+                                                <img class="social__icon1" src="./assets/images/ft-facebook.png" alt="facebook">
+                                            </a>
+                                        </li>
+                                        <li class="social__item social__item--ft">
+                                            <a class="social__link" href="#">
+                                                <img class="social__icon2" src="./assets/images/ft-pinterest.png" alt="pinterest">
+                                            </a>
+                                        </li>
+                                        <li class="social__item social__item--ft">
+                                            <a class="social__link" href="#">
+                                                <img class="social__icon3" src="./assets/images/ft-instagram.png" alt="instagram">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
                         </div>
 
-                        <div class="footer__social social">
-                            <ul class="social__list">
-                                <li class="social__item social__item--ft">
-                                    <a class="social__link" href="">
-                                        <img class="social__icon1" src="./assets/images/ft-facebook.png" alt="facebook">
-                                    </a>
-                                </li>
-                                <li class="social__item social__item--ft">
-                                    <a class="social__link" href="">
-                                        <img class="social__icon2" src="./assets/images/ft-pinterest.png" alt="pinterest">
-                                    </a>
-                                </li>
-                                <li class="social__item social__item--ft">
-                                    <a class="social__link" href="">
-                                        <img class="social__icon3" src="./assets/images/ft-instagram.png" alt="instagram">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        
 
                     </div>
 
