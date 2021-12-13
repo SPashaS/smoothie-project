@@ -1,6 +1,6 @@
 /*   ---------------------------   HEADER   ---------------------------   */
 .header {
-    background: url('./../images/header-bg-img.png') center no-repeat;
+    background: url('./../images/header/header-bg-img.png') center no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -18,7 +18,7 @@
     }
 
     &__burger-btn {
-        background-image: url('./../images/menu.png');
+        background-image: url('./../images/header/menu.png');
         background-size: cover;
         width: 30px;
         height: 30px;

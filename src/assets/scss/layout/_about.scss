@@ -48,7 +48,7 @@
 
         &--light-green::after {
             content: "";
-            background-image: url('./../images/smLine.png');
+            background-image: url('./../images/about/smLine.png');
             display: block;
             width: 450px;
             height: 13px;
@@ -68,7 +68,7 @@
 
         &::before {
             content: '';
-            background-image: url('./../images/about-li.png');
+            background-image: url('./../images/about/about-li.png');
             position: absolute;
             width: 18px; height: 18px;
             background-size: 18px 18px;
