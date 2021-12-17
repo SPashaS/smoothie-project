@@ -1066,10 +1066,24 @@ input[type="text"]::-moz-placeholder {
     display: none; } }
 
 @media screen and (max-width: 1360px) {
+  .header__navigation {
+    position: fixed;
+    background-color: #0aa566;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: column-reverse;
+    padding-top: 100px;
+    justify-content: flex-end;
+    display: none; }
+    .header__navigation-active {
+      display: flex; }
   .header__burger-btn {
     display: block; }
-  .header__navigation {
-    display: none; } }
+  .header__right-block {
+    margin-bottom: 130px; } }
 
 @media screen and (max-width: 1250px) {
   .blog__content {
@@ -1137,23 +1151,6 @@ input[type="text"]::-moz-placeholder {
 @media screen and (max-width: 768px) {
   .container {
     padding: 0 10px; }
-  .header__navigation {
-    position: fixed;
-    background-color: #0aa566;
-    z-index: 999;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column-reverse;
-    padding-top: 100px;
-    justify-content: flex-end;
-    display: none; }
-  .header__burger-btn {
-    display: block; }
-  .header__right-block {
-    margin-bottom: 130px; }
   .smoothies__wrapper {
     max-width: 540px; }
   .smoothies__box {

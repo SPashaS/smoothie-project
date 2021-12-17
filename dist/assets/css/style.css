@@ -414,7 +414,7 @@ input[type="text"]::-moz-placeholder {
 
 /*   ---------------------------   HEADER   ---------------------------   */
 .header {
-    background: url("./../images/header-bg-img.png") center no-repeat;
+    background: url("./../images/header/header-bg-img.png") center no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -436,7 +436,7 @@ input[type="text"]::-moz-placeholder {
 }
 
 .header__burger-btn {
-    background-image: url("./../images/menu.png");
+    background-image: url("./../images/header/menu.png");
     background-size: cover;
     width: 30px;
     height: 30px;
@@ -638,7 +638,7 @@ input[type="text"]::-moz-placeholder {
 
 .form::before {
     content: "";
-    background-image: url("./../images/ft-inp-ic.png");
+    background-image: url("./../images/footer/letter.png");
     background-size: 24px;
     width: 24px;
     height: 19px;
@@ -826,7 +826,7 @@ input[type="text"]::-moz-placeholder {
 
 .about__title--light-green::after {
     content: "";
-    background-image: url("./../images/smLine.png");
+    background-image: url("./../images/about/smLine.png");
     display: block;
     width: 450px;
     height: 13px;
@@ -846,7 +846,7 @@ input[type="text"]::-moz-placeholder {
 
 .about__item::before {
     content: '';
-    background-image: url("./../images/about-li.png");
+    background-image: url("./../images/about/about-li.png");
     position: absolute;
     width: 18px;
     height: 18px;
