@@ -43,10 +43,16 @@
             padding-top: 100px;
             justify-content: flex-end;
             display: none;
+            transition: 1s;
 
-            &-active{
+            &_active {
                 display: flex;
             }
+        }
+        .menu__list {
+            flex-direction: column;
+            text-align: center;
+            gap: 40px;
         }
 
         &__burger-btn {
@@ -180,6 +186,25 @@
 }
 
 @media screen and (max-width: 490px) {
+    .header {
+        &__right-block {
+            margin-bottom: 50px;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    
+    .personal {
+        &__list {
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+
+        &__list::after {
+            display: none;
+        }
+    }
+    
     .form {
         &__footer {
             margin-right: 0;
@@ -232,38 +257,6 @@
 }
 
 @media screen and (max-width: 360px) {
-
-    .header__navigation {
-        position: fixed;
-        background-color: #0aa566;
-        z-index: 999;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column-reverse;
-        padding-top: 100px;
-        justify-content: flex-end;
-        display: none;
-    }
-    .personal__list {
-        margin-right: 0;
-        margin-bottom: 40px;
-    }
-    .personal__list::after {
-        display: none;
-    }
-    .header__right-block {
-        margin-bottom: 50px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .header__nav {
-        text-align: center;
-    }
-
     .instagram {
         &__link {
             min-width: 270px;
