@@ -436,7 +436,7 @@ input[type="text"]::-moz-placeholder {
 }
 
 .header__burger-btn {
-    background-image: url("./../images/header/menu.png");
+    background-image: url("./../images/header/burger/burger.svg");
     background-size: cover;
     width: 30px;
     height: 30px;
@@ -444,6 +444,12 @@ input[type="text"]::-moz-placeholder {
     top: 30px;
     right: 30px;
     display: none;
+    z-index: 1000;
+}
+
+.header__burger-btn-close {
+    background-image: url("./../images/header/burger/burger-close.svg");
+    transition: 1s;
 }
 
 .header__menu {
@@ -489,9 +495,7 @@ input[type="text"]::-moz-placeholder {
 .menu__list {
     display: -ms-flexbox;
     display: flex;
-    -webkit-column-gap: 26px;
-    -moz-column-gap: 26px;
-    column-gap: 26px;
+    gap: 26px;
 }
 
 /*   -------------   personal   -------------   */
@@ -681,7 +685,7 @@ input[type="text"]::-moz-placeholder {
 
 .form__wrapper::after {
     content: "";
-    background-image: url("./../images/ft-arr.png");
+    background-image: url("./../images/footer/ft-arr.png");
     background-size: 47px;
     width: 47px;
     height: 43px;
@@ -1392,7 +1396,7 @@ input[type="text"]::-moz-placeholder {
 
 .footer__goTop::before {
     content: '';
-    background-image: url("./../images/ft-arr-top.png");
+    background-image: url("./../images/footer/ft-arr-top.png");
     background-size: 13px 25px;
     width: 13px;
     height: 25px;
@@ -1438,12 +1442,40 @@ input[type="text"]::-moz-placeholder {
 }
 
 @media screen and (max-width: 1360px) {
+    .header__navigation {
+        position: fixed;
+        background-color: #0aa566;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        padding-top: 100px;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        display: none;
+    }
+
+    .header__navigation_active {
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .header .menu__list {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
     .header__burger-btn {
         display: block;
     }
 
-    .header__navigation {
-        display: none;
+    .header__right-block {
+        margin-bottom: 130px;
     }
 }
 
@@ -1559,6 +1591,23 @@ input[type="text"]::-moz-placeholder {
 }
 
 @media screen and (max-width: 490px) {
+    .header__right-block {
+        margin-bottom: 50px;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .personal__list {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .personal__list::after {
+        display: none;
+    }
+
     .form__footer {
         margin-right: 0;
     }
@@ -1568,32 +1617,6 @@ input[type="text"]::-moz-placeholder {
 @media screen and (max-width: 768px) {
     .container {
         padding: 0 10px;
-    }
-
-    .header__navigation {
-        position: fixed;
-        background-color: #0aa566;
-        z-index: 999;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
-        padding-top: 100px;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-        display: none;
-    }
-
-    .header__burger-btn {
-        display: block;
-    }
-
-    .header__right-block {
-        margin-bottom: 130px;
     }
 
     .smoothies__wrapper {
@@ -1627,47 +1650,6 @@ input[type="text"]::-moz-placeholder {
 }
 
 @media screen and (max-width: 360px) {
-    .header__navigation {
-        position: fixed;
-        background-color: #0aa566;
-        z-index: 999;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
-        padding-top: 100px;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-        display: none;
-    }
-
-    .personal__list {
-        margin-right: 0;
-        margin-bottom: 40px;
-    }
-
-    .personal__list::after {
-        display: none;
-    }
-
-    .header__right-block {
-        margin-bottom: 50px;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-
-    .header__nav {
-        text-align: center;
-    }
-
     .instagram__link {
         min-width: 270px;
         height: 270px;
