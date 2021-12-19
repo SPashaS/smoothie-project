@@ -1,5 +1,5 @@
 /* доп медиа запросы*/
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1540px) {
     .about {
         &__inner {
             flex-direction: column;
@@ -12,7 +12,9 @@
             left: 0;
         }
     }
+}
 
+@media screen and (max-width: 1450px) {
     .products {
         overflow: scroll;
 

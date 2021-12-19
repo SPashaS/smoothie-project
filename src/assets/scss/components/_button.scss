@@ -6,12 +6,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+    
 
     &--green-bg {
         background-color: $primaryColor;
 
         &:hover {
             background-color: #098d58;
+            
         }
 
         &::after  {

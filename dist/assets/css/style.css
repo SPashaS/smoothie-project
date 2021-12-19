@@ -1092,7 +1092,7 @@ input[type="text"]::-moz-placeholder {
 }
 
 .testimonials__button {
-    background-image: url("./../../images/components/arrow/arrow-yellow.png");
+    background-image: url("./../images/components/arrow/arrow-yellow.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
@@ -1456,6 +1456,7 @@ input[type="text"]::-moz-placeholder {
         -ms-flex-pack: end;
         justify-content: flex-end;
         display: none;
+        transition: 1s;
     }
 
     .header__navigation_active {
