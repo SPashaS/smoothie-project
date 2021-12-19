@@ -40,20 +40,20 @@
         &::before {
             content: "";
             background-image: url('./../images/inst-wt-ic.png');
-            background-size: 25px 25px ;
-            width: 25px;
-            height: 25px;
+            background-size: cover;
+            width: 7%;
+            height: 7%;
             position: absolute;
-            bottom: 20px;
-            right: 22px;
+            bottom: 4%;
+            right: 8%;
             z-index: 1;
         }
 
         &::after {
             content: "";
-            background: linear-gradient(to top left, #00000046 10%, #00000010 30%, #ddd1ba00 70%);
-            width: 150px;
-            height: 150px;
+            background: linear-gradient(to top left, #00000042 10%, #00000005 30%, #ddd1ba00 70%);
+            width: 50%;
+            height: 50%;
             position: absolute;
             bottom: 0px;
             right: 0px;

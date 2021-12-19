@@ -596,6 +596,7 @@ input[type="text"]::-moz-placeholder {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .button--green-bg {
@@ -805,7 +806,7 @@ input[type="text"]::-moz-placeholder {
 }
 
 .about__content {
-    max-width: 590px;
+    max-width: 665px;
 }
 
 .about__list {
@@ -1383,7 +1384,7 @@ input[type="text"]::-moz-placeholder {
     color: #af8a82;
 }
 
-.footer__goTop {
+.footer .goTop {
     display: block;
     width: 50px;
     height: 50px;
@@ -1394,7 +1395,7 @@ input[type="text"]::-moz-placeholder {
     right: 101px;
 }
 
-.footer__goTop::before {
+.footer .goTop::before {
     content: '';
     background-image: url("./../images/footer/ft-arr-top.png");
     background-size: 13px 25px;
@@ -1405,7 +1406,7 @@ input[type="text"]::-moz-placeholder {
     right: 19px;
 }
 
-.footer__goTop::after {
+.footer .goTop::after {
     content: 'Go top';
     position: absolute;
     bottom: -18px;
@@ -1414,7 +1415,7 @@ input[type="text"]::-moz-placeholder {
 }
 
 /* доп медиа запросы*/
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1540px) {
     .about__inner {
         -ms-flex-direction: column;
         flex-direction: column;
@@ -1427,7 +1428,9 @@ input[type="text"]::-moz-placeholder {
         top: 30px;
         left: 0;
     }
+}
 
+@media screen and (max-width: 1450px) {
     .products {
         overflow: scroll;
     }
