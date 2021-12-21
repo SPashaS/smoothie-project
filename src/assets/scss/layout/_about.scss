@@ -29,7 +29,6 @@
 
     &__list {
         margin-bottom: 41px;
-        padding-left: 16px;
     }
 
     &__title {
@@ -64,7 +63,7 @@
         text-align: left;
         position: relative;
         letter-spacing: 0.4px;
-        left: 22px;
+        padding-left: 40px;
 
         &::before {
             content: '';
@@ -72,8 +71,8 @@
             position: absolute;
             width: 18px; height: 18px;
             background-size: 18px 18px;
-            left: -36px;
-            top: 12px;
+            left: 0;
+            top: 14px;
         }
     }
 
