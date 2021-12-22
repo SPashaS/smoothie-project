@@ -811,7 +811,6 @@ input[type="text"]::-moz-placeholder {
 
 .about__list {
     margin-bottom: 41px;
-    padding-left: 16px;
 }
 
 .about__title {
@@ -846,7 +845,7 @@ input[type="text"]::-moz-placeholder {
     text-align: left;
     position: relative;
     letter-spacing: 0.4px;
-    left: 22px;
+    padding-left: 40px;
 }
 
 .about__item::before {
@@ -856,8 +855,8 @@ input[type="text"]::-moz-placeholder {
     width: 18px;
     height: 18px;
     background-size: 18px 18px;
-    left: -36px;
-    top: 12px;
+    left: 0;
+    top: 14px;
 }
 
 .about__button {
@@ -884,6 +883,8 @@ input[type="text"]::-moz-placeholder {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
     padding: 128px 10px 78px;
@@ -916,6 +917,7 @@ input[type="text"]::-moz-placeholder {
     margin-bottom: 9px;
     font-family: 'MuliExtraBold';
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .products__desc {

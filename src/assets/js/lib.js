@@ -1,11 +1,12 @@
 function burgerMenu() {
-    let burgerIcon = document.querySelector('.header__burger-btn');
+    let burgerIcon = document.querySelector('.header__burger');
     let headerNavigation = document.querySelector('.header__navigation');
+    let bodyLock = document.getElementById('body');
 
 
     burgerIcon.addEventListener('click', function() {
-        headerNavigation.classList.toggle('header__navigation_active')
-        burgerIcon.classList.toggle('header__burger-btn-close')
+        headerNavigation.classList.toggle('header__navigation--active')
+        burgerIcon.classList.toggle('header__burger--active')
     })
 }
 burgerMenu();
