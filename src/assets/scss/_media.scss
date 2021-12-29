@@ -49,10 +49,19 @@
                 right: 0;
             }
         }
-        .menu__list {
-            flex-direction: column;
-            text-align: center;
-            gap: 40px;
+
+        .menu {
+            &__list {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+            }
+
+            &__link {
+                &::after {
+                    background-color: $accentColor;
+                }
+            }
         }
 
         &__burger {
@@ -116,7 +125,7 @@
             margin-bottom: 130px;
         }
     }
-
+    
     .blog {
         &__content {
             flex-direction: column;

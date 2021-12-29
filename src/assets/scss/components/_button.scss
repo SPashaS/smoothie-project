@@ -1,6 +1,7 @@
 /*   -------------   btn   -------------   */
 .button {
     font-family: 'MuliExtraBold';
+    text-transform: capitalize;
     color: white;
     font-size: 1.42rem;
     display: flex;
@@ -14,12 +15,17 @@
 
         &:hover {
             background-color: #098d58;
-            
+
+            &::after {
+                transform: translateX(10px);
+                transition: transform ease-out .65s;
+            }
         }
 
         &::after  {
             content: "";
             display: block;
+            position: relative;
             background-image: url('./../images/components/arrow/arrow-yellow.png');
             background-size: 30px 16px;
             width: 30px;

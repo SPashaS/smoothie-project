@@ -380,6 +380,10 @@ body {
     min-width: 360px;
 }
 
+.wrapper {
+    position: relative;
+}
+
 .container {
     max-width: 1784px;
     margin: 0 auto;
@@ -414,15 +418,13 @@ input[type="text"]::-moz-placeholder {
 
 /*   ---------------------------   HEADER   ---------------------------   */
 .header {
-    background: url("./../images/header/header-bg-img.png") center no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 96px;
+    left: 0;
 }
 
 .header__top {
-    padding: 89px 0 121px;
     position: relative;
 }
 
@@ -441,7 +443,7 @@ input[type="text"]::-moz-placeholder {
 
 .header__logo {
     position: absolute;
-    top: 70px;
+    top: -20px;
     left: 50%;
     -webkit-transform: translateX(-52%);
     transform: translateX(-52%);
@@ -454,7 +456,18 @@ input[type="text"]::-moz-placeholder {
     align-items: center;
 }
 
-.header__button {
+.main-screen {
+    background: url("./../images/header/header-bg-img.png") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+}
+
+.main-screen__content {
+    padding: 246px 0px 0px 0px;
+}
+
+.main-screen__button {
     width: 280px;
     padding: 0 40px;
     font-size: 1.5rem;
@@ -1376,6 +1389,7 @@ input[type="text"]::-moz-placeholder {
     position: fixed;
     bottom: 44px;
     right: 101px;
+    z-index: 100;
 }
 
 .footer .goTop::before {
@@ -1397,7 +1411,6 @@ input[type="text"]::-moz-placeholder {
     color: #fff;
 }
 
-/* доп медиа запросы*/
 @media screen and (max-width: 1540px) {
     .about__inner {
         -ms-flex-direction: column;
@@ -1441,7 +1454,7 @@ input[type="text"]::-moz-placeholder {
         padding-top: 100px;
         -ms-flex-pack: end;
         justify-content: flex-end;
-        transition: all 1s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     .header__navigation--active {
@@ -1628,6 +1641,10 @@ input[type="text"]::-moz-placeholder {
 
     .smoothies__box:nth-child(5), .smoothies__box:nth-child(6) {
         border-bottom: 2px solid #f6edde;
+    }
+
+    .smoothies__name {
+        font-size: 20px;
     }
 
     .story__image-wrapper::after {

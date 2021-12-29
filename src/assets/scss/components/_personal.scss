@@ -19,10 +19,15 @@
 
         &-item {
             margin-right: 46px;
+            transition: transform ease-out .15s;
 
             &:last-child {
                 position: relative;
                 margin-right: 0px;
+            }
+
+            &:hover {
+                transform: translateY(-5px);
             }
         }
     }

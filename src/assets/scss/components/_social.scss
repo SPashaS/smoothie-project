@@ -3,6 +3,13 @@
         display: flex;
         column-gap: 10px;
     }
+    &__item {
+        transition: transform ease-out .35s;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
 
     &__link {
         display: flex;
