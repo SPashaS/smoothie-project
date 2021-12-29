@@ -100,6 +100,7 @@
         position: fixed;
         bottom: 44px;
         right: 101px;
+        z-index: 100;
 
         &::before {
             content: '';

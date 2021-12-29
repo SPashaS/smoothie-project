@@ -20,6 +20,9 @@ body {
     min-width: 360px;
 }
 
+.wrapper {
+    position: relative;
+}
 .container {
     max-width: 1784px;
     margin: 0 auto;
@@ -50,6 +53,7 @@ input[type="text"]::-moz-placeholder {
 }
 
 @import './layout/header';
+@import './layout/main-screen';
 @import './components/menu';
 @import './components/personal';
 @import './components/social';

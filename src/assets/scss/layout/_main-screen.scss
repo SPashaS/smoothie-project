@@ -1,0 +1,19 @@
+.main-screen {
+    background: url('./../images/header/header-bg-img.png') center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+
+    &__content {
+        padding: 246px 0px 0px 0px;
+    }
+
+    &__button {
+        width: 280px;
+        padding: 0 40px;
+        font-size: 1.5rem;
+        height: 70px;
+        border-radius: 35px;
+        margin: 0 auto;
+    }
+}

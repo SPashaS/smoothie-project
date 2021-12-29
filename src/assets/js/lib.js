@@ -1,8 +1,6 @@
 function burgerMenu() {
     let burgerIcon = document.querySelector('.header__burger');
     let headerNavigation = document.querySelector('.header__navigation');
-    let bodyLock = document.getElementById('body');
-
 
     burgerIcon.addEventListener('click', function() {
         headerNavigation.classList.toggle('header__navigation--active')
@@ -27,7 +25,6 @@ for (let anchor of anchors) {
 }
 
 const goTop = document.querySelector(".goTop");
-
 window.addEventListener("scroll", function () {
     if (this.window.scrollY > 400) {
         goTop.style.display = "block"

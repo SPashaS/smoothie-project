@@ -1,13 +1,11 @@
 /*   ---------------------------   HEADER   ---------------------------   */
 .header {
-    background: url('./../images/header/header-bg-img.png') center no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 96px;
+    left: 0;
 
     &__top {
-        padding: 89px 0 121px;
         position: relative;
     }
 
@@ -19,17 +17,13 @@
 
     
 
-
-
-
-
     &__menu {
         margin-top: -5px;
     }
 
     &__logo {
         position: absolute;
-        top: 70px;
+        top: -20px;
         left: 50%;
         transform: translateX(-52%);
     }
@@ -39,12 +33,5 @@
         align-items: center;
     }
 
-    &__button {
-        width: 280px;
-        padding: 0 40px;
-        font-size: 1.5rem;
-        height: 70px;
-        border-radius: 35px;
-        margin: 0 auto;
-    }
+
 }
