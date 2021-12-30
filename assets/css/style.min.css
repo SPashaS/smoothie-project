@@ -370,7 +370,7 @@ input[type="text"]::-moz-placeholder {
 .header {
   position: absolute;
   width: 100%;
-  top: 96px;
+  top: 90px;
   left: 0; }
   .header__top {
     position: relative; }
@@ -489,18 +489,6 @@ input[type="text"]::-moz-placeholder {
   .social__link--ft {
     background-color: transparent; }
 
-.social__icon1 {
-  width: 12px;
-  height: 24px; }
-
-.social__icon2 {
-  width: 20px;
-  height: 26px; }
-
-.social__icon3 {
-  width: 26px;
-  height: 26px; }
-
 /*   -------------   btn   -------------   */
 .button {
   font-family: 'MuliExtraBold';
@@ -511,28 +499,25 @@ input[type="text"]::-moz-placeholder {
   justify-content: space-between;
   align-items: center;
   cursor: pointer; }
-  .button--green-bg {
-    background-color: #0aa566; }
-    .button--green-bg:hover {
-      background-color: #098d58; }
-      .button--green-bg:hover::after {
-        transform: translateX(10px);
-        transition: transform ease-out .65s; }
-    .button--green-bg::after {
-      content: "";
-      display: block;
-      position: relative;
-      background-image: url("./../images/components/arrow/arrow-yellow.png");
-      background-size: 30px 16px;
-      width: 30px;
-      height: 16px; }
-  .button--no-bg::after {
+  .button::after {
     content: "";
     display: block;
-    background-image: url("./../images/arr-white.png");
+    position: relative;
+    background-image: url("./../images/components/arrow/arrow-yellow.png");
     background-size: 30px 16px;
     width: 30px;
     height: 16px; }
+  .button:hover {
+    background-color: rgba(255, 255, 255, 0.082); }
+    .button:hover::after {
+      transform: translateX(10px);
+      transition: transform ease-out .65s; }
+  .button--green-bg {
+    background-color: #0aa566; }
+    .button--green-bg:hover {
+      background-color: #16b676; }
+  .button--no-bg::after {
+    background-image: url("./../images/arr-white.png"); }
 
 .title {
   font-family: 'MuliExtraBold';
@@ -974,7 +959,7 @@ input[type="text"]::-moz-placeholder {
     overflow: hidden; }
     .instagram__link::before {
       content: "";
-      background-image: url("./../images/inst-wt-ic.png");
+      background-image: url("./../images/instagram/icon/inst-wt-ic.png");
       background-size: cover;
       width: 7%;
       height: 7%;
@@ -1124,7 +1109,7 @@ input[type="text"]::-moz-placeholder {
     width: 30px;
     height: 20px;
     top: 30px;
-    right: 20px;
+    right: 40px;
     z-index: 10000;
     transition: all 0.3s ease 0s; }
     .header__burger span {
@@ -1210,6 +1195,10 @@ input[type="text"]::-moz-placeholder {
 @media screen and (max-width: 768px) {
   .container {
     padding: 0 10px; }
+  .header__logo {
+    top: 8px; }
+  .main-screen__body {
+    padding: 275px 0px 0px 0px; }
   .smoothies__wrapper {
     max-width: 540px; }
   .smoothies__box {
@@ -1260,6 +1249,8 @@ input[type="text"]::-moz-placeholder {
     margin-right: 0; } }
 
 @media screen and (max-width: 360px) {
+  .header__burger {
+    right: 30px; }
   .instagram__link {
     min-width: 270px;
     height: 270px; }
