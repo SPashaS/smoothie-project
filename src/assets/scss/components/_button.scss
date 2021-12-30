@@ -9,39 +9,35 @@
     align-items: center;
     cursor: pointer;
     
+    &::after  {
+        content: "";
+        display: block;
+        position: relative;
+        background-image: url('./../images/components/arrow/arrow-yellow.png');
+        background-size: 30px 16px;
+        width: 30px;
+        height: 16px; 
+    }
 
-    &--green-bg {
-        background-color: $primaryColor;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.082);
 
-        &:hover {
-            background-color: #098d58;
-
-            &::after {
-                transform: translateX(10px);
-                transition: transform ease-out .65s;
-            }
-        }
-
-        &::after  {
-            content: "";
-            display: block;
-            position: relative;
-            background-image: url('./../images/components/arrow/arrow-yellow.png');
-            background-size: 30px 16px;
-            width: 30px;
-            height: 16px;
+        &::after {
+            transform: translateX(10px);
+            transition: transform ease-out .65s;
         }
     }
 
-    &--no-bg {
+    &--green-bg {
+        background-color: $primaryColor;
+        &:hover {
+            background-color: #16b676;
+        }     
+    }
 
+    &--no-bg {
         &::after {
-            content: "";
-            display: block;
             background-image: url('./../images/arr-white.png');
-            background-size: 30px 16px;
-            width: 30px;
-            height: 16px;
         }
     }
 }

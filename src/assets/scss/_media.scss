@@ -70,7 +70,7 @@
             width: 30px;
             height: 20px;
             top: 30px;
-            right: 20px;
+            right: 40px;
             z-index: 10000;
             transition: all 0.3s ease 0s;
 
@@ -224,7 +224,16 @@
     .container {
         padding: 0 10px;
     }
-
+    .header {
+        &__logo {
+            top: 8px;
+        }
+    }
+    .main-screen {
+        &__body {
+            padding: 275px 0px 0px 0px;
+        }
+    }
     .smoothies {
         &__wrapper {
             max-width: 540px;
@@ -337,6 +346,12 @@
 
 
 @media screen and (max-width: 360px) {
+    .header {
+        &__burger {
+            right: 30px;
+        }
+    }
+    
     .instagram {
         &__link {
             min-width: 270px;
