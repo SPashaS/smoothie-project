@@ -420,7 +420,7 @@ input[type="text"]::-moz-placeholder {
 .header {
     position: absolute;
     width: 100%;
-    top: 96px;
+    top: 90px;
     left: 0;
 }
 
@@ -631,6 +631,10 @@ input[type="text"]::-moz-placeholder {
     height: 16px;
 }
 
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.082);
+}
+
 .button:hover::after {
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
@@ -644,15 +648,7 @@ input[type="text"]::-moz-placeholder {
 }
 
 .button--green-bg:hover {
-    background-color: #098d58;
-}
-
-.button--green-bg:hover::after {
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
-    transition: -webkit-transform ease-out .65s;
-    transition: transform ease-out .65s;
-    transition: transform ease-out .65s, -webkit-transform ease-out .65s;
+    background-color: #16b676;
 }
 
 .button--no-bg::after {
@@ -1286,7 +1282,7 @@ input[type="text"]::-moz-placeholder {
 
 .instagram__link::before {
     content: "";
-    background-image: url("./../images/inst-wt-ic.png");
+    background-image: url("./../images/instagram/icon/inst-wt-ic.png");
     background-size: cover;
     width: 7%;
     height: 7%;
@@ -1516,7 +1512,7 @@ input[type="text"]::-moz-placeholder {
         width: 30px;
         height: 20px;
         top: 30px;
-        right: 20px;
+        right: 40px;
         z-index: 10000;
         transition: all 0.3s ease 0s;
     }
@@ -1669,6 +1665,14 @@ input[type="text"]::-moz-placeholder {
         padding: 0 10px;
     }
 
+    .header__logo {
+        top: 8px;
+    }
+
+    .main-screen__body {
+        padding: 275px 0px 0px 0px;
+    }
+
     .smoothies__wrapper {
         max-width: 540px;
     }
@@ -1759,6 +1763,10 @@ input[type="text"]::-moz-placeholder {
 }
 
 @media screen and (max-width: 360px) {
+    .header__burger {
+        right: 30px;
+    }
+
     .instagram__link {
         min-width: 270px;
         height: 270px;
