@@ -1,18 +1,4 @@
 
-@media screen and (max-width: 1540px) {
-    .about {
-        &__inner {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        &__image {
-            position: relative;
-            top: 30px;
-            left: 0;
-        }
-    }
-}
 
 @media screen and (max-width: 1450px) {
     .products {
@@ -26,6 +12,22 @@
     .testimonials {
         &::before {
             display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1316px) {
+    .about {
+        &__inner {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__image {
+            position: relative;
+            top: 30px;
+            left: 0;
         }
     }
 }
@@ -360,7 +362,6 @@
         }
     }
 }
-
 
 @media screen and (max-width: 360px) {
     .header {
