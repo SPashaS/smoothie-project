@@ -758,7 +758,7 @@ input[type="text"]::-moz-placeholder {
     max-width: 915px;
     margin-bottom: 52px;
     font-size: 1.125rem;
-    line-height: 1.95;
+    line-height: 194%;
     text-align: center;
     color: #1e1e1e;
 }
@@ -1632,6 +1632,23 @@ input[type="text"]::-moz-placeholder {
 }
 
 @media screen and (max-width: 1100px) {
+    .smoothies__wrapper {
+        max-width: 540px;
+    }
+
+    .smoothies__box {
+        width: 50%;
+        height: 195px;
+    }
+
+    .smoothies__box:nth-child(2), .smoothies__box:nth-child(6) {
+        border-right: 0;
+    }
+
+    .smoothies__box:nth-child(5), .smoothies__box:nth-child(6) {
+        border-bottom: 2px solid #f6edde;
+    }
+
     .testimonials__inner::after {
         left: -20px;
     }
@@ -1673,24 +1690,18 @@ input[type="text"]::-moz-placeholder {
         padding: 275px 0px 0px 0px;
     }
 
-    .smoothies__wrapper {
-        max-width: 540px;
+    .smoothies {
+        padding: 39px 0px 105px 0px;
     }
 
-    .smoothies__box {
-        width: 50%;
+    .smoothies__title {
+        text-align: center;
+        margin-bottom: 19px;
     }
 
-    .smoothies__box:nth-child(2), .smoothies__box:nth-child(6) {
-        border-right: 0;
-    }
-
-    .smoothies__box:nth-child(5), .smoothies__box:nth-child(6) {
-        border-bottom: 2px solid #f6edde;
-    }
-
-    .smoothies__name {
-        font-size: 20px;
+    .smoothies__desc {
+        max-width: 715px;
+        margin-bottom: 39px;
     }
 
     .story__image-wrapper::after {
@@ -1717,6 +1728,10 @@ input[type="text"]::-moz-placeholder {
 }
 
 @media screen and (max-width: 615px) {
+    .smoothies__name {
+        font-size: 1.25rem;
+    }
+
     .about__title--light-green::after {
         display: none;
     }
@@ -1765,6 +1780,21 @@ input[type="text"]::-moz-placeholder {
 @media screen and (max-width: 360px) {
     .header__burger {
         right: 30px;
+    }
+
+    .smoothies {
+        padding-bottom: 65px;
+    }
+
+    .smoothies__title {
+        margin-bottom: 26px;
+        font-size: 2.5rem;
+        text-align: center;
+        line-height: 127%;
+    }
+
+    .smoothies__desc {
+        margin-bottom: 54px;
     }
 
     .instagram__link {
