@@ -41,7 +41,7 @@
         .about__title {
             margin-bottom: 51px;
         }
-        
+
         &__button {
             margin: 0px 0px 0px 0px;
         }
@@ -361,6 +361,20 @@
         }
         &__button {
             font-size: 1.125rem;
+        }
+    }
+
+    .products {
+        &__box {
+            min-width: 300px;
+            padding: 71px 10px 85px;
+        }
+        &__img {
+            width: 100px;
+            margin: 0 8px 29px 0;
+        }
+        &__name {
+            font-size: 1.35rem;
         }
     }
     .blog {

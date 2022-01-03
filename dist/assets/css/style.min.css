@@ -705,7 +705,7 @@ input[type="text"]::-moz-placeholder {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 128px 10px 78px;
+    padding: 128px 10px 79px;
     /* мод*/ }
     .products__box--brown {
       background-color: #632b17; }
@@ -717,7 +717,6 @@ input[type="text"]::-moz-placeholder {
       background-color: #c3471b; }
   .products__img {
     width: 119px;
-    height: 303px;
     margin: 0 8px 29px 0; }
   .products__name {
     margin-bottom: 9px;
@@ -1268,6 +1267,14 @@ input[type="text"]::-moz-placeholder {
       bottom: -4px; }
     .about__button {
       font-size: 1.125rem; }
+  .products__box {
+    min-width: 300px;
+    padding: 71px 10px 85px; }
+  .products__img {
+    width: 100px;
+    margin: 0 8px 29px 0; }
+  .products__name {
+    font-size: 1.35rem; }
   .blog__article-excerpt {
     padding-left: 0;
     max-width: 340px; }

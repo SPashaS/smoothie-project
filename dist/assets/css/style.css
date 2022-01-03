@@ -811,7 +811,7 @@ input[type="text"]::-moz-placeholder {
 .about {
     background-color: #14826f;
     color: white;
-    padding: 87px 0 90px;
+    padding-top: 87px;
 }
 
 .about__inner {
@@ -843,7 +843,7 @@ input[type="text"]::-moz-placeholder {
 }
 
 .about__list {
-    margin-bottom: 41px;
+    margin-bottom: 45px;
 }
 
 .about__title {
@@ -852,7 +852,7 @@ input[type="text"]::-moz-placeholder {
     line-height: 1.09;
     letter-spacing: -1.1px;
     color: #ffffff;
-    margin-bottom: 46px;
+    margin-bottom: 52px;
 }
 
 .about__title--light-green {
@@ -874,11 +874,12 @@ input[type="text"]::-moz-placeholder {
 .about__item {
     list-style-position: inside;
     font-size: 1.31rem;
-    line-height: 2.10;
+    line-height: 140%;
     text-align: left;
     position: relative;
     letter-spacing: 0.4px;
-    padding-left: 40px;
+    padding-left: 38px;
+    margin-bottom: 15px;
 }
 
 .about__item::before {
@@ -889,7 +890,7 @@ input[type="text"]::-moz-placeholder {
     height: 18px;
     background-size: 18px 18px;
     left: 0;
-    top: 14px;
+    top: 6px;
 }
 
 .about__button {
@@ -900,6 +901,7 @@ input[type="text"]::-moz-placeholder {
     border: solid 2px #f8b231;
     background-color: #14826f;
     padding: 0 38px 0 28px;
+    margin: 0px 0px 220px 0px;
 }
 
 /*   ---------------------------   PRODUCTS   ---------------------------   */
@@ -907,6 +909,10 @@ input[type="text"]::-moz-placeholder {
     display: -ms-flexbox;
     display: flex;
     color: white;
+}
+
+.products--mt {
+    margin-top: -125px;
 }
 
 .products__box {
@@ -1461,6 +1467,44 @@ input[type="text"]::-moz-placeholder {
     }
 }
 
+@media screen and (max-width: 1285px) {
+    .about {
+        padding: 57px 0 100px;
+    }
+
+    .about__inner {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .about__image-wrapper {
+        padding: 0 0 67px;
+    }
+
+    .about__image {
+        top: 0;
+        left: 0;
+    }
+
+    .about__content {
+        padding-left: 0;
+    }
+
+    .about .about__title {
+        margin-bottom: 51px;
+    }
+
+    .about__button {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .products--mt {
+        margin-top: 0;
+    }
+}
+
 @media screen and (max-width: 1250px) {
     .header__navigation {
         position: fixed;
@@ -1665,10 +1709,6 @@ input[type="text"]::-moz-placeholder {
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        padding: 0 10px;
-    }
-
     .header__logo {
         top: 8px;
     }
@@ -1689,6 +1729,11 @@ input[type="text"]::-moz-placeholder {
     .smoothies__desc {
         max-width: 715px;
         margin-bottom: 39px;
+    }
+
+    .about__column:last-child {
+        -ms-flex-item-align: start;
+        align-self: flex-start;
     }
 
     .story__image-wrapper::after {
@@ -1714,13 +1759,44 @@ input[type="text"]::-moz-placeholder {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
 @media screen and (max-width: 615px) {
     .smoothies__name {
         font-size: 1.25rem;
     }
 
+    .about {
+        padding: 57px 0 77px;
+    }
+
+    .about__title {
+        font-size: 2.75rem;
+        line-height: 114%;
+    }
+
+    .about__image-wrapper {
+        padding: 0 0 36px;
+    }
+
+    .about__title {
+        margin-bottom: 53px;
+    }
+
     .about__title--light-green::after {
-        display: none;
+        width: 305px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 0;
+        bottom: -4px;
+    }
+
+    .about__button {
+        font-size: 1.125rem;
     }
 
     .blog__article-excerpt {
