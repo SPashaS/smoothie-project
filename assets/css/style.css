@@ -925,7 +925,7 @@ input[type="text"]::-moz-placeholder {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    padding: 128px 10px 78px;
+    padding: 128px 10px 79px;
     /* мод*/
 }
 
@@ -947,7 +947,6 @@ input[type="text"]::-moz-placeholder {
 
 .products__img {
     width: 119px;
-    height: 303px;
     margin: 0 8px 29px 0;
 }
 
@@ -1797,6 +1796,20 @@ input[type="text"]::-moz-placeholder {
 
     .about__button {
         font-size: 1.125rem;
+    }
+
+    .products__box {
+        min-width: 300px;
+        padding: 71px 10px 85px;
+    }
+
+    .products__img {
+        width: 100px;
+        margin: 0 8px 29px 0;
+    }
+
+    .products__name {
+        font-size: 1.35rem;
     }
 
     .blog__article-excerpt {
