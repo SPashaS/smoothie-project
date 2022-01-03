@@ -1,13 +1,13 @@
 /*   ---------------------------   STORY   ---------------------------   */
 
 .story {
-
+    padding: 121px 0 160px;
+    
     &__inner {
         margin: 0 auto;
         max-width: 1300px;
         display: flex;
         justify-content: space-between;
-        padding: 121px 0 160px;
         position: relative;
     }
 

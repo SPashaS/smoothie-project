@@ -198,13 +198,22 @@
 }
 
 @media screen and (max-width: 1210px) {
-    // .blog__article-link::after {
-    //     display: none;
-    // }
-    
     .story {
+        padding: 77px 0 79px;
+
         &__inner {
             flex-wrap: wrap;
+        }
+        &__title {
+            margin: 0 0 37px; 
+        }
+
+        &__text {
+            padding-bottom: 48px;
+        }
+
+        &__button {
+            margin-bottom: 79px;
         }
 
         &__image-wrapper {
@@ -377,6 +386,24 @@
             font-size: 1.35rem;
         }
     }
+    .story {
+        padding: 52px 0 91px;
+
+        &__title {
+            font-size: 2.75rem;
+            margin: 0 0 41px;
+        }
+        &__content {
+            margin-right: 0;
+        }
+        &__text {
+            padding-bottom: 40px;
+        }
+        &__button {
+            margin: 0 auto 50px;
+        }
+    }
+
     .blog {
         &__article-excerpt {
             padding-left: 0;
