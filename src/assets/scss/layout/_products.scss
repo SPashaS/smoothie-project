@@ -2,6 +2,10 @@
 .products {
     display: flex;
     color: white;
+    
+    &--mt{
+        margin-top: -125px;
+    }
 
     &__box {
         width: 25%;

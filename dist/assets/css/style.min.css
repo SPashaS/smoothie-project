@@ -627,35 +627,36 @@ input[type="text"]::-moz-placeholder {
 .about {
   background-color: #14826f;
   color: white;
-  padding: 0; }
+  padding-top: 87px; }
   .about__inner {
     display: flex;
-    position: relative;
-    justify-content: space-between; }
+    position: relative; }
+  .about__column {
+    flex: 0 1 50%; }
   .about__image-wrapper {
-    flex: 0 1 700px;
-    margin-right: 30px; }
+    padding-right: 40px; }
   .about__image {
     max-width: 691px;
     width: 100%;
-    position: absolute;
-    top: 64px;
-    left: 43px; }
+    position: relative;
+    top: -25px;
+    left: 5%; }
   .about__content {
-    flex: 0 1 665px; }
+    max-width: 620px;
+    padding-left: 15px; }
   .about__list {
-    margin-bottom: 41px; }
+    margin-bottom: 45px; }
   .about__title {
     font-family: 'MuliExtraBold';
     font-size: 3.43rem;
     line-height: 1.09;
     letter-spacing: -1.1px;
     color: #ffffff;
-    margin-bottom: 46px;
-    padding-top: 88px; }
+    margin-bottom: 52px; }
     .about__title--light-green {
       color: #cae941;
-      position: relative; }
+      position: relative;
+      white-space: nowrap; }
     .about__title--light-green::after {
       content: "";
       background-image: url("./../images/about/smLine.png");
@@ -667,11 +668,12 @@ input[type="text"]::-moz-placeholder {
   .about__item {
     list-style-position: inside;
     font-size: 1.31rem;
-    line-height: 2.10;
+    line-height: 140%;
     text-align: left;
     position: relative;
     letter-spacing: 0.4px;
-    padding-left: 40px; }
+    padding-left: 38px;
+    margin-bottom: 15px; }
     .about__item::before {
       content: '';
       background-image: url("./../images/about/about-li.png");
@@ -680,7 +682,7 @@ input[type="text"]::-moz-placeholder {
       height: 18px;
       background-size: 18px 18px;
       left: 0;
-      top: 14px; }
+      top: 6px; }
   .about__button {
     font-size: 1.3rem;
     max-width: 380px;
@@ -689,12 +691,14 @@ input[type="text"]::-moz-placeholder {
     border: solid 2px #f8b231;
     background-color: #14826f;
     padding: 0 38px 0 28px;
-    margin-bottom: 94px; }
+    margin: 0px 0px 220px 0px; }
 
 /*   ---------------------------   PRODUCTS   ---------------------------   */
 .products {
   display: flex;
   color: white; }
+  .products--mt {
+    margin-top: -125px; }
   .products__box {
     width: 25%;
     display: flex;
@@ -1073,14 +1077,25 @@ input[type="text"]::-moz-placeholder {
   .testimonials::before {
     display: none; } }
 
-@media screen and (max-width: 1316px) {
-  .about__inner {
-    flex-direction: column;
-    align-items: center; }
-  .about__image {
-    position: relative;
-    top: 30px;
-    left: 0; } }
+@media screen and (max-width: 1285px) {
+  .about {
+    padding: 57px 0 100px; }
+    .about__inner {
+      flex-direction: column;
+      align-items: center; }
+    .about__image-wrapper {
+      padding: 0 0 67px; }
+    .about__image {
+      top: 0;
+      left: 0; }
+    .about__content {
+      padding-left: 0; }
+    .about .about__title {
+      margin-bottom: 51px; }
+    .about__button {
+      margin: 0px 0px 0px 0px; }
+  .products--mt {
+    margin-top: 0; } }
 
 @media screen and (max-width: 1250px) {
   .header__navigation {
@@ -1202,8 +1217,6 @@ input[type="text"]::-moz-placeholder {
     margin: 0 auto; } }
 
 @media screen and (max-width: 768px) {
-  .container {
-    padding: 0 10px; }
   .header__logo {
     top: 8px; }
   .main-screen__body {
@@ -1216,6 +1229,8 @@ input[type="text"]::-moz-placeholder {
     .smoothies__desc {
       max-width: 715px;
       margin-bottom: 39px; }
+  .about__column:last-child {
+    align-self: flex-start; }
   .story__image-wrapper::after {
     display: none; }
   .testimonials__inner::after {
@@ -1229,11 +1244,30 @@ input[type="text"]::-moz-placeholder {
     bottom: 40px;
     right: 30px; } }
 
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 10px; } }
+
 @media screen and (max-width: 615px) {
   .smoothies__name {
     font-size: 1.25rem; }
-  .about__title--light-green::after {
-    display: none; }
+  .about {
+    padding: 57px 0 77px; }
+    .about__title {
+      font-size: 2.75rem;
+      line-height: 114%; }
+    .about__image-wrapper {
+      padding: 0 0 36px; }
+    .about__title {
+      margin-bottom: 53px; }
+    .about__title--light-green::after {
+      width: 305px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: 0;
+      bottom: -4px; }
+    .about__button {
+      font-size: 1.125rem; }
   .blog__article-excerpt {
     padding-left: 0;
     max-width: 340px; }

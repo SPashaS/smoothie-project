@@ -17,17 +17,38 @@
 }
 
 
-@media screen and (max-width: 1316px) {
+@media screen and (max-width: 1285px) {
     .about {
+        padding: 57px 0 100px;
+
         &__inner {
             flex-direction: column;
             align-items: center;
         }
 
+        &__image-wrapper {
+            padding: 0 0 67px;
+        }
+
         &__image {
-            position: relative;
-            top: 30px;
+            top: 0;
             left: 0;
+        }
+
+        &__content {
+            padding-left: 0;
+        }
+        .about__title {
+            margin-bottom: 51px;
+        }
+        
+        &__button {
+            margin: 0px 0px 0px 0px;
+        }
+    }
+    .products {
+        &--mt {
+            margin-top: 0;
         }
     }
 }
@@ -242,9 +263,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        padding: 0 10px;
-    }
     .header {
         &__logo {
             top: 8px;
@@ -269,6 +287,11 @@
         }
     }
 
+    .about {
+        &__column:last-child {
+            align-self: flex-start;
+        }
+    }
     .story {
         &__image-wrapper::after {
             display: none;
@@ -303,6 +326,12 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
 @media screen and (max-width: 615px) {
     .smoothies {
         &__name {
@@ -311,10 +340,28 @@
     }
 
     .about {
-        &__title--light-green::after {
-            display: none;
+        padding: 57px 0 77px;
+        
+        &__title {
+            font-size: 2.75rem;
+            line-height: 114%;
         }
-
+        &__image-wrapper {
+            padding: 0 0 36px;
+        }
+        &__title {
+            margin-bottom: 53px;
+        }
+        &__title--light-green::after {
+            width: 305px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: 0;
+            bottom: -4px;
+        }
+        &__button {
+            font-size: 1.125rem;
+        }
     }
     .blog {
         &__article-excerpt {
