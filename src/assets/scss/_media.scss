@@ -14,6 +14,17 @@
             display: none;
         }
     }
+
+    .instagram {
+        &__content {
+            overflow-x: scroll;
+        }
+
+        &__link {
+            min-width: 384px;
+            height: 384px;
+        }
+    }
 }
 
 
@@ -169,12 +180,16 @@
             max-width: 708px;
         }
     }
-
+}
+@media screen and (max-width: 1200px) {
     .footer {
+        .container {
+            padding: 0 100px
+        }
         &__content {
+            padding: 6px 0 86px;
             &-inner {
                 flex-wrap: wrap;
-                justify-content: center;
             }
         }
 
@@ -182,21 +197,19 @@
             flex: 0 0 100%;
             display: flex;
             justify-content: center;
-            margin-bottom: 70px;
+            margin-bottom: 65px;
         }
 
         &__information {
-            flex: 0 0 40%;
+            flex: 0 1 40%;
         }
 
         &__payment {
-            flex: 0 0 40%;
-            margin-bottom: 90px;
+            flex: 0 1 40%;
+            margin-bottom: 84px;
+            margin-right: 3%;
         }
 
-        &__subscribe {
-            margin: 0;
-        }
     }
 }
 
@@ -317,24 +330,14 @@
         }
     }
 
-    .instagram {
-        &__content {
-            overflow-x: scroll;
-        }
-
-        &__link {
-            min-width: 384px;
-            height: 384px;
-        }
-    }
-
     .footer {
         & .goTop {
-            bottom: 40px;
+            bottom: 46px;
             right: 30px;
         }
     }
 }
+
 
 @media screen and (max-width: 767px) {
     .container {
@@ -347,8 +350,28 @@
             }
         }
     }
+
 }
 
+@media screen and (max-width: 640px) {
+    .footer {
+        .container {
+            padding: 0 10px;
+        }
+        &__payment {
+            margin-right: 0;
+        }
+
+        & .goTop {
+            right: 10px;
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+}
 
 // УМЕНЬШЕНИЕ ШРИФТОВ
 @media screen and (max-width: 615px) {
@@ -434,18 +457,6 @@
             max-width: 340px;
         }
     }
-
-    .footer {
-        &__information {
-            flex: 0 0 100%;
-            margin-bottom: 70px;
-        }
-
-        &__payment {
-            flex: 0 0 100%;
-            margin-bottom: 70px;
-        }
-    }
 }
 
 @media screen and (max-width: 490px) {
@@ -454,6 +465,31 @@
             margin-bottom: 50px;
             align-items: center;
             flex-direction: column;
+        }
+    }
+    
+    .footer {
+        &__content {
+            padding: 6px 0 55px;
+        }
+        &__logo {
+            margin-bottom: 56px;
+        }
+
+        &__information {
+            flex: 0 0 100%;
+            margin-bottom: 58px;
+        }
+
+        &__payment {
+            flex: 0 0 100%;
+            margin-bottom: 65px;
+            padding-left: 0;
+
+            &-list {
+                width: 100%;
+                gap: 16px 18px;
+            }
         }
     }
 
@@ -470,6 +506,7 @@
     
     .form {
         &__footer {
+            width: 255px;
             margin-right: 0;
         }
     }
@@ -500,16 +537,6 @@
         &__link {
             min-width: 270px;
             height: 270px;
-        }
-    }
-
-    .footer {
-        & .goTop {
-            right: 10px;
-
-            &::after {
-                display: none;
-            }
         }
     }
 }

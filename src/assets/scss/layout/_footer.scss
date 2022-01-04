@@ -5,7 +5,7 @@
 
     &__content {
         background-color: #f6ab3b;
-        padding: 74px 0 91px;
+        padding: 74px 0 92px;
 
         &-inner {
         display: flex;
@@ -16,17 +16,17 @@
 
     &__title {
         font-family: 'MuliExtraBold';
-        font-size: 26px;
+        font-size: 1.625rem;
         letter-spacing: -0.52px;
         color: #ffffff;
-        padding-bottom: 29px;
+        padding-bottom: 27px;
     }
 
     /*   -------------   logo   -------------   */
 
     &__logo {
-        flex: 0 1 385px;
-        align-self: center;
+        flex: 0 2 385px;
+        padding-top: 58px;
     }
 
     /*   -------------   information   -------------   */
@@ -36,9 +36,9 @@
         &-list {
             padding-left: 3px;
             font-family: 'MuliExtraBold';
-            font-size: 18px;
-            letter-spacing: -0.36px;
-            line-height: 1.96; 
+            font-size: 1.125rem;
+            letter-spacing: -0.6px;
+            line-height: 196%; 
         }
 
         &-link {
@@ -50,24 +50,25 @@
         flex: 0 0 285px;
 
         &-list {
-            padding-top: 5px;
+            padding-top: 7px;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             flex-wrap: wrap;
-            width: 270px;
-            gap: 17px 18px;
+            width: 240px;
+            gap: 23px 18px;
         }
 
-        &-icon {
-            &5 {
-                margin-left: 7px;
+        &-item {
+            &:nth-child(5) img {
+                margin-left: 4px;
             }
-
-            &8 {
-                margin-left: 7px;
+            &:nth-child(8) img {
+                margin-left: 3px;
+                margin-top: -3px;
             }
         }
+
     }
 
     &__subscribe {
@@ -76,12 +77,19 @@
 
     & .social__link {
         background-color: transparent;
+    }   
+
+    &__form {
+        padding-top: 2px;
+    }
+
+    &__social {
+        padding-right: 2px;
     }
 
     &__bottom {
-        display: flex;
-        justify-content: center;
-        padding: 26px 0;
+        text-align: center;
+        padding: 24px 0;
         background-color: #6c2c1c;
     }
 
