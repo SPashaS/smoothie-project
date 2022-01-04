@@ -197,31 +197,6 @@
     }
 }
 
-@media screen and (max-width: 1210px) {
-    .story {
-        padding: 77px 0 79px;
-
-        &__inner {
-            flex-wrap: wrap;
-        }
-        &__title {
-            margin: 0 0 37px; 
-        }
-
-        &__text {
-            padding-bottom: 48px;
-        }
-
-        &__button {
-            margin-bottom: 79px;
-        }
-
-        &__image-wrapper {
-            margin-left: auto;
-        }
-    }
-}
-
 @media screen and (max-width: 1100px) {
     .smoothies {
         &__wrapper {
@@ -248,22 +223,54 @@
         }
     }
 }
+@media screen and (max-width: 968px) {
+    .story {
+        padding: 77px 0 79px;
+
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__title {
+            margin: 0 0 37px; 
+        }
+
+        &__text {
+            padding-bottom: 48px;
+        }
+
+        &__button {
+            margin-bottom: 79px;
+        }
+
+        &__image-wrapper {
+            margin-left: auto;
+        }
+    }
+}
 
 @media screen and (max-width: 870px) {
     .testimonials {
         &__inner {
             align-items: center;
-
             &::after {
                 font-size: 11.25rem;
-                left: 20px;
-                top: 450px;
-                width: 687px;
+                left: 2px;
+                top: 339px;
+                width: 691px;
             }
         }
         &__content {
             flex-direction: column-reverse;
+            margin-bottom: 103px;
         }
+        
+        &__title {
+            margin-bottom: 91px;
+        }
+        &__text {
+            padding-top: 80px;
+        }
+
         &__img {
             margin: 0 auto;
         }
@@ -307,15 +314,6 @@
         }
     }
 
-    .testimonials {
-        &__inner {
-            &::after {
-                display: none;
-            }
-        }
-    }
-    
-
     .instagram {
         &__content {
             overflow-x: scroll;
@@ -339,8 +337,17 @@
     .container {
         padding: 0 10px;
     }
+    .testimonials {
+        &__inner {
+            &::after {
+                display: none;
+            }
+        }
+    }
 }
 
+
+// УМЕНЬШЕНИЕ ШРИФТОВ
 @media screen and (max-width: 615px) {
     .smoothies {
         &__name {
@@ -403,7 +410,16 @@
             margin: 0 auto 50px;
         }
     }
-
+    .testimonials {
+        padding: 50px 0px 113px 0px;
+        &__title {
+            font-size: 2.75rem;
+            margin-bottom: 73px;
+        }
+        &__text {
+            padding-top: 50px;
+        }
+    }
     .blog {
         &__article-excerpt {
             padding-left: 0;

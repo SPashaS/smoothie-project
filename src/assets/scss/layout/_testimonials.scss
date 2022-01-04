@@ -1,6 +1,7 @@
 /*   ---------------------------   TESTIMONIALS   ---------------------------   */
 
 .testimonials {
+    padding: 107px 0 81px;
     background-color: #672f1b;
     position: relative;
 
@@ -16,7 +17,7 @@
     }
 
     &__inner {
-        max-width: 731px;
+        max-width: 736px;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -26,8 +27,8 @@
             content: "Sarah A";
             width: 766px;
             position: absolute;
-            top: 216px;
-            left: -139px;
+            top: 100px;
+            left: -164px;
             font-family: 'MuliExtraBold';
             font-size: 12.5rem;
             letter-spacing: -4px;
@@ -36,8 +37,8 @@
     }
     
     &__title {
-        margin: 107px auto 118px;
-
+        margin: 0 auto 118px;
+        text-align: center;
     }
 
     &__content {
@@ -51,9 +52,6 @@
         flex-direction: column;
         max-width: 510px;
         padding-top: 56px;
-        position: relative;
-
-        
     }
 
     &__img {
@@ -65,10 +63,11 @@
     &__quote {
         max-width: 457px;
         font-size: 1.125rem;
-        line-height: 1.9;
+        line-height: 1.95;
         text-align: center;
         color: #ffffff;
         z-index: 1;
+        margin-bottom: 16px;
     }
 
     &__address {
@@ -76,13 +75,12 @@
         font-size: 1.06rem;
         color: #f7ae3b;
         text-align: center;
-        padding-top: 19px;
     }
 
     &__footer {
         display: flex;
         justify-content: space-between;
-        margin: 0 auto 81px;
+        margin: 0 auto;
         width: 160px;
 
         &-btn {
