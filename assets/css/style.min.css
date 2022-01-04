@@ -757,7 +757,6 @@ input[type="text"]::-moz-placeholder {
   .story__button {
     width: 300px;
     padding: 0 42px 0 27px;
-    margin-bottom: 30px;
     height: 60px;
     border-radius: 30px; }
   .story__image {
@@ -780,6 +779,7 @@ input[type="text"]::-moz-placeholder {
 
 /*   ---------------------------   TESTIMONIALS   ---------------------------   */
 .testimonials {
+  padding: 107px 0 81px;
   background-color: #672f1b;
   position: relative; }
   .testimonials::before {
@@ -792,7 +792,7 @@ input[type="text"]::-moz-placeholder {
     top: -83px;
     right: 58px; }
   .testimonials__inner {
-    max-width: 731px;
+    max-width: 736px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -801,14 +801,15 @@ input[type="text"]::-moz-placeholder {
       content: "Sarah A";
       width: 766px;
       position: absolute;
-      top: 216px;
-      left: -139px;
+      top: 100px;
+      left: -164px;
       font-family: 'MuliExtraBold';
       font-size: 12.5rem;
       letter-spacing: -4px;
       color: rgba(82, 25, 5, 0.6); }
   .testimonials__title {
-    margin: 107px auto 118px; }
+    margin: 0 auto 118px;
+    text-align: center; }
   .testimonials__content {
     display: flex;
     justify-content: space-between;
@@ -817,8 +818,7 @@ input[type="text"]::-moz-placeholder {
     display: flex;
     flex-direction: column;
     max-width: 510px;
-    padding-top: 56px;
-    position: relative; }
+    padding-top: 56px; }
   .testimonials__img {
     width: 220px;
     height: 218px;
@@ -826,20 +826,20 @@ input[type="text"]::-moz-placeholder {
   .testimonials__quote {
     max-width: 457px;
     font-size: 1.125rem;
-    line-height: 1.9;
+    line-height: 1.95;
     text-align: center;
     color: #ffffff;
-    z-index: 1; }
+    z-index: 1;
+    margin-bottom: 16px; }
   .testimonials__address {
     font-family: 'MuliSemiBoldItalic';
     font-size: 1.06rem;
     color: #f7ae3b;
-    text-align: center;
-    padding-top: 19px; }
+    text-align: center; }
   .testimonials__footer {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto 81px;
+    margin: 0 auto;
     width: 160px; }
     .testimonials__footer-btn {
       width: 30px;
@@ -1179,20 +1179,6 @@ input[type="text"]::-moz-placeholder {
   .footer__subscribe {
     margin: 0; } }
 
-@media screen and (max-width: 1210px) {
-  .story {
-    padding: 77px 0 79px; }
-    .story__inner {
-      flex-wrap: wrap; }
-    .story__title {
-      margin: 0 0 37px; }
-    .story__text {
-      padding-bottom: 48px; }
-    .story__button {
-      margin-bottom: 79px; }
-    .story__image-wrapper {
-      margin-left: auto; } }
-
 @media screen and (max-width: 1100px) {
   .smoothies__wrapper {
     max-width: 540px; }
@@ -1206,16 +1192,35 @@ input[type="text"]::-moz-placeholder {
   .testimonials__inner::after {
     left: -20px; } }
 
+@media screen and (max-width: 968px) {
+  .story {
+    padding: 77px 0 79px; }
+    .story__inner {
+      flex-wrap: wrap; }
+    .story__title {
+      margin: 0 0 37px; }
+    .story__text {
+      padding-bottom: 48px; }
+    .story__button {
+      margin-bottom: 79px; }
+    .story__image-wrapper {
+      margin-left: auto; } }
+
 @media screen and (max-width: 870px) {
   .testimonials__inner {
     align-items: center; }
     .testimonials__inner::after {
       font-size: 11.25rem;
-      left: 20px;
-      top: 450px;
-      width: 687px; }
+      left: 2px;
+      top: 339px;
+      width: 691px; }
   .testimonials__content {
-    flex-direction: column-reverse; }
+    flex-direction: column-reverse;
+    margin-bottom: 103px; }
+  .testimonials__title {
+    margin-bottom: 91px; }
+  .testimonials__text {
+    padding-top: 80px; }
   .testimonials__img {
     margin: 0 auto; } }
 
@@ -1236,8 +1241,6 @@ input[type="text"]::-moz-placeholder {
     align-self: flex-start; }
   .story__image-wrapper::after {
     display: none; }
-  .testimonials__inner::after {
-    display: none; }
   .instagram__content {
     overflow-x: scroll; }
   .instagram__link {
@@ -1249,7 +1252,9 @@ input[type="text"]::-moz-placeholder {
 
 @media screen and (max-width: 767px) {
   .container {
-    padding: 0 10px; } }
+    padding: 0 10px; }
+  .testimonials__inner::after {
+    display: none; } }
 
 @media screen and (max-width: 615px) {
   .smoothies__name {
@@ -1290,6 +1295,13 @@ input[type="text"]::-moz-placeholder {
       padding-bottom: 40px; }
     .story__button {
       margin: 0 auto 50px; }
+  .testimonials {
+    padding: 50px 0px 113px 0px; }
+    .testimonials__title {
+      font-size: 2.75rem;
+      margin-bottom: 73px; }
+    .testimonials__text {
+      padding-top: 50px; }
   .blog__article-excerpt {
     padding-left: 0;
     max-width: 340px; }
