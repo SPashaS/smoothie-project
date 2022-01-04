@@ -6,7 +6,7 @@
 
     &__top {
         margin: 0 auto;
-        padding: 47px 0 45px;
+        padding: 49px 0 45px;
 
         &-link {
             display: flex;
@@ -44,8 +44,8 @@
             width: 7%;
             height: 7%;
             position: absolute;
-            bottom: 4%;
-            right: 8%;
+            bottom: 5%;
+            right: 5.5%;
             z-index: 1;
         }
 
@@ -62,6 +62,7 @@
 
     &__image {
         width:100%;
+        max-height: 384px;
         height: 100%;
         object-fit: cover;
     }
