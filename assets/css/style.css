@@ -1148,9 +1148,12 @@ input[type="text"]::-moz-placeholder {
 }
 
 /*   ---------------------------   BLOG   ---------------------------   */
+.blog {
+    padding: 89px 0 148px;
+}
+
 .blog__inner {
     max-width: 1200px;
-    padding-bottom: 150px;
     margin: 0 auto;
 }
 
@@ -1160,7 +1163,7 @@ input[type="text"]::-moz-placeholder {
 }
 
 .blog__title {
-    margin: 89px 0 50px;
+    margin-bottom: 50px;
 }
 
 .blog__image {
@@ -1183,7 +1186,7 @@ input[type="text"]::-moz-placeholder {
     background-color: #f7ae3b;
     background-size: 530px 5px;
     border-radius: 0 6px 6px 0;
-    width: 100%;
+    width: 107%;
     height: 12px;
     position: absolute;
     top: 70px;
@@ -1193,23 +1196,18 @@ input[type="text"]::-moz-placeholder {
 .blog__article-title {
     font-family: 'MuliExtraBold';
     font-size: 1.875rem;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.33;
     letter-spacing: -0.6px;
-    text-align: left;
     color: #f2612d;
     position: relative;
 }
 
 .blog__article-time {
     font-size: 1rem;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 2.19;
-    letter-spacing: normal;
-    text-align: left;
     color: #1e1e1e;
+    position: relative;
+    left: 3px;
 }
 
 .blog__article-excerpt {
@@ -1217,7 +1215,6 @@ input[type="text"]::-moz-placeholder {
     padding: 26px 0 0 60px;
     font-size: 1.125rem;
     line-height: 1.95;
-    text-align: left;
     color: #1e1e1e;
 }
 
@@ -1604,9 +1601,15 @@ input[type="text"]::-moz-placeholder {
         margin-bottom: 130px;
     }
 
+    .blog {
+        padding-bottom: 99px;
+    }
+
     .blog__content {
         -ms-flex-direction: column;
         flex-direction: column;
+        max-width: 708px;
+        margin: 0 auto;
     }
 
     .blog__article::before {
@@ -1614,7 +1617,7 @@ input[type="text"]::-moz-placeholder {
     }
 
     .blog__article {
-        padding: 20px 0 0;
+        padding: 30px 0 0;
     }
 
     .blog__image-wrapper {
@@ -1873,6 +1876,14 @@ input[type="text"]::-moz-placeholder {
 
     .testimonials__text {
         padding-top: 50px;
+    }
+
+    .blog {
+        padding: 52px 0px 43px 0px;
+    }
+
+    .blog__title {
+        font-size: 2.75rem;
     }
 
     .blog__article-excerpt {
