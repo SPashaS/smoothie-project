@@ -1,10 +1,10 @@
 /*   ---------------------------   BLOG   ---------------------------   */
 
 .blog {
+    padding: 89px 0 148px;
 
     &__inner {
         max-width: 1200px;
-        padding-bottom: 150px;
         margin: 0 auto;
     }
 
@@ -13,7 +13,7 @@
     }
 
     &__title {
-        margin: 89px 0 50px;
+        margin-bottom: 50px;
     }
 
     &__image {
@@ -35,7 +35,7 @@
             background-color: #f7ae3b;
             background-size: 530px 5px;
             border-radius: 0 6px 6px 0;
-            width: 100%;
+            width: 107%;
             height: 12px;
             position: absolute;
             top: 70px;
@@ -45,23 +45,18 @@
         &-title {
             font-family: 'MuliExtraBold';
             font-size: 1.875rem;
-            font-stretch: normal;
-            font-style: normal;
             line-height: 1.33;
             letter-spacing: -0.6px;
-            text-align: left;
             color: #f2612d;
             position: relative;
         }
 
         &-time {
             font-size: 1rem;
-            font-stretch: normal;
-            font-style: normal;
             line-height: 2.19;
-            letter-spacing: normal;
-            text-align: left;
             color: #1e1e1e;
+            position: relative;
+            left: 3px;
         }
 
         &-excerpt {
@@ -69,7 +64,6 @@
             padding: 26px 0 0 60px;
             font-size: 1.125rem;
             line-height: 1.95;
-            text-align: left;
             color: #1e1e1e;
         }
 
