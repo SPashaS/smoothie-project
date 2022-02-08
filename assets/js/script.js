@@ -13,7 +13,6 @@ burgerMenu();
 
 
 let anchors = document.querySelectorAll("a[href^='#']");
-console.log (anchors);
 for (let anchor of anchors) {
     anchor.addEventListener("click", function(e) {
         e.preventDefault();

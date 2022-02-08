@@ -184,7 +184,7 @@ input[type="text"]::-moz-placeholder {
 }
 
 .main-screen {
-    background: url("./../images/header/header-bg-img.png") center no-repeat;
+    background: url("./../images/header/header-bg-img.jpg") center no-repeat;
     background-size: cover;
     height: 100vh;
     color: #fff;
